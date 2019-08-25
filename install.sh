@@ -8,8 +8,12 @@ DEST="$HOME"
 #symlink all files (and folders), exluding important existing folders (Documents and .config)
 #this will delete existing folders
 for f in $(ls -a $SRC/); do
-	if [[ ! $f =~ Documents|.config|.git*|README.md|install.sh ]]; then
-		sudo rm $DEST/$f/
+	if [[ (! $f =~ Documents|.config|.git*|README.md|install.sh) && ( -e $f) ]]; then
+		if [[ -d $f ]]; then
+			sudo rm -rf $DEST/$f/
+		elif [[ -f $f ]]; then
+			sudo rm $DEST/$f/
+		fi
 		sudo ln -sf $SRC/$f $DEST/$f
 		#echo $SRC/$f
 		#echo $DEST/$f
@@ -25,8 +29,8 @@ for f in $(ls -a $SRC/.config/); do
 done
 
 echo ''
-echo "Don't forget to install tixati setting, firefox bookmarks"
-echo "and check Documents/programming"
+echo "Don't forget to import tixati setting, firefox bookmarks"
+echo "and to check Documents/programming"
 
 
 ### recusively symlink each file in the file tree
