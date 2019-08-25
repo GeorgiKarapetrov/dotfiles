@@ -177,3 +177,5 @@ set -o vi
 QT_QPA_PLATFORMTHEME="qt5ct"
 
 alias monitor=./.scripts/system/monitorOnOff.sh
+alias go_git='git add -A && git commit -a -m sync && git push origin master'
+

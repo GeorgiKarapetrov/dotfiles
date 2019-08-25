@@ -397,8 +397,7 @@ client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color      
 # Start i3bar to display a workspace bar (plus the system information i3status if available)
 bar {
 	i3bar_command i3bar
-	status_command i3blocks -c /home/george/.i3/i3blocks.conf
-	#status_command i3status -c /home/george/.i3/i3status.conf
+	status_command i3blocks -c /home/george/.config/i3/i3blocks.conf
 	position bottom
     
 

@@ -12,7 +12,7 @@ for f in $(ls -a $SRC/); do
 		if [[ -d $f ]]; then
 			sudo rm -rf $DEST/$f/
 		elif [[ -f $f ]]; then
-			sudo rm $DEST/$f/
+			sudo rm $DEST/$f
 		fi
 		sudo ln -sf $SRC/$f $DEST/$f
 		#echo $SRC/$f
