@@ -1,0 +1,6 @@
+#!/bin/bash
+
+conky -p 8 -c $HOME/.config/conky/conky1.10_shortcuts_maia &&
+conky -p 8 -c $HOME/.config/conky/conky_maia &&
+
+exit 0

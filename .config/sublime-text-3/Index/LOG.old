@@ -1,0 +1,3 @@
+2019/08/14-16:55:29.256555 7f198d62f700 Recovering log #82
+2019/08/14-16:55:29.256663 7f198d62f700 Level-0 table #84: started
+2019/08/14-16:55:29.256746 7f198d62f700 Level-0 table #84: 0 bytes IO error: /home/george/.config/sublime-text-3/Index/000084.ldb: Permission denied

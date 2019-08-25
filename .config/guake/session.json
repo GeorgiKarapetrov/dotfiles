@@ -1,0 +1,20 @@
+{
+    "schema_version": 2,
+    "timestamp": 1566703143,
+    "workspace": {
+        "0": [
+            [
+                {
+                    "panes": [
+                        {
+                            "type": "term",
+                            "directory": "/home/george"
+                        }
+                    ],
+                    "label": "george@pc: ~",
+                    "custom_label_set": false
+                }
+            ]
+        ]
+    }
+}
