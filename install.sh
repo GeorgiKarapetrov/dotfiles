@@ -8,13 +8,13 @@ DEST="$HOME"
 #symlink all files (and folders), exluding important existing folders (Documents and .config)
 #this will delete existing folders
 for f in $(ls -a $SRC/); do
-	if [[ (! $f =~ Documents|.config|.git*|README.md|install.sh) && ( -e $f) ]]; then
+	if [[ ( ! $f =~ Documents|.config|.git*|README.md|install.sh|.|.. ) && ( -e $f ) ]]; then
 		if [[ -d $f ]]; then
 			sudo rm -rf $DEST/$f/
 		elif [[ -f $f ]]; then
 			sudo rm $DEST/$f
 		fi
-		sudo ln -sf $SRC/$f $DEST/$f
+		sudo ln -sf "$SRC/$f" "$DEST/$f"
 		#echo $SRC/$f
 		#echo $DEST/$f
 	fi
@@ -23,7 +23,7 @@ done
 #override ~/.config
 for f in $(ls -a $SRC/.config/); do
 	sudo rm -rf $DEST/.config/$f/
-	sudo ln -sf $SRC/.config/$f $DEST/.config/
+	sudo ln -sf "$SRC/.config/$f" "$DEST/.config/$f"
 	#echo $SRC/.config/$f
 	#echo $DEST/.config/
 done

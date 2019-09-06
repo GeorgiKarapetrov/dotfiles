@@ -209,7 +209,7 @@ bindsym $mod+Shift+8 move container to workspace $ws8; workspace $ws8
 
 # Open applications on specific workspaces
 assign [class="Terminator"] $ws1
-assign [class="firefox"] $ws2
+assign [class="Firefox"] $ws2
 assign [class="Pale moon"] $ws2
 assign [class="Vimb"] $ws2
 assign [class="qutebrowser"] $ws2
