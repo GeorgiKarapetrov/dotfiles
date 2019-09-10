@@ -1,0 +1,44 @@
+[Added Associations]
+application/pdf=epdfview.desktop;
+application/x-bittorrent=deluge.desktop;
+application/x-extension-htm=userapp-Pale Moon.desktop;
+application/x-extension-html=userapp-Pale Moon.desktop;
+application/x-extension-shtml=userapp-Pale Moon.desktop;
+application/x-extension-xht=userapp-Pale Moon.desktop;
+application/x-extension-xhtml=userapp-Pale Moon.desktop;
+application/xhtml+xml=userapp-Pale Moon.desktop;
+image/jpeg=viewnior.desktop;gpicview.desktop;
+image/png=viewnior.desktop;gpicview.desktop;
+message/rfc822=userapp-Thunderbird.desktop;
+text/html=userapp-Pale Moon.desktop;
+text/plain=sublime_text_3.desktop;mousepad.desktop;
+x-scheme-handler/chrome=userapp-Pale Moon.desktop;
+x-scheme-handler/ftp=userapp-Pale Moon.desktop;
+x-scheme-handler/http=userapp-Pale Moon.desktop;
+x-scheme-handler/https=userapp-Pale Moon.desktop;
+x-scheme-handler/mailto=userapp-Thunderbird.desktop;
+x-scheme-handler/sms=org.gnome.Shell.Extensions.GSConnect.desktop;
+x-scheme-handler/tel=org.gnome.Shell.Extensions.GSConnect.desktop;
+
+[Default Applications]
+application/pdf=FoxitReader.desktop
+application/x-bittorrent=deluge.desktop
+application/x-extension-htm=userapp-Pale Moon.desktop
+application/x-extension-html=userapp-Pale Moon.desktop
+application/x-extension-shtml=userapp-Pale Moon.desktop
+application/x-extension-xht=userapp-Pale Moon.desktop
+application/x-extension-xhtml=userapp-Pale Moon.desktop
+application/xhtml+xml=userapp-Pale Moon.desktop
+image/jpeg=viewnior.desktop;gpicview.desktop;
+image/png=viewnior.desktop;gpicview.desktop;
+message/rfc822=userapp-Thunderbird.desktop
+text/html=userapp-Pale Moon.desktop
+text/plain=sublime_text_3.desktop;
+x-scheme-handler/chrome=userapp-Pale Moon.desktop
+x-scheme-handler/ftp=userapp-Pale Moon.desktop
+x-scheme-handler/http=userapp-Pale Moon.desktop
+x-scheme-handler/https=userapp-Pale Moon.desktop
+x-scheme-handler/mailto=userapp-Thunderbird.desktop
+application/ppdf=FoxitReader.desktop
+
+[Added Associations] inode/directory=pcmanfm.desktop;

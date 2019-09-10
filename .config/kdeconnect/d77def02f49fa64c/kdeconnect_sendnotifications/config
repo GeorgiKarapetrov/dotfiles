@@ -1,9 +1,10 @@
 [applications]
-1\value=@Variant(\0\0\0\x7f\0\0\0\x15NotifyingApplication\0\0\0\0\x16\0\x61\0l\0\x61\0r\0m\0-\0\x63\0l\0o\0\x63\0k\0\0\0\x16\0\x61\0l\0\x61\0r\0m\0-\0\x63\0l\0o\0\x63\0k\x1\xff\xff\xff\xff)
+1\value=@Variant(\0\0\0\x7f\0\0\0\x15NotifyingApplication\0\0\0\0\n\0S\0k\0y\0p\0\x65\0\0\0\0\x1\xff\xff\xff\xff)
 2\value=@Variant(\0\0\0\x7f\0\0\0\x15NotifyingApplication\0\0\0\0\n\0G\0u\0\x61\0k\0\x65\0\0\0^\0/\0u\0s\0r\0/\0s\0h\0\x61\0r\0\x65\0/\0g\0u\0\x61\0k\0\x65\0/\0p\0i\0x\0m\0\x61\0p\0s\0/\0g\0u\0\x61\0k\0\x65\0-\0n\0o\0t\0i\0\x66\0i\0\x63\0\x61\0t\0i\0o\0n\0.\0p\0n\0g\x1\xff\xff\xff\xff)
-3\value=@Variant(\0\0\0\x7f\0\0\0\x15NotifyingApplication\0\0\0\0\n\0S\0k\0y\0p\0\x65\0\0\0\0\x1\xff\xff\xff\xff)
-4\value=@Variant(\0\0\0\x7f\0\0\0\x15NotifyingApplication\0\0\0\0\x16\0n\0o\0t\0i\0\x66\0y\0-\0s\0\x65\0n\0\x64\0\0\0\0\x1\xff\xff\xff\xff)
-5\value=@Variant(\0\0\0\x7f\0\0\0\x15NotifyingApplication\0\0\0\0\x12\0N\0\x65\0x\0t\0\x63\0l\0o\0u\0\x64\0\0\0\x12\0N\0\x65\0x\0t\0\x63\0l\0o\0u\0\x64\x1\xff\xff\xff\xff)
-6\value=@Variant(\0\0\0\x7f\0\0\0\x15NotifyingApplication\0\0\0\0\x1c\0N\0\x65\0t\0w\0o\0r\0k\0M\0\x61\0n\0\x61\0g\0\x65\0r\0\0\0\x18\0n\0m\0-\0s\0i\0g\0n\0\x61\0l\0-\0\x35\0\x30\x1\xff\xff\xff\xff)
+3\value=@Variant(\0\0\0\x7f\0\0\0\x15NotifyingApplication\0\0\0\0\x1c\0N\0\x65\0t\0w\0o\0r\0k\0M\0\x61\0n\0\x61\0g\0\x65\0r\0\0\0\x18\0n\0m\0-\0s\0i\0g\0n\0\x61\0l\0-\0\x35\0\x30\x1\xff\xff\xff\xff)
+4\value=@Variant(\0\0\0\x7f\0\0\0\x15NotifyingApplication\0\0\0\0\x16\0\x61\0l\0\x61\0r\0m\0-\0\x63\0l\0o\0\x63\0k\0\0\0\x16\0\x61\0l\0\x61\0r\0m\0-\0\x63\0l\0o\0\x63\0k\x1\xff\xff\xff\xff)
+5\value=@Variant(\0\0\0\x7f\0\0\0\x15NotifyingApplication\0\0\0\0\x16\0n\0o\0t\0i\0\x66\0y\0-\0s\0\x65\0n\0\x64\0\0\0\0\x1\xff\xff\xff\xff)
+6\value=@Variant(\0\0\0\x7f\0\0\0\x15NotifyingApplication\0\0\0\0\x16\0V\0o\0l\0u\0m\0\x65\0 \0I\0\x63\0o\0n\0\0\0&\0\x61\0u\0\x64\0i\0o\0-\0v\0o\0l\0u\0m\0\x65\0-\0m\0\x65\0\x64\0i\0u\0m\x1\xff\xff\xff\xff)
 7\value=@Variant(\0\0\0\x7f\0\0\0\x15NotifyingApplication\0\0\0\0\f\0T\0i\0x\0\x61\0t\0i\0\0\0$\0\x64\0i\0\x61\0l\0o\0g\0-\0i\0n\0\x66\0o\0r\0m\0\x61\0t\0i\0o\0n\x1\xff\xff\xff\xff)
-size=7
+8\value=@Variant(\0\0\0\x7f\0\0\0\x15NotifyingApplication\0\0\0\0\x12\0N\0\x65\0x\0t\0\x63\0l\0o\0u\0\x64\0\0\0\x12\0N\0\x65\0x\0t\0\x63\0l\0o\0u\0\x64\x1\xff\xff\xff\xff)
+size=8
