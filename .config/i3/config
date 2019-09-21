@@ -324,7 +324,7 @@ exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id nitrogen --restore; sleep 1; compton -b
 exec --no-startup-id xrandr --output LVDS1 --primary --mode 1366x768 --pos 0x0 --rotate normal --output DP1 --off --output HDMI1 --mode 1920x1080 --pos 1366x0 --rotate normal --output VGA1 --off --output VIRTUAL1 --off
 #audio
-exec --no-startup-id pulseaudio-equalizer enable
+exec --no-startup-id sleep 1; pulseaudio-equalizer enable
 # phone integration
 exec --no-startup-id /usr/lib/kdeconnectd; sleep 1; kdeconnect-indicator
 # cyrilic + tray icon

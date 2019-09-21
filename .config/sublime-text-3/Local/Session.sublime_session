@@ -12,11 +12,11 @@
 		"/home/george/a"
 	],
 	"last_version": 3207,
-	"last_window_id": 77,
+	"last_window_id": 79,
 	"log_indexing": false,
 	"settings":
 	{
-		"new_window_height": 1019.0,
+		"new_window_height": 1043.0,
 		"new_window_settings":
 		{
 			"auto_complete":
@@ -643,6 +643,21 @@
 			},
 			"file_history":
 			[
+				"/home/george/dotfiles/.config/sublime-text-3/Packages/SublimeREPL/SublimeREPL.sublime-settings",
+				"/home/george/dotfiles/.config/sublime-text-3/Packages/User/SublimeREPL.sublime-settings",
+				"/home/george/Documents/programming/pythonProgress/subl.tutorial.project/jp/james_powell_combined_dec_gen_context.py",
+				"/home/george/Documents/programming/pythonProgress/reads/Pandurski-git/examples/sqlite/sql_commands.py",
+				"/home/george/Documents/programming/pythonProgress/subl.tutorial.project/python101/context_man.py",
+				"/home/george/Documents/programming/pythonProgress/Exam-Karapetrov-Georgi.py",
+				"/home/george/Documents/programming/pythonProgress/reads/Pandurski-git/examples/mergesort.py",
+				"/home/george/Documents/programming/pythonProgress/notes/w6/week6-1.py",
+				"/home/george/Documents/programming/pythonProgress/notes/w6/week6-2.py",
+				"/home/george/Documents/programming/pythonProgress/notes/w5/week5-2.py",
+				"/home/george/Documents/programming/pythonProgress/notes/w5/week5-1.py",
+				"/home/george/Documents/programming/pythonProgress/notes/w4/week4-2.py",
+				"/home/george/Documents/programming/pythonProgress/notes/w7/week7-1.py",
+				"/home/george/Documents/programming/pythonProgress/subl.tutorial.project/python101/json1.py",
+				"/home/george/Documents/programming/pythonProgress/Exam-Karapetrov-Georgi.sublime-workspace",
 				"/home/george/Downloads/torrent/L.Empereur.De.Paris.2018.FRENCH.720p.BluRay.mHD.x264.AC3-GOLD/L.Empereur.De.Paris.2018.FRENCH.720p.BluRay.mHD.x264.AC3-GOLD.nfo",
 				"/home/george/Desktop/pythonProgress/subl.tutorial.project/python101/generators.py",
 				"/home/george/Desktop/pythonProgress/subl.tutorial.project/python101/inheritance.py",
@@ -755,22 +770,7 @@
 				"/Users/jai/Library/Application Support/Sublime Text 3/Packages/SublimeTutor/tutorial/chapter_2_12.md",
 				"/Users/jai/Library/Application Support/Sublime Text 3/Packages/SublimeTutor/tutorial/chapter_2_13.md",
 				"/Users/jai/Library/Application Support/Sublime Text 3/Packages/SublimeTutor/tutorial/chapter_2_14.md",
-				"/Users/jai/Library/Application Support/Sublime Text 3/Packages/SublimeTutor/tutorial/chapter_2_15.md",
-				"/Users/jai/Library/Application Support/Sublime Text 3/Packages/SublimeTutor/tutorial/chapter_3.md",
-				"/Users/jai/Library/Application Support/Sublime Text 3/Packages/SublimeTutor/tutorial/chapter_3_1.md",
-				"/Users/jai/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-				"/Users/jai/Library/Application Support/Sublime Text 3/Packages/SublimeTutor/tutorial/chapter_2_7.md",
-				"/Users/jai/Library/Application Support/Sublime Text 3/Packages/SublimeTutor/tutorial/chapter_1.md",
-				"/Users/jai/Library/Application Support/Sublime Text 3/Packages/SublimeTutor/tutorial/chapter_2_8.md",
-				"/Users/jai/Library/Application Support/Sublime Text 3/Packages/SublimeTutor/tutorial/chapter_2.md",
-				"/Users/jai/Library/Application Support/Sublime Text 3/Packages/SublimeTutor/tutorial/chapter_2_4.md",
-				"/Users/jai/Library/Application Support/Sublime Text 3/Packages/SublimeTutor/tutorial/chapter_2_5.md",
-				"/Users/jai/Library/Application Support/Sublime Text 3/Packages/SublimeTutor/tutorial/chapter_2_6.md",
-				"/Users/jai/Library/Application Support/Sublime Text 3/Packages/SublimeTutor/tutorial/chapter_2_1.md",
-				"/Users/jai/Library/Application Support/Sublime Text 3/Packages/SublimeTutor/tutorial/README.md",
-				"/Users/jai/Library/Application Support/Sublime Text 3/Packages/SublimeTutor/tutorial/Contents.md",
-				"/Users/jai/Library/Application Support/Sublime Text 3/Packages/SublimeTutor/tutorial/tutorial.sublime-completions",
-				"/Users/jai/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings"
+				"/Users/jai/Library/Application Support/Sublime Text 3/Packages/SublimeTutor/tutorial/chapter_2_15.md"
 			],
 			"find":
 			{
@@ -778,7 +778,7 @@
 			},
 			"find_in_files":
 			{
-				"height": 132.0,
+				"height": 144.0,
 				"where_history":
 				[
 					"",
@@ -1642,6 +1642,10 @@
 				"selected_items":
 				[
 					[
+						"max",
+						"max_size"
+					],
+					[
 						"fr",
 						"frameworks"
 					],
@@ -1930,10 +1934,6 @@
 						"trips_with_availability"
 					],
 					[
-						"max",
-						"max_occupancy"
-					],
-					[
 						"total",
 						"total_deboarded"
 					],
@@ -1950,17 +1950,35 @@
 			"buffers":
 			[
 				{
+					"contents": "import re\ndef extract(string):\n    list_o_words = list(set(string.split()))\n    contacts = list()\n    for _ in list_o_words:\n        temp = re.match('#[A-Z]+[a-z]*\\\\.[A-z]+[a-z]*', _)\n        if temp != None:\n            contacts.append( temp )            \n    return contacts\ncontacts = extract('Welcome to #EMIS. If you need any help from HR you can write to #Milo.Minderbinder. For any technical problems you should contact #Major.Major. If you need any smart advises, please contact #Ali.Baba or #John.Yossarian. When you are sick, please stay at #Home.')\nprint (contacts)",
+					"file": "/home/george/Documents/programming/python_course/hw/hw2/test.py",
+					"file_size": 576,
+					"file_write_time": 132131898882374289,
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 576,
 						"line_ending": "Unix"
 					}
 				},
 				{
-					"file": "/home/george/Documents/programming/python_course/hw/hw2/11RandomGame.py",
+					"contents": "def neighbours(pos, matrix):\n    sort = ''\n    rows = len(matrix)\n    cols = len(matrix[0]) \n    for i in range(max(0, pos[0] - 1), min(rows, pos[0] + 2)):\n        for j in range(max(0, pos[1] - 1), min(cols, pos[1] + 2)):\n            if (i, j) != pos:\n                sort = sort + str(matrix[i][j])\n    return ''.join(sorted(sort))\n\ndef concat(matrix):\n    result = [None] * len(matrix)\n    for i,row in enumerate(matrix):\n        result[i] = [None] * len(row)\n        for j,col in enumerate(row):\n            result[i][j] = neighbours([i,j], matrix)",
+					"file": "/home/george/Documents/programming/python_course/hw/hw2/test2.py",
+					"file_size": 552,
+					"file_write_time": 132131898869740957,
 					"settings":
 					{
-						"buffer_size": 541,
+						"buffer_size": 552,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"contents": "def group(array):\n    grouped = []\n    groups = set()\n    for _ in array:\n        if _ // 1 in groups:\n            grouped.[_ // 1 - 1].append(_)\n        else:\n            groups.add(_ // 1)\n            grouped.append([])\n            grouped.[_ // 1 - 1].append(_)\n    return grouped\n\ndef duplicates(array):\n    grouped = group(array)\n    max_size = 0\n    for _ in grouped:\n        _ = sorted(_)\n        if len(_) > max_size:\n            max_size = _\n\n    duplicate = []\n    for i in Range(max_size):\n        for _ in grouped:\n            if i < len(_):\n                duplicate.append(_[i])\n            else:\n                duplicate.append(_[len(_) - 1])\n        print duplicate\n\n\n        ",
+					"file": "/home/george/Documents/programming/python_course/hw/hw2/test3.py",
+					"file_size": 693,
+					"file_write_time": 132131898804974296,
+					"settings":
+					{
+						"buffer_size": 693,
 						"line_ending": "Unix"
 					}
 				}
@@ -2286,6 +2304,16 @@
 			],
 			"file_history":
 			[
+				"/home/george/Documents/programming/pythonProgress/hw/hw3/test.py",
+				"/home/george/Documents/programming/python_course/hw/hw2/test3.py",
+				"/home/george/Documents/programming/python_course/hw/hw2/test2.py",
+				"/home/george/Documents/programming/python_course/hw/hw2/test.py",
+				"/home/george/Documents/programming/python_course/Exam-Karapetrov-Georgi.py",
+				"/home/george/dotfiles/.config/sublime-text-3/Packages/User/python3.sublime-build",
+				"/home/george/dotfiles/.config/sublime-text-3/Packages/project_venv_repls.py",
+				"/home/george/Documents/programming/pythonProgress/subl.tutorial.project/subl.tutorial.project.sublime-project",
+				"/home/george/dotfiles/.config/sublime-text-3/Packages/SublimeREPL/SublimeREPL.sublime-settings",
+				"/home/george/dotfiles/.config/sublime-text-3/Packages/User/SublimeREPL.sublime-settings",
 				"/home/george/Documents/programming/pythonProgress/subl.tutorial.project/jp/james_powell_combined_dec_gen_context.py",
 				"/home/george/Documents/programming/pythonProgress/reads/Pandurski-git/examples/sqlite/sql_commands.py",
 				"/home/george/Documents/programming/pythonProgress/subl.tutorial.project/python101/context_man.py",
@@ -2403,21 +2431,11 @@
 				"/Users/jai/Library/Application Support/Sublime Text 3/Packages/SublimeTutor/tutorial/chapter_3_7.md",
 				"/Users/jai/Library/Application Support/Sublime Text 3/Packages/SublimeTutor/tutorial/chapter_3_8.md",
 				"/Users/jai/Library/Application Support/Sublime Text 3/Packages/SublimeTutor/tutorial/chapter_2_2.md",
-				"/Users/jai/Library/Application Support/Sublime Text 3/Packages/SublimeTutor/tutorial/chapter_2_3.md",
-				"/Users/jai/Library/Application Support/Sublime Text 3/Packages/SublimeTutor/tutorial/chapter_2_10.md",
-				"/Users/jai/Library/Application Support/Sublime Text 3/Packages/SublimeTutor/tutorial/chapter_2_9.md",
-				"/Users/jai/Library/Application Support/Sublime Text 3/Packages/SublimeTutor/tutorial/sublimetutor.sublime-project",
-				"/Users/jai/Library/Application Support/Sublime Text 3/Packages/SublimeTutor/tutorial/chapter_2_11.md",
-				"/Users/jai/Library/Application Support/Sublime Text 3/Packages/SublimeTutor/tutorial/chapter_2_12.md",
-				"/Users/jai/Library/Application Support/Sublime Text 3/Packages/SublimeTutor/tutorial/chapter_2_13.md",
-				"/Users/jai/Library/Application Support/Sublime Text 3/Packages/SublimeTutor/tutorial/chapter_2_14.md",
-				"/Users/jai/Library/Application Support/Sublime Text 3/Packages/SublimeTutor/tutorial/chapter_2_15.md",
-				"/Users/jai/Library/Application Support/Sublime Text 3/Packages/SublimeTutor/tutorial/chapter_3.md",
-				"/Users/jai/Library/Application Support/Sublime Text 3/Packages/SublimeTutor/tutorial/chapter_3_1.md"
+				"/Users/jai/Library/Application Support/Sublime Text 3/Packages/SublimeTutor/tutorial/chapter_2_3.md"
 			],
 			"find":
 			{
-				"height": 52.0
+				"height": 54.0
 			},
 			"find_in_files":
 			{
@@ -2698,15 +2716,45 @@
 			"groups":
 			[
 				{
-					"selected": 1,
+					"selected": 0,
 					"sheets":
 					[
 						{
 							"buffer": 0,
+							"file": "/home/george/Documents/programming/python_course/hw/hw2/test.py",
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 0,
+								"buffer_size": 576,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										576,
+										576
+									]
+								],
+								"settings":
+								{
+									"git_gutter_is_enabled": false,
+									"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 0,
+							"type": "text"
+						},
+						{
+							"buffer": 1,
+							"file": "/home/george/Documents/programming/python_course/hw/hw2/test2.py",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 552,
 								"regions":
 								{
 								},
@@ -2719,43 +2767,47 @@
 								],
 								"settings":
 								{
-									"syntax": "Packages/Text/Plain text.tmLanguage"
+									"git_gutter_is_enabled": true,
+									"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 2,
+							"type": "text"
+						},
+						{
+							"buffer": 2,
+							"file": "/home/george/Documents/programming/python_course/hw/hw2/test3.py",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 693,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"git_gutter_is_enabled": true,
+									"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
 								},
 								"translation.x": 0.0,
 								"translation.y": 0.0,
 								"zoom_level": 1.0
 							},
 							"stack_index": 1,
-							"type": "text"
-						},
-						{
-							"buffer": 1,
-							"file": "/home/george/Documents/programming/python_course/hw/hw2/11RandomGame.py",
-							"semi_transient": true,
-							"settings":
-							{
-								"buffer_size": 541,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										0,
-										0
-									]
-								],
-								"settings":
-								{
-									"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage",
-									"tab_size": 4,
-									"translate_tabs_to_spaces": true
-								},
-								"translation.x": 0.0,
-								"translation.y": 576.0,
-								"zoom_level": 1.0
-							},
-							"stack_index": 0,
 							"type": "text"
 						}
 					]
@@ -2794,7 +2846,7 @@
 				"cols":
 				[
 					0.0,
-					0.604635934011,
+					0.645516645884,
 					1.0
 				],
 				"rows":
@@ -2816,8 +2868,8 @@
 			{
 				"height": 157.0
 			},
-			"pinned_build_system": "",
-			"position": "0,0,0,0,0,1366,30,3286,1049,3286,1080",
+			"pinned_build_system": "Packages/User/python3.sublime-build",
+			"position": "0,0,0,0,0,1366,0,3286,1043,3286,1080",
 			"project": "subl.tutorial.project.sublime-project",
 			"replace":
 			{
@@ -3374,7 +3426,7 @@
 			"show_minimap": true,
 			"show_open_files": true,
 			"show_tabs": true,
-			"side_bar_visible": true,
+			"side_bar_visible": false,
 			"side_bar_width": 298.0,
 			"status_bar_visible": true,
 			"template_settings":
