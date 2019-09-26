@@ -1,129 +1,293 @@
-acpid 2.0.31-1
-arandr 0.1.10-3
-autoconf 2.69-5
-automake 1.16.1-1
-b43-fwcutter 019-2
-bison 3.4-1
-blueman 2.1.1-1
-bluez-utils 5.50-6
-bmenu 0.5-3
-clipit 1:1.4.3-2
-cpupower 5.2-1
-deluge 2.0.3-1
-dfc 3.1.1-1
-ecryptfs-utils 111-3
-epdfview 0.1.8-10
-etcher 1.5.56-1
-fakeroot 1.23-1
-ffmpegthumbnailer 2.2.0-2
-file-roller 3.32.1-1
-filemanager-actions 3.4-2
-firefox 69.0-0.1
-gcolor2 0.4-8
-gksu-polkit 0.0.3-1
-gparted 1.0.0-1
-grub-theme-manjaro-dev 18.0-3
-gsound 1.0.2-4
-gtksourceview-pkgbuild 4-2
-guake 3.6.3-1
-gufw 19.10.0-1
-gxkb 0.8.1-1
-hexchat 2.14.2-3
-htop 2.2.0-2
-i3blocks 1.4-6
-intel-ucode 20190618-1
-iputils 20180629.f6aac8d-4
-ipw2100-fw 1.3-9
-ipw2200-fw 3.1-7
-lib32-flex 2.6.4-2
-lib32-mesa-demos 8.4.0-1
-lib32-vulkan-intel 19.1.5-1
-lib32-vulkan-radeon 19.1.5-1
-libgpod 0.8.3-7
-licenses 20181104-1
-lightdm-settings 1.2.8-1
-lxappearance 0.6.3-2
-lxinput 0.3.5-2
-maia-console 1.2-6
-make 4.2.1-3
-man-db 2.8.7-1
-man-pages 5.02-1
-manjaro-alsa 2012.11-1
-manjaro-browser-settings 20181222-1
-manjaro-firmware 20160419-1
-manjaro-hello 0.6.1-4
-manjaro-hotfixes 2018.08-6
-manjaro-i3-settings 20190809-1
-manjaro-printer 20170501-1
-manjaro-ranger-settings 20190513-2
-manjaro-release 18.0.4-1
-manjaro-system 20190429-1
-markdown_previewer 0.r6.64ad4d7-1
-memtest86+ 5.01-3
-mkinitcpio-openswap 0.1.0-2
-mlocate 0.26.git.20170220-1
-moc 1:2.5.2-2
-morc_menu 1.0-2
-mousepad 0.4.2-2
-nano 4.4-1
-ncdu 1.14.1-1
-neovim 0.3.8-1
-netctl 1.20-1
-network-manager-applet 1.8.22-1.1
-networkmanager-openconnect 1.2.6-1
-networkmanager-openvpn 1.8.10-1
-networkmanager-pptp 1.2.9dev+10+gb41b0d0-1
-networkmanager-vpnc 1.2.7dev+20+gdca3aea-1
-nfs-utils 2.4.1-2
-ntp 4.2.8.p13-2
-open-fuse-iso 1.1-1
-palemoon-bin 28.7.0-1
-pamac-gtk-dev 9.0.0alpha-1
-patch 2.7.6-7
-patchutils 0.3.4-3
-pavucontrol 1:4.0-1
-pkgconf 1.6.3-1
-polkit-gnome 0.105-4
-powertop 2.10-1
-pulseaudio-equalizer-ladspa 3.0.2-1
-qt5-styleplugins 5.0.0.20170311-15
-qt5ct 0.41-1
-sbxkb 0.7.6-3
-screenfetch 3.8.0.r107.g522c9c0-1
-spectre-meltdown-checker 0.42-1
-speedtest-cli 2.1.1-1
-syslog-ng 3.23.1-1
-systemd-fsck-silent 239-1
-terminator 1.91-6
-terminus-font 4.48-1
-timeshift 19.08.1-2
-tlp 1.2.2-1.1
-ttf-font-awesome 5.10.2-1
-ttf-inconsolata 1:2.0.0.1-3
-ttf-indic-otf 0.2-9
-vbetool 1.2.2-4
-vertex-maia-themes 20180519-4
-vi 1:070224-3
-vibrancy-icons-teal 2.7-1
-viewnior 1.7-2
-vlc 3.0.8-1
-volumeicon 0.5.1-4
-w3m 0.5.3.git20190105-1
-which 2.21-3
-xautolock 2.2-5
-xcursor-chameleon-pearl 0.5-4
-xcursor-maia 20160417-1
-xdg-su 1.2.3-1
-xf86-input-elographics 1.4.2-1
-xf86-input-evdev 2.10.6-1
-xf86-input-keyboard 1.9.0-3
-xf86-input-mouse 1.9.3-1
-xf86-input-void 1.4.1-4
-xf86-video-amdgpu 19.0.1-1
-xf86-video-ati 1:19.0.1-1
-xf86-video-intel 1:2.99.917+870+g6f4972d5-1
-xfburn 0.5.5-1
-xfce4-power-manager 1.6.5-2
-xorg-xhost 1.0.8-1
-xorg-xinit 1.4.1-1
-xorg-xkill 1.0.5-1
+accountsservice
+acpi
+acpid
+alarm-clock-applet
+alsa-firmware
+alsa-plugins
+alsa-utils
+arandr
+artwork-i3
+autoconf
+automake
+avahi
+b43-fwcutter
+bash
+binutils
+bison
+blueman
+bluez-utils
+bmenu
+btrfs-progs
+bumblebee
+bzip2
+cantarell-fonts
+cherrytree
+clipit
+coreutils
+cpupower
+crda
+cronie
+cryptsetup
+deluge
+device-mapper
+dfc
+dhclient
+dhcpcd
+diffutils
+dmidecode
+dmraid
+dnsmasq
+dosfstools
+downgrade
+e2fsprogs
+ecryptfs-utils
+efibootmgr
+epdfview
+etcher
+exfat-utils
+f2fs-tools
+fakeroot
+ffmpeg
+ffmpegthumbnailer
+file
+file-roller
+filemanager-actions
+filesystem
+findutils
+firefox
+flac
+flex
+foxitreader
+gawk
+gcc
+gcc-libs
+gcolor2
+gconf
+gettext
+gimp
+git
+gksu-polkit
+glibc
+gnome-keyring
+gparted
+grep
+grub
+grub-theme-manjaro-dev
+gsound
+gst-libav
+gst-plugins-bad
+gst-plugins-base
+gst-plugins-good
+gst-plugins-ugly
+gstreamer
+gtk3-classic
+gtksourceview-pkgbuild
+guake
+gufw
+gvfs
+gvfs-afc
+gvfs-gphoto2
+gvfs-mtp
+gvfs-smb
+gxkb
+gzip
+haveged
+hexchat
+htop
+i3blocks
+indicator-kdeconnect
+inetutils
+intel-ucode
+inxi
+iproute2
+iptables
+iputils
+ipw2100-fw
+ipw2200-fw
+jfsutils
+kdeconnect
+kvantum-manjaro
+less
+lib32-flex
+lib32-libva-vdpau-driver
+lib32-mesa-demos
+lib32-mesa-vdpau
+lib32-nvidia-418xx-utils
+lib32-primus
+lib32-vulkan-intel
+lib32-vulkan-radeon
+libdvdcss
+libgpod
+libtool
+libva-mesa-driver
+libva-vdpau-driver
+licenses
+lightdm-settings
+lightdm-slick-greeter
+linux-firmware
+linux419
+linux419-bbswitch
+linux419-nvidia-418xx
+logrotate
+lsb-release
+lvm2
+lxappearance
+lxinput
+m4
+maia-console
+make
+man-db
+man-pages
+manjaro-alsa
+manjaro-browser-settings
+manjaro-firmware
+manjaro-hello
+manjaro-hotfixes
+manjaro-i3-settings
+manjaro-printer
+manjaro-ranger-settings
+manjaro-release
+manjaro-settings-manager-notifier
+manjaro-system
+markdown_previewer
+matcha-gtk-theme
+mdadm
+memtest86+
+mesa-demos
+mesa-vdpau
+mhwd
+mhwd-db
+mkinitcpio-openswap
+mlocate
+mobile-broadband-provider-info
+moc
+modemmanager
+morc_menu
+mousepad
+nano
+ncdu
+neovim
+netctl
+network-manager-applet
+networkmanager
+networkmanager-openconnect
+networkmanager-openvpn
+networkmanager-pptp
+networkmanager-vpnc
+nfs-utils
+noto-fonts-emoji
+nss-mdns
+ntfs-3g
+ntp
+nvidia-418xx-utils
+open-fuse-iso
+openresolv
+openssh
+os-prober
+p7zip
+pacaur
+pacman
+palemoon-bin
+pamac-gtk-dev
+patch
+patchutils
+pavucontrol
+pciutils
+pcmanfm
+perl
+perl-file-mimeinfo
+pkgconf
+polkit-gnome
+poppler-data
+powertop
+procps-ng
+psmisc
+pulseaudio-equalizer-ladspa
+pygtk
+qt5-styleplugins
+qt5ct
+ranger
+reiserfsprogs
+rofi
+rsync
+s-nail
+sbxkb
+screenfetch
+sed
+shadow
+skypeforlinux-stable-bin
+spectre-meltdown-checker
+speedtest-cli
+sshfs
+sublime-text-dev
+subversion
+sudo
+sysfsutils
+syslog-ng
+systemd-fsck-silent
+systemd-sysvcompat
+tar
+terminator
+terminus-font
+texinfo
+timeshift
+tixati
+tldr
+tlp
+tree
+ttf-bitstream-vera
+ttf-dejavu
+ttf-droid
+ttf-font-awesome
+ttf-inconsolata
+ttf-indic-otf
+ttf-liberation
+upower
+usbutils
+util-linux
+vbetool
+vertex-maia-themes
+vi
+vibrancy-icons-teal
+viewnior
+vim
+vlc
+volumeicon
+vulkan-intel
+vulkan-radeon
+w3m
+wget
+which
+wmutils
+wpa_supplicant
+xarchiver
+xcursor-chameleon-pearl
+xcursor-maia
+xdg-su
+xdg-user-dirs
+xdg-utils
+xdotool
+xf86-input-elographics
+xf86-input-evdev
+xf86-input-keyboard
+xf86-input-libinput
+xf86-input-mouse
+xf86-input-void
+xf86-video-amdgpu
+xf86-video-ati
+xf86-video-intel
+xf86-video-nouveau
+xfburn
+xfce4-power-manager
+xfsprogs
+xorg-server
+xorg-twm
+xorg-xhost
+xorg-xinit
+xorg-xkill
+xorg-xprop
+xterm
+yay
+youtube-dl
+zoom
+zsh

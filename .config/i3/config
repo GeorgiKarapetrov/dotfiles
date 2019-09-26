@@ -276,20 +276,20 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 
 # Set shut down, restart and locking features
 #bindsym $mod+0 mode "$mode_system"
-set $mode_system (l)ock, (e)xit, switch_(u)ser, (s)uspend, (h)ibernate, (r)eboot, (Shift+s)hutdown
-mode "$mode_system" {
-    bindsym l exec --no-startup-id i3exit lock, mode "default"
-    bindsym s exec --no-startup-id i3exit suspend, mode "default"
-    bindsym u exec --no-startup-id i3exit switch_user, mode "default"
-    bindsym e exec --no-startup-id i3exit logout, mode "default"
-    bindsym h exec --no-startup-id i3exit hibernate, mode "default"
-    bindsym r exec --no-startup-id i3exit reboot, mode "default"
-    bindsym Shift+s exec --no-startup-id i3exit shutdown, mode "default"
+#set $mode_system (l)ock, (e)xit, switch_(u)ser, (s)uspend, (h)ibernate, (r)eboot, (Shift+s)hutdown
+#mode "$mode_system" {
+#    bindsym l exec --no-startup-id i3exit lock, mode "default"
+#    bindsym s exec --no-startup-id i3exit suspend, mode "default"
+#    bindsym u exec --no-startup-id i3exit switch_user, mode "default"
+#    bindsym e exec --no-startup-id i3exit logout, mode "default"
+#    bindsym h exec --no-startup-id i3exit hibernate, mode "default"
+#    bindsym r exec --no-startup-id i3exit reboot, mode "default"
+#    bindsym Shift+s exec --no-startup-id i3exit shutdown, mode "default"
 
     # exit system mode: "Enter" or "Escape"
-    bindsym Return mode "default"
-    bindsym Escape mode "default"
-}
+#    bindsym Return mode "default"
+#    bindsym Escape mode "default"
+#}
 
 # Resize window (you can also use the mouse for that)
 bindsym $mod+r mode "resize"
@@ -324,9 +324,9 @@ exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id nitrogen --restore; sleep 1; compton -b
 exec --no-startup-id xrandr --output LVDS1 --primary --mode 1366x768 --pos 0x0 --rotate normal --output DP1 --off --output HDMI1 --mode 1920x1080 --pos 1366x0 --rotate normal --output VGA1 --off --output VIRTUAL1 --off
 #audio
-exec --no-startup-id sleep 1; pulseaudio-equalizer enable
+exec --no-startup-id sleep 3; pulseaudio-equalizer enable
 # phone integration
-exec --no-startup-id /usr/lib/kdeconnectd; sleep 1; kdeconnect-indicator
+exec_always --no-startup-id sleep 2 /usr/lib/kdeconnectd; sleep 4; kdeconnect-indicator
 # cyrilic + tray icon
 exec --no-startup-id setxkbmap -model pc105 -layout us,bg -variant ,phonetic -option grp:alt_shift_toggle
 exec --no-startup-id gxkb
