@@ -63,4 +63,8 @@ get_session(){
 	echo "dbus-launch ${dbus_args[*]}"
 }
 
+#don't blanck screeen
+setterm -powersave off -blank 0 -powerdown 0
+xset s off
+
 exec $(get_session)

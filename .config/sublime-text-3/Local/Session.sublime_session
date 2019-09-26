@@ -12,7 +12,7 @@
 		"/home/george/a"
 	],
 	"last_version": 3207,
-	"last_window_id": 79,
+	"last_window_id": 80,
 	"log_indexing": false,
 	"settings":
 	{
@@ -1642,10 +1642,6 @@
 				"selected_items":
 				[
 					[
-						"max",
-						"max_size"
-					],
-					[
 						"fr",
 						"frameworks"
 					],
@@ -1934,6 +1930,10 @@
 						"trips_with_availability"
 					],
 					[
+						"max",
+						"max_occupancy"
+					],
+					[
 						"total",
 						"total_deboarded"
 					],
@@ -1950,40 +1950,15 @@
 			"buffers":
 			[
 				{
-					"contents": "import re\ndef extract(string):\n    list_o_words = list(set(string.split()))\n    contacts = list()\n    for _ in list_o_words:\n        temp = re.match('#[A-Z]+[a-z]*\\\\.[A-z]+[a-z]*', _)\n        if temp != None:\n            contacts.append( temp )            \n    return contacts\ncontacts = extract('Welcome to #EMIS. If you need any help from HR you can write to #Milo.Minderbinder. For any technical problems you should contact #Major.Major. If you need any smart advises, please contact #Ali.Baba or #John.Yossarian. When you are sick, please stay at #Home.')\nprint (contacts)",
-					"file": "/home/george/Documents/programming/python_course/hw/hw2/test.py",
-					"file_size": 576,
-					"file_write_time": 132131898882374289,
+					"contents": "Hello Silviya,\n\nHappy to meet you too. See you tomorrow and have a wonderful day yourself.\n\nKind regards,\nGeorge\n\n",
 					"settings":
 					{
-						"buffer_size": 576,
-						"line_ending": "Unix"
-					}
-				},
-				{
-					"contents": "def neighbours(pos, matrix):\n    sort = ''\n    rows = len(matrix)\n    cols = len(matrix[0]) \n    for i in range(max(0, pos[0] - 1), min(rows, pos[0] + 2)):\n        for j in range(max(0, pos[1] - 1), min(cols, pos[1] + 2)):\n            if (i, j) != pos:\n                sort = sort + str(matrix[i][j])\n    return ''.join(sorted(sort))\n\ndef concat(matrix):\n    result = [None] * len(matrix)\n    for i,row in enumerate(matrix):\n        result[i] = [None] * len(row)\n        for j,col in enumerate(row):\n            result[i][j] = neighbours([i,j], matrix)",
-					"file": "/home/george/Documents/programming/python_course/hw/hw2/test2.py",
-					"file_size": 552,
-					"file_write_time": 132131898869740957,
-					"settings":
-					{
-						"buffer_size": 552,
-						"line_ending": "Unix"
-					}
-				},
-				{
-					"contents": "def group(array):\n    grouped = []\n    groups = set()\n    for _ in array:\n        if _ // 1 in groups:\n            grouped.[_ // 1 - 1].append(_)\n        else:\n            groups.add(_ // 1)\n            grouped.append([])\n            grouped.[_ // 1 - 1].append(_)\n    return grouped\n\ndef duplicates(array):\n    grouped = group(array)\n    max_size = 0\n    for _ in grouped:\n        _ = sorted(_)\n        if len(_) > max_size:\n            max_size = _\n\n    duplicate = []\n    for i in Range(max_size):\n        for _ in grouped:\n            if i < len(_):\n                duplicate.append(_[i])\n            else:\n                duplicate.append(_[len(_) - 1])\n        print duplicate\n\n\n        ",
-					"file": "/home/george/Documents/programming/python_course/hw/hw2/test3.py",
-					"file_size": 693,
-					"file_write_time": 132131898804974296,
-					"settings":
-					{
-						"buffer_size": 693,
+						"buffer_size": 114,
 						"line_ending": "Unix"
 					}
 				}
 			],
-			"build_system": "Packages/Python/Python.sublime-build",
+			"build_system": "",
 			"build_system_choices":
 			[
 				[
@@ -2296,22 +2271,8 @@
 				"side_bar_visible": false,
 				"status_bar_visible": false
 			},
-			"expanded_folders":
-			[
-				"/home/george/Documents/programming/python_course",
-				"/home/george/Documents/programming/python_course/hw",
-				"/home/george/Documents/programming/python_course/hw/hw2"
-			],
 			"file_history":
 			[
-				"/home/george/Documents/programming/pythonProgress/hw/hw3/test.py",
-				"/home/george/Documents/programming/python_course/hw/hw2/test3.py",
-				"/home/george/Documents/programming/python_course/hw/hw2/test2.py",
-				"/home/george/Documents/programming/python_course/hw/hw2/test.py",
-				"/home/george/Documents/programming/python_course/Exam-Karapetrov-Georgi.py",
-				"/home/george/dotfiles/.config/sublime-text-3/Packages/User/python3.sublime-build",
-				"/home/george/dotfiles/.config/sublime-text-3/Packages/project_venv_repls.py",
-				"/home/george/Documents/programming/pythonProgress/subl.tutorial.project/subl.tutorial.project.sublime-project",
 				"/home/george/dotfiles/.config/sublime-text-3/Packages/SublimeREPL/SublimeREPL.sublime-settings",
 				"/home/george/dotfiles/.config/sublime-text-3/Packages/User/SublimeREPL.sublime-settings",
 				"/home/george/Documents/programming/pythonProgress/subl.tutorial.project/jp/james_powell_combined_dec_gen_context.py",
@@ -2431,111 +2392,25 @@
 				"/Users/jai/Library/Application Support/Sublime Text 3/Packages/SublimeTutor/tutorial/chapter_3_7.md",
 				"/Users/jai/Library/Application Support/Sublime Text 3/Packages/SublimeTutor/tutorial/chapter_3_8.md",
 				"/Users/jai/Library/Application Support/Sublime Text 3/Packages/SublimeTutor/tutorial/chapter_2_2.md",
-				"/Users/jai/Library/Application Support/Sublime Text 3/Packages/SublimeTutor/tutorial/chapter_2_3.md"
+				"/Users/jai/Library/Application Support/Sublime Text 3/Packages/SublimeTutor/tutorial/chapter_2_3.md",
+				"/Users/jai/Library/Application Support/Sublime Text 3/Packages/SublimeTutor/tutorial/chapter_2_10.md",
+				"/Users/jai/Library/Application Support/Sublime Text 3/Packages/SublimeTutor/tutorial/chapter_2_9.md",
+				"/Users/jai/Library/Application Support/Sublime Text 3/Packages/SublimeTutor/tutorial/sublimetutor.sublime-project",
+				"/Users/jai/Library/Application Support/Sublime Text 3/Packages/SublimeTutor/tutorial/chapter_2_11.md",
+				"/Users/jai/Library/Application Support/Sublime Text 3/Packages/SublimeTutor/tutorial/chapter_2_12.md",
+				"/Users/jai/Library/Application Support/Sublime Text 3/Packages/SublimeTutor/tutorial/chapter_2_13.md",
+				"/Users/jai/Library/Application Support/Sublime Text 3/Packages/SublimeTutor/tutorial/chapter_2_14.md",
+				"/Users/jai/Library/Application Support/Sublime Text 3/Packages/SublimeTutor/tutorial/chapter_2_15.md"
 			],
 			"find":
 			{
-				"height": 54.0
+				"height": 41.0
 			},
 			"find_in_files":
 			{
 				"height": 144.0,
 				"where_history":
 				[
-					"",
-					"/Users/jai/go/src/github.com/mattermost/platform",
-					"/Users/jai/Workspace/trevo/",
-					"/Users/jai/Workspace/trevo/app/admin",
-					"app/admin",
-					"",
-					"/Users/jai/Workspace/trevo/",
-					"/Users/jai/Workspace/trevo/railsbox",
-					"/Users/jai/Workspace/trevo/",
-					"/Users/jai/Workspace/trevo/app/serializers",
-					"/Users/jai/Workspace/trevo/",
-					"/Users/jai/Workspace/trevo/railsbox/ansible",
-					"/Users/jai/Workspace/market_place_api",
-					"",
-					"/Users/jai/Workspace/trevo/railsbox/",
-					"/Users/jai/Workspace/talentpad/",
-					"/Users/jai/Workspace/talentpad/client",
-					"/Users/jai/Workspace/talentpad/db/migrate",
-					"/Users/jai/Workspace/talentpad/",
-					"/Users/jai/Workspace/talentpad/app/views/scheduled_mails",
-					"",
-					"You might find this helpful:",
-					"/Users/jai/Workspace/talentpad/",
-					"/Users/jai/Workspace/talentpad/client",
-					"/Users/jai/Workspace/talentpad/",
-					"/Users/jai/Workspace/talentpad/config",
-					"/Users/jai/Workspace/talentpad/app",
-					"/Users/jai/Workspace/talentpad/",
-					"/Users/jai/Workspace/talentpad/app",
-					"/Users/jai/Workspace/talentpad/public",
-					"/Users/jai/Workspace/talentpad",
-					"/Users/jai/Workspace/talentpad/client",
-					"/Users/jai/Workspace/talentpad",
-					"",
-					"/Users/jai/Workspace/talentpad/app/",
-					"/Users/jai/Workspace/talentpad/app/assets",
-					"/Users/jai/Workspace/talentpad/",
-					"/Users/jai/Workspace/talentpad/client",
-					"/Users/jai/Workspace/talentpad/",
-					"/Users/jai/Workspace/talentpad/app",
-					"/Users/jai/Workspace/talentpad/client",
-					"/Users/jai/Workspace/talentpad/",
-					"/Users/jai/Workspace/talentpad/client",
-					"/Users/jai/Workspace/talentpad/",
-					"/Users/jai/Workspace/talentpad/app",
-					"/Users/jai/Workspace/talentpad/client",
-					"/Users/jai/Workspace/talentpad/",
-					"/Users/jai/Workspace/talentpad/app",
-					"/Users/jai/Workspace/talentpad/",
-					"/Users/jai/Workspace/talentpad/public",
-					"/Users/jai/Workspace/talentpad/client,-/Users/jai/Workspace/talentpad/client/.tmp/*",
-					"/Users/jai/Workspace/talentpad/",
-					"/Users/jai/Workspace/talentpad/app",
-					"/Users/jai/Workspace/talentpad/client",
-					"/Users/jai/Workspace/talentpad/client,-/Users/jai/Workspace/talentpad/client/.tmp/*",
-					"/Users/jai/Workspace/talentpad/public",
-					"/Users/jai/Workspace/talentpad/client,-/Users/jai/Workspace/talentpad/client/.tmp/*",
-					"/Users/jai/Workspace/talentpad/client,-/Users/jai/Workspace/talentpad/client/.tmp/",
-					"/Users/jai/Workspace/talentpad/client",
-					"/Users/jai/Workspace/talentpad/public/client",
-					"/Users/jai/Workspace/talentpad/public",
-					"/Users/jai/Workspace/talentpad/",
-					"/Users/jai/Workspace/talentpad/app",
-					"/Users/jai/Workspace/talentpad/client",
-					"/Users/jai/Workspace/talentpad/public",
-					"/Users/jai/Workspace/talentpad/client",
-					"/Users/jai/Workspace/talentpad/public",
-					"/Users/jai/Workspace/talentpad/client,-/Users/jai/Workspace/talentpad/public",
-					"/Users/jai/Workspace/talentpad/,-/Users/jai/Workspace/talentpad/public",
-					"/Users/jai/Workspace/talentpad/",
-					"/Users/jai/Workspace/talentpad/client/",
-					"/Users/jai/Workspace/talentpad/",
-					"/Users/jai/Workspace/talentpad/app/assets/stylesheets/244809",
-					"/Users/jai/Workspace/talentpad/",
-					"/Users/jai/Workspace/talentpad/client",
-					"/Users/jai/Workspace/talentpad/",
-					"/Users/jai/Workspace/talentpad/client/",
-					"/Users/jai/Workspace/talentpad/client/app/angular",
-					"/Users/jai/Workspace/talentpad/client/angular",
-					"/Users/jai/Workspace/talentpad/",
-					"/Users/jai/Workspace/talentpad/client",
-					"/Users/jai/Workspace/talentpad/",
-					"/Users/jai/Workspace/talentpad/client",
-					"/Users/jai/Workspace/talentpad/app",
-					"/Users/jai/Workspace/talentpad/client",
-					"/Users/jai/Workspace/talentpad",
-					"/Users/jai/Workspace/talentpad_1",
-					"",
-					"*.html",
-					"",
-					"/Users/jai/Workspace/talentpad/public",
-					"",
-					"/Users/jai/Workspace/talentpad/client",
-					""
 				]
 			},
 			"find_state":
@@ -2543,134 +2418,6 @@
 				"case_sensitive": true,
 				"find_history":
 				[
-					"sprite1",
-					"Hat",
-					"pygame",
-					"game",
-					"_TY",
-					"_ty",
-					"radius",
-					"class Foo",
-					"phone",
-					"===============",
-					"phone",
-					"android",
-					"phone",
-					".",
-					"D",
-					"Sublime",
-					"sublime",
-					"tutor[^i]",
-					"tutor ",
-					"Tutorial",
-					"Tutor",
-					"tutor",
-					"Tutor",
-					"sublime",
-					"resources",
-					"^",
-					"phone",
-					"once",
-					"word",
-					"tag",
-					"Goto Anywhere",
-					"Quick",
-					"/",
-					" /",
-					"/ ",
-					"Upper",
-					"⌘ + L",
-					"⌘",
-					"DrMJG_HN ",
-					"line",
-					"word",
-					"lower",
-					"Selecting",
-					"The",
-					"tab",
-					"subprocess",
-					"run",
-					"on_modified",
-					"Invite New Member",
-					"Manage Team",
-					"credit_free_bookings",
-					"status: ",
-					"status: :ok",
-					"credit_free_bookings",
-					"initial_recharge_on_signup",
-					"credit_free_bookings",
-					"referral",
-					"late_by",
-					"booking_status",
-					"NUMBER_OF_CANCELLATION_ALLWED_IN_20_DAY",
-					"get_coordinates_and_distance",
-					"origin_coordinates_and_distance",
-					"cancel",
-					"generic",
-					"discounted_fare",
-					"fare",
-					"QZ696juyQW0suQDv8aGtErj4zVA0jVB3SUu9mpzW",
-					"titleize",
-					"send_message",
-					"free_bookings_credit_used",
-					"discounted_fare",
-					"fare",
-					"recharge_by",
-					"initial_recharge_on_signup",
-					"availability",
-					"bookie",
-					"initial_recharge_on_signup",
-					"credit_free",
-					"credit_free_bookings_for_recipient",
-					"free_booking",
-					"user",
-					"create",
-					"everone",
-					"rating",
-					"name",
-					"csv",
-					"through",
-					"route",
-					"PARSE_SECRET_KEY",
-					"2eEU157b5XiWII7epmV04Tf0Gy3yI1n4dIO3bjHM",
-					"A9R07PtTlX8xcg7iqNKkM36Udo9cyA0ybogg3lwq",
-					"PARSE_APP_ID",
-					"PARSE_SECRET_KEY",
-					"parse",
-					"REFERRER",
-					"FREE",
-					"FreeBooking::FREE_BOOKINGS_FOR_REFERRER",
-					"send_message",
-					"credit_free_bookings",
-					"credit",
-					"referral_code",
-					"debugger",
-					"byebug",
-					"recipient",
-					"deduct_free_bookings",
-					"deduct_free_",
-					"trevoapp.dev",
-					"get_trevoapp.com",
-					"server_name",
-					"server",
-					"server_type",
-					"nginx_unicorn",
-					"referral_code",
-					"3000",
-					"asset_host",
-					"root_url",
-					"3000",
-					"referral_code",
-					"free_bookings",
-					"show",
-					"free_bookings_credited",
-					"referral_code",
-					"passcode",
-					"byebug",
-					"refund_free_bookings",
-					"deduct_free_bookings",
-					"deduct_fare",
-					"bookings"
 				],
 				"highlight": true,
 				"in_selection": false,
@@ -2678,34 +2425,6 @@
 				"regex": true,
 				"replace_history":
 				[
-					"pg",
-					"pew",
-					"Tutor",
-					"Sublime",
-					"Goto Anything",
-					"recipient",
-					"TrevoUtilities",
-					"arrived_at_parking",
-					"full_messages.join(',')",
-					"52.74.85.135",
-					"Driver",
-					"driver",
-					"Driver",
-					"driver",
-					"Bus",
-					"bus",
-					"Bus",
-					"bus",
-					"",
-					"'",
-					"I led this project",
-					"You might find this helpful:",
-					":status => false",
-					":status => true",
-					"angulartics",
-					"192.168.33.10",
-					"0.0.0.0",
-					""
 				],
 				"reverse": false,
 				"show_context": true,
@@ -2721,25 +2440,24 @@
 					[
 						{
 							"buffer": 0,
-							"file": "/home/george/Documents/programming/python_course/hw/hw2/test.py",
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 576,
+								"buffer_size": 114,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										576,
-										576
+										0,
+										114
 									]
 								],
 								"settings":
 								{
 									"git_gutter_is_enabled": false,
-									"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage"
+									"syntax": "Packages/Text/Plain text.tmLanguage"
 								},
 								"translation.x": 0.0,
 								"translation.y": 0.0,
@@ -2747,80 +2465,13 @@
 							},
 							"stack_index": 0,
 							"type": "text"
-						},
-						{
-							"buffer": 1,
-							"file": "/home/george/Documents/programming/python_course/hw/hw2/test2.py",
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 552,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										0,
-										0
-									]
-								],
-								"settings":
-								{
-									"git_gutter_is_enabled": true,
-									"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage",
-									"tab_size": 4,
-									"translate_tabs_to_spaces": true
-								},
-								"translation.x": 0.0,
-								"translation.y": 0.0,
-								"zoom_level": 1.0
-							},
-							"stack_index": 2,
-							"type": "text"
-						},
-						{
-							"buffer": 2,
-							"file": "/home/george/Documents/programming/python_course/hw/hw2/test3.py",
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 693,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										0,
-										0
-									]
-								],
-								"settings":
-								{
-									"git_gutter_is_enabled": true,
-									"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage",
-									"tab_size": 4,
-									"translate_tabs_to_spaces": true
-								},
-								"translation.x": 0.0,
-								"translation.y": 0.0,
-								"zoom_level": 1.0
-							},
-							"stack_index": 1,
-							"type": "text"
 						}
-					]
-				},
-				{
-					"sheets":
-					[
 					]
 				}
 			],
 			"incremental_find":
 			{
-				"height": 45.0
+				"height": 41.0
 			},
 			"input":
 			{
@@ -2835,18 +2486,11 @@
 						0,
 						1,
 						1
-					],
-					[
-						1,
-						0,
-						2,
-						1
 					]
 				],
 				"cols":
 				[
 					0.0,
-					0.645516645884,
 					1.0
 				],
 				"rows":
@@ -2868,12 +2512,12 @@
 			{
 				"height": 157.0
 			},
-			"pinned_build_system": "Packages/User/python3.sublime-build",
+			"pinned_build_system": "",
 			"position": "0,0,0,0,0,1366,0,3286,1043,3286,1080",
-			"project": "subl.tutorial.project.sublime-project",
+			"project": "",
 			"replace":
 			{
-				"height": 95.0
+				"height": 78.0
 			},
 			"save_all_on_build": true,
 			"select_file":
@@ -3426,14 +3070,14 @@
 			"show_minimap": true,
 			"show_open_files": true,
 			"show_tabs": true,
-			"side_bar_visible": false,
+			"side_bar_visible": true,
 			"side_bar_width": 298.0,
 			"status_bar_visible": true,
 			"template_settings":
 			{
 			},
-			"window_id": 72,
-			"workspace_name": "/home/george/Documents/programming/pythonProgress/subl.tutorial.project/subl.tutorial.project.sublime-workspace"
+			"window_id": 80,
+			"workspace_name": ""
 		}
 	],
 	"workspaces":
