@@ -155,9 +155,9 @@ bindsym $mod+Ctrl+Left workspace prev
 set $ws1 "1: Term "
 set $ws2 "2: Web "
 set $ws3 "3: Doc "
-set $ws4 "4: "
-set $ws5 "5: "
-set $ws6 "6: "
+set $ws4 "4: "
+set $ws5 "5: "
+set $ws6 "6: Cal "
 set $ws7 "7: DL "
 set $ws8 "8: Code "
 set $ws9 "9: Chat "
@@ -215,6 +215,7 @@ assign [class="Vimb"] $ws2
 assign [class="qutebrowser"] $ws2
 assign [class="Foxit Reader"] $ws3
 assign [class="libreoffice"] $ws3
+assign [class="google-calendar-nativefier-e22938"] $ws6
 assign [class="Tixati"] $ws7
 assign [class="Subl3"] $ws8
 assign [class="Emacs"] $ws8
@@ -229,6 +230,7 @@ assign [class="Spotify"] $ws10
 # assign [class="Pcmanfm"] $ws3
 
 # Open specific applications in floating mode
+for_window [class="(?i)gsimplecal"] floating enable, move position mouse, move down $height px
 for_window [class="qTox"] floating enable
 for_window [class="Pavucontrol"] floating enable
 for_window [class="Skype"] floating enable
