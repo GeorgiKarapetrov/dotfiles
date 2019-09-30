@@ -10,12 +10,11 @@ DEST="$HOME"
 for f in $(ls -a $SRC/); do
 	if [[ ( ! $f =~ Documents|.config|.git*|README.md|install.sh|.|.. ) && ( -e $f ) ]]; then
 		if [[ -d $f ]]; then
-			sudo rm -rf $DEST/$f/
-			sudo ln -sf "$SRC/$f/" "$DEST/$f/"
+			sudo rm -rf $DEST/$f
 		elif [[ -f $f ]]; then
 			sudo rm $DEST/$f
-			sudo ln -sf "$SRC/$f" "$DEST/$f"
 		fi
+		sudo ln -sf $SRC/$f $DEST/$f
 		#echo $SRC/$f
 		#echo $DEST/$f
 	fi
@@ -25,11 +24,10 @@ done
 for f in $(ls -a $SRC/.config/); do
 	if [[ -d $f ]]; then
 		sudo rm -rf $DEST/$f/
-		sudo ln -sf "$SRC/.config/$f/" "$DEST/.config/$f/"
 	elif [[ -f $f ]]; then
 		sudo rm $DEST/$f
-		sudo ln -sf "$SRC/.config/$f/" "$DEST/.config/$f/"
 	fi
+	sudo ln -sf $SRC/.config/$f $DEST/.config/$f
 	#echo $SRC/.config/$f
 	#echo $DEST/.config/
 done
