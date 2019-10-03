@@ -1949,14 +1949,6 @@
 			},
 			"buffers":
 			[
-				{
-					"contents": "Hello Silviya,\n\nHappy to meet you too. See you tomorrow and have a wonderful day yourself.\n\nKind regards,\nGeorge\n\n",
-					"settings":
-					{
-						"buffer_size": 114,
-						"line_ending": "Unix"
-					}
-				}
 			],
 			"build_system": "",
 			"build_system_choices":
@@ -2273,6 +2265,14 @@
 			},
 			"file_history":
 			[
+				"/home/george/Documents/misc/Untitled Folder/христо.радо.17май.txt",
+				"/home/george/Documents/misc/Untitled Folder/Марин13-14май.txt",
+				"/home/george/Documents/misc/Untitled Folder/здравко20май.txt",
+				"/home/george/Documents/misc/Untitled Folder/верилПламен23май.txt",
+				"/home/george/Documents/misc/Untitled Folder/tihomir.gushtera.16may.txt",
+				"/home/george/Documents/misc/Untitled Folder/settings.txt",
+				"/home/george/Documents/misc/Untitled Folder/june office.txt",
+				"/home/george/d.txt",
 				"/home/george/dotfiles/.config/sublime-text-3/Packages/SublimeREPL/SublimeREPL.sublime-settings",
 				"/home/george/dotfiles/.config/sublime-text-3/Packages/User/SublimeREPL.sublime-settings",
 				"/home/george/Documents/programming/pythonProgress/subl.tutorial.project/jp/james_powell_combined_dec_gen_context.py",
@@ -2392,15 +2392,7 @@
 				"/Users/jai/Library/Application Support/Sublime Text 3/Packages/SublimeTutor/tutorial/chapter_3_7.md",
 				"/Users/jai/Library/Application Support/Sublime Text 3/Packages/SublimeTutor/tutorial/chapter_3_8.md",
 				"/Users/jai/Library/Application Support/Sublime Text 3/Packages/SublimeTutor/tutorial/chapter_2_2.md",
-				"/Users/jai/Library/Application Support/Sublime Text 3/Packages/SublimeTutor/tutorial/chapter_2_3.md",
-				"/Users/jai/Library/Application Support/Sublime Text 3/Packages/SublimeTutor/tutorial/chapter_2_10.md",
-				"/Users/jai/Library/Application Support/Sublime Text 3/Packages/SublimeTutor/tutorial/chapter_2_9.md",
-				"/Users/jai/Library/Application Support/Sublime Text 3/Packages/SublimeTutor/tutorial/sublimetutor.sublime-project",
-				"/Users/jai/Library/Application Support/Sublime Text 3/Packages/SublimeTutor/tutorial/chapter_2_11.md",
-				"/Users/jai/Library/Application Support/Sublime Text 3/Packages/SublimeTutor/tutorial/chapter_2_12.md",
-				"/Users/jai/Library/Application Support/Sublime Text 3/Packages/SublimeTutor/tutorial/chapter_2_13.md",
-				"/Users/jai/Library/Application Support/Sublime Text 3/Packages/SublimeTutor/tutorial/chapter_2_14.md",
-				"/Users/jai/Library/Application Support/Sublime Text 3/Packages/SublimeTutor/tutorial/chapter_2_15.md"
+				"/Users/jai/Library/Application Support/Sublime Text 3/Packages/SublimeTutor/tutorial/chapter_2_3.md"
 			],
 			"find":
 			{
@@ -2435,37 +2427,8 @@
 			"groups":
 			[
 				{
-					"selected": 0,
 					"sheets":
 					[
-						{
-							"buffer": 0,
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 114,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										0,
-										114
-									]
-								],
-								"settings":
-								{
-									"git_gutter_is_enabled": false,
-									"syntax": "Packages/Text/Plain text.tmLanguage"
-								},
-								"translation.x": 0.0,
-								"translation.y": 0.0,
-								"zoom_level": 1.0
-							},
-							"stack_index": 0,
-							"type": "text"
-						}
 					]
 				}
 			],
