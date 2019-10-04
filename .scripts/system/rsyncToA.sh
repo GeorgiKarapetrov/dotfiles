@@ -21,11 +21,12 @@ sudo rsync -av --delete-excluded --delete-after ~/dotfiles ~/a/
 
 #package list
 #build a list of installed (or removed) packages
-#build for manjaro?
-#sudo dpkg --get-selections > ~/a/Settings/my-packages.txt
+pacaur -Qqe > pkglist.txt #manjaro
+#sudo dpkg --get-selections > ~/a/Settings/my-packages.txt #debian
 
 #on reinstall, run
-#sudo dpkg --set-#selections < ~/a/my-packages.txt
+#pacman -S --needed - < pkglist.txt #manjaro
+#sudo dpkg --set-#selections < ~/a/my-packages.txt # debian
 #sudo apt-get -u dselect-upgrade
 #to start installing packages.
 
