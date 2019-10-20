@@ -10,6 +10,7 @@ artwork-i3
 autoconf
 automake
 avahi
+awesome-terminal-fonts
 b43-fwcutter
 bash
 binutils
@@ -20,6 +21,7 @@ bmenu
 btrfs-progs
 bumblebee
 bzip2
+calendar-indicator
 cantarell-fonts
 cherrytree
 clipit
@@ -59,6 +61,7 @@ flac
 flex
 foxitreader
 gawk
+gcal
 gcc
 gcc-libs
 gcolor2
@@ -69,10 +72,13 @@ git
 gksu-polkit
 glibc
 gnome-keyring
+google-calendar-nativefier
 gparted
 grep
+grive
 grub
 grub-theme-manjaro-dev
+gsimplecal
 gsound
 gst-libav
 gst-plugins-bad
@@ -118,6 +124,7 @@ lib32-vulkan-intel
 lib32-vulkan-radeon
 libdvdcss
 libgpod
+libreoffice-fresh
 libtool
 libva-mesa-driver
 libva-vdpau-driver
@@ -167,6 +174,7 @@ mousepad
 nano
 ncdu
 neovim
+nerd-fonts-complete
 netctl
 network-manager-applet
 networkmanager
@@ -174,12 +182,15 @@ networkmanager-openconnect
 networkmanager-openvpn
 networkmanager-pptp
 networkmanager-vpnc
+nextcloud-client
 nfs-utils
 noto-fonts-emoji
 nss-mdns
 ntfs-3g
 ntp
+nushell-bin
 nvidia-418xx-utils
+odrive-bin
 open-fuse-iso
 openresolv
 openssh
@@ -203,7 +214,9 @@ powertop
 procps-ng
 psmisc
 pulseaudio-equalizer-ladspa
+py3status
 pygtk
+python-pip
 qt5-styleplugins
 qt5ct
 ranger
@@ -211,19 +224,21 @@ reiserfsprogs
 rofi
 rsync
 s-nail
+samba
 sbxkb
 screenfetch
 sed
 shadow
-skypeforlinux-stable-bin
 spectre-meltdown-checker
 speedtest-cli
 sshfs
+strace
 sublime-text-dev
 subversion
 sudo
 sysfsutils
 syslog-ng
+system-config-samba
 systemd-fsck-silent
 systemd-sysvcompat
 tar
@@ -234,6 +249,7 @@ timeshift
 tixati
 tldr
 tlp
+tor-browser
 tree
 ttf-bitstream-vera
 ttf-dejavu
@@ -289,5 +305,4 @@ xorg-xprop
 xterm
 yay
 youtube-dl
-zoom
 zsh
