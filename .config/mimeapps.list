@@ -88,6 +88,7 @@ video/vnd.divx=vlc.desktop
 video/vnd.rn-realvideo=vlc.desktop
 video/vnd.vivo=vlc.desktop
 video/webm=vlc.desktop
+video/VPPV=vlc.desktop
 video/x-anim=vlc.desktop
 video/x-avi=vlc.desktop
 video/x-flc=vlc.desktop
