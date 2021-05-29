@@ -1,0 +1,4 @@
+{
+    "executable": "/opt/anaconda/bin/python3",
+    "environment_directory": "/opt/anaconda/envs/",
+}

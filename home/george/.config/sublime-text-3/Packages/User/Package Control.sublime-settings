@@ -1,0 +1,36 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"A File Icon",
+		"Anaconda",
+		"Conda",
+		"Djaneiro",
+		"Emmet",
+		"GitGutter",
+		"GitSavvy",
+		"Indent XML",
+		"Jedi - Python autocompletion",
+		"MarkdownPreview",
+		"Package Control",
+		"PackageDev",
+		"PowerShell",
+		"PyYapf Python Formatter",
+		"requirementstxt",
+		"SideBarEnhancements",
+		"Sublime Text 3 Snippets",
+		"Sublime Tutor",
+		"SublimeLinter-csslint",
+		"SublimeLinter-html-tidy",
+		"SublimeLinter-jshint",
+		"SublimeLinter-json",
+		"SublimeLinter-pep8",
+		"SublimeLinter-pyflakes",
+		"SublimeREPL",
+		"SummitLinter",
+		"Virtualenv"
+	]
+}
