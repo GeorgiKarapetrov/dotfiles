@@ -13,8 +13,10 @@ fi;
 dotfiles checkout master /
 dotfiles config status.showUntrackedFiles no
 
-#yes |yay -S npm yarn git-interactive-rebase-tool electrum monero monero-gui pulseaudio-equalizer-ladspa preload tixati gxkb neovim cherrytree
+#yes |yay -S npm yarn git-interactive-rebase-tool electrum monero monero-gui pulseaudio-equalizer-ladspa preload tixati gxkb neovim cherrytree kdeconnect gsimplecal
 #yes| yay -Rns snapd gutenprint cups-pdf cups termite sddm-config-editor-git sddm\n
 #sudo systemctl enable preload
 #sudo rm /etc/systemd/system/display-manager.service
 #sudo systemctl enable lightdm
+#sudo groupadd fuse
+#sudo usermod -a -G fuse george
