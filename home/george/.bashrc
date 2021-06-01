@@ -147,6 +147,7 @@ parse_git_branch ()
 }
 
 export EDITOR=nvim
+export PATH="$HOME/.scripts/download:$HOME/.scripts/media:$HOME/.scripts/misc:$HOME/.scripts/system:$HOME/.scripts/system/rsync:$PATH"
 export PYTHONSTARTUP=$HOME/.pythonrc
 # <<< end >>>
 

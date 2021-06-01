@@ -3,6 +3,5 @@ sudo mount -t davfs http://kmu.files.cnow.at/remote.php/webdav /home/george/Next
 #TODO
 #expect_pass
 
-#in /ets/fstab
+#in /etc/fstab
 #https://kmu.files.cnow.at/remote.php/webdav /home/george/Nextcloud davfs rw,george,noauto 0 0
-

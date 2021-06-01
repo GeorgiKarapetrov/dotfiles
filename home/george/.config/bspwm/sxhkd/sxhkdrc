@@ -77,7 +77,12 @@ super + h
 #arcolinux-logout
 super + x
     arcolinux-logout
-#arcolinux-logout
+
+#blank screen
+super + a
+   terminator -e 'sleep 1; xset dpms force off'
+
+#switch user
 super + z
     dm-tool switch-to-greeter
 
@@ -85,9 +90,9 @@ super + z
 super + r
     rofi-theme-selector
 
-#st
+#terminator
 super + t
-    st
+    terminator
 
 #Pavucontrol
 super + v
@@ -125,7 +130,7 @@ super + shift + Return
 
 #dmenu
 super + shift + d
-	dmenu_run -i -nb '#191919' -nf '#fea63c' -sb '#fea63c' -sf '#191919' -fn 'NotoMonoRegular:bold:pixelsize=14'
+	dmenu_run -i -nb '#191919' -nf '#fea63c' -sb '#fea63c' -sf '#191919' -fn 'NotoMonoRegular:bold:pixelsize=32'
 
 #reload sxhkd:
 super + shift + s
@@ -526,6 +531,14 @@ super + shift + Down
 #################################################################
 # SUPER + CONTROL KEYS
 #################################################################
+
+# Cycle focus/swap windows
+super + ctrl + C
+	bspc node --focus next
+
+# Cycle focus/swap windows
+super + ctrl + c
+	bspc node --focus next.local
 
 # Focus/swap windows by direction
 super + ctrl + {Left,Down,Up,Right}

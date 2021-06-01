@@ -3,7 +3,7 @@
 	email = georgi_d_k@abv.bg
 	username = georgi_d_k@abv.bg
 [core]
-    editor = nvim
+	editor = /usr/bin/nvim
     whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
     excludesfile = ~/.gitignore
 [merge]

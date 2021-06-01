@@ -5,8 +5,8 @@ if [ -z $1 ] ; then echo "Requires single argument: <directoryname>" ; exit 1 ; 
 
 destdir=$1
 
-dirmode=0770
-filemode=0744
+dirmode=0755
+filemode=0644
 
 YN=no
 
