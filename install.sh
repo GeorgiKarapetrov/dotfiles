@@ -23,3 +23,4 @@ dotfiles config status.showUntrackedFiles no
 #text editors:
 #yay -S sublime-text-3 notepadqq bluefish brackets-bin atom
 #yay -S vscodium codelobster uex
+#dummy
