@@ -80,7 +80,7 @@ super + x
 
 #blank screen
 super + a
-   terminator -e 'sleep 1; xset dpms force off'
+   terminator -e 'xset dpms force off'
 
 #switch user
 super + z
@@ -632,3 +632,8 @@ super + shift + {1-9,0}
 #    id=$(bspc query -N -n); bspc node -d ^{1-9,10}; bspc node -f ${id}}
 
 #################################################################
+
+#Custom
+#Left Click 300 times
+super + shift + c
+	xdotool click --repeat 100 1

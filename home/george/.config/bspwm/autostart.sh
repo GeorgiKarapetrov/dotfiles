@@ -44,10 +44,6 @@ run volumeicon &
 run thunderbird &
 #nitrogen --restore &
 run caffeine -a &
-#run firefox &
-#run thunar &
-#run dropbox &
-#run insync start &
 
 #custom
 sleep 1; pulseaudio-equalizer enable &
@@ -64,4 +60,5 @@ run firefox &
 # chmod +x /etc/profile.d/qt-hidpi.sh
 run keepassxc & #-style=gtk2
 run flameshot & #-style=gtk2
-run sleep 2; bspc desktop -f "^6" &
+run xfce4-power-manager &
+run sleep 10; bspc desktop -f "^6" &

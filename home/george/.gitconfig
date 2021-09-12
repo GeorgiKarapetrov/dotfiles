@@ -7,6 +7,7 @@
 	editor = /usr/bin/nvim
     whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
     excludesfile = ~/.gitignore
+	trustctime = false
 [merge]
     conflictstyle = diff3
 [web]
