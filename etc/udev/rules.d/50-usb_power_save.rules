@@ -1,0 +1,2 @@
+# blacklist for usb autosuspend
+ACTION=="add", SUBSYSTEM=="usb", GOTO="power_usb_rules_end"
