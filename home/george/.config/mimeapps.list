@@ -174,10 +174,10 @@ video/mp4=vlc.desktop
 [Added Associations]
 image/bmp=pix.desktop;gimp.desktop;xviewer.desktop;
 image/gif=pix.desktop;gimp.desktop;xviewer.desktop;
-image/jpeg=org.gnome.gThumb.desktop;ristretto.desktop;pix.desktop;gimp.desktop;xviewer.desktop;
+image/jpeg=org.xfce.ristretto.desktop;org.gnome.gThumb.desktop;ristretto.desktop;pix.desktop;gimp.desktop;xviewer.desktop;
 image/jpg=pix.desktop;xviewer.desktop;
 image/pjpeg=pix.desktop;xviewer.desktop;
-image/png=ristretto.desktop;pix.desktop;gimp.desktop;xviewer.desktop;
+image/png=org.xfce.ristretto.desktop;ristretto.desktop;pix.desktop;gimp.desktop;xviewer.desktop;
 image/tiff=pix.desktop;gimp.desktop;xviewer.desktop;
 image/x-bmp=pix.desktop;xviewer.desktop;
 image/x-gray=pix.desktop;xviewer.desktop;

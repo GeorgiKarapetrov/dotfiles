@@ -62,3 +62,5 @@ run keepassxc & #-style=gtk2
 run flameshot & #-style=gtk2
 run xfce4-power-manager &
 run sleep 10; bspc desktop -f "^6" &
+mount | grep "${HOME}/Documents/gdrive" >/dev/null || /usr/bin/google-drive-ocamlfuse "${HOME}/Documents/gdrive"
+/home/george/Documents/nextcloud || mount /home/george/Documents/nextcloud
