@@ -58,6 +58,10 @@ super + F12
 # SUPER + ... KEYS
 #################################################################
 
+#change your keyboard if you need it
+super + k
+    setxkbmap -model pc105 -layout us,bg -variant ,phonetic -option grp:alt_caps_toggle
+
 #Atom
 super + e
     subl

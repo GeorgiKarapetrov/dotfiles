@@ -49,7 +49,8 @@
 	support = support-
 	versiontag = v
 [sequence]
-	editor = interactive-rebase-tool
+	#editor = interactive-rebase-tool
+	editor = nvim
 #[alias]
 #	a = add --all
 #	ai = add -i

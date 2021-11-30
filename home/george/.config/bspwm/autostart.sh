@@ -18,7 +18,7 @@ $HOME/.config/polybar/launch.sh &
 
 #change your keyboard if you need it
 run setxkbmap -model pc105 -layout us,bg -variant ,phonetic -option grp:alt_caps_toggle
-run gxkb &
+sleep 1; run gxkb &
 
 #Some ways to set your wallpaper besides variety or nitrogen
 #feh --bg-scale ~/.config/bspwm/wall.png &

@@ -8,10 +8,13 @@ Then it will modify system files in `/etc`, `/boot`, and `/usr` as well as your 
 **Do not run blindly!**
 
 ### TODO
-- [ ]  Clean Up
+- [ ] Clean Up
   - [ ] Refactor
   - [ ] Conglomerate
   - [ ] Document
+- [ ] Move to ZSH
+- [ ] Take care of XDG vars
+- [ ] Add aliases
 
 ### Completed ✓
 - [x] Get used to the mess I created.
