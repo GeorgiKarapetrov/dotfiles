@@ -639,5 +639,5 @@ super + shift + {1-9,0}
 
 #Custom
 #Left Click 300 times
-super + shift + c
+alt + c
 	xdotool click --repeat 100 1
