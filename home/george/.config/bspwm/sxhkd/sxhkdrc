@@ -641,3 +641,8 @@ super + shift + {1-9,0}
 #Left Click 300 times
 alt + c
 	xdotool click --repeat 100 1
+
+# lockscreen
+
+alt + l
+	betterlockscreen -l dim
