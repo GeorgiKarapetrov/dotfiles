@@ -1,0 +1,12 @@
+hash -d cac=/home/georgi/.cache 
+hash -d cf=/home/georgi/.config 
+hash -d D=/home/georgi/Downloads 
+hash -d d=/home/georgi/Documents 
+hash -d dt=/home/georgi/.local/share 
+hash -d h=/home/georgi 
+hash -d m=/home/georgi/Music 
+hash -d mn=/mnt 
+hash -d pp=/home/georgi/Pictures 
+hash -d sc=/home/georgi/.local/bin 
+hash -d src=/home/georgi/.local/src 
+hash -d vv=/home/georgi/Videos 
