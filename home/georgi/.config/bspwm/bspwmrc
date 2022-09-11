@@ -119,8 +119,12 @@ bspc rule -a firefox desktop='^6' follow=on
 bspc rule -a qutebrowser desktop='^6' follow=on
 bspc rule -a Steam desktop='^7'
 bspc rule -a Thunderbird desktop='^7'
+bspc rule -a thunderbird desktop='^7'
+bspc rule -a Mail desktop='^7'
 bspc rule -a subl desktop='^8' follow=on
 bspc rule -a Subl desktop='^8' follow=on
+bspc rule -a vscodium desktop='^8' follow=on
+bspc rule -a VSCodium desktop='^8' follow=on
 bspc rule -a Cherrytree desktop='^8' follow=on
 bspc rule -a qTox desktop='^9' follow=on
 bspc rule -a viber desktop='^9' follow=on

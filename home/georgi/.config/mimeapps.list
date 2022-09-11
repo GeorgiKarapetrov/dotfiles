@@ -170,6 +170,13 @@ x-scheme-handler/msteams=teams.desktop
 application/vnd.openxmlformats-officedocument.wordprocessingml.document=libreoffice-writer.desktop
 x-scheme-handler/kite=kite-copilot.desktop
 video/mp4=vlc.desktop
+x-scheme-handler/mailto=userapp-Thunderbird-R1A3T1.desktop
+message/rfc822=userapp-Thunderbird-R1A3T1.desktop
+x-scheme-handler/mid=userapp-Thunderbird-R1A3T1.desktop
+x-scheme-handler/webcal=userapp-Thunderbird-H7C6T1.desktop
+text/calendar=userapp-Thunderbird-H7C6T1.desktop
+application/x-extension-ics=userapp-Thunderbird-H7C6T1.desktop
+x-scheme-handler/webcals=userapp-Thunderbird-H7C6T1.desktop
 
 [Added Associations]
 image/bmp=pix.desktop;gimp.desktop;xviewer.desktop;
@@ -340,3 +347,7 @@ text/csv=sublime_text.desktop;
 text/vnd.trolltech.linguist=mpv.desktop;vlc.desktop;
 application/vnd.apple.keynote=sublime_text.desktop;
 text/markdown=sublime_text.desktop;
+x-scheme-handler/mailto=userapp-Thunderbird-R1A3T1.desktop;
+x-scheme-handler/mid=userapp-Thunderbird-R1A3T1.desktop;
+x-scheme-handler/webcal=userapp-Thunderbird-H7C6T1.desktop;
+x-scheme-handler/webcals=userapp-Thunderbird-H7C6T1.desktop;
