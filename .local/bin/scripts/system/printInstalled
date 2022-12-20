@@ -1,0 +1,3 @@
+#!/bin/bash
+yay -Qqe # > $HOME/pkglist.txt
+#comm -23 <(pacman -Qqett | sort) <(pacman -Qq base -g base-devel | sort | uniq) > $HOME/.pkglist.test

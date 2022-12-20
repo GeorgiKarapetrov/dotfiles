@@ -1,0 +1,249 @@
+[user]
+    name = Georgi D. Karapetrov
+	signingkey = 81DA35B92255B037C509D3D51E622AEFF3A9A9C8
+	email = georgiKarapetrov@users.noreply.github.com
+[core]
+	editor = /usr/bin/nvim
+    whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
+    excludesfile = ~/.gitignore
+	trustctime = false
+[merge]
+    conflictstyle = diff3
+[web]
+	browser = firefox
+[instaweb]
+	httpd = apache2 -f
+[rerere]
+	enabled = 1
+	autoupdate = 1
+[push]
+	default = matching
+[color]
+    ui = auto
+[color "branch"]
+	current = yellow bold
+	local = green bold
+	remote = cyan bold
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+[color "status"]
+	added = green bold
+	changed = yellow bold
+	untracked = red bold
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false
+[github]
+	user = georgi_d_k@abv.bg
+	token = 0a9d9432ec013070189ce362c98862445165f564
+[gitflow "prefix"]
+	feature = feature-
+	release = release-
+	hotfix = hotfix-
+	support = support-
+	versiontag = v
+[sequence]
+	editor = interactive-rebase-tool
+#[alias]
+#	a = add --all
+#	ai = add -i
+#	#############
+#	ap = apply
+#	as = apply --stat
+#	ac = apply --check
+#	#############
+#	ama = am --abort
+#	amr = am --resolved
+#	ams = am --skip
+#	#############
+#	b = branch
+#	ba = branch -a
+#	bd = branch -d
+#	bdd = branch -D
+#	br = branch -r
+#	bc = rev-parse --abbrev-ref HEAD
+#	bu = !git rev-parse --abbrev-ref --symbolic-full-name "@{u}"
+#	#############
+#	c = commit
+#	ca = commit -a
+#	cm = commit -m
+#	cam = commit -am
+#	cem = commit --allow-empty -m
+#	cd = commit --amend
+#	cad = commit -a --amend
+#	ced = commit --allow-empty --amend
+#	#############
+#	cl = clone
+#	cld = clone --depth 1
+#	clg = !sh -c 'git clone git://github.com/$1 $(basename $1)' -
+#	clgp = !sh -c 'git clone git@github.com:$(git config --get #user.username)/$1 $1' -#
+#	##############
+#	cp = cherry-p#ick#
+#	cpa = cherry-#pick --abort#
+#	cpc = cherry-#pick --conti#nue#
+#	##############
+#	d = diff#
+#	dp = dif#f --patience#
+#	dc = dif#f --cached#
+#	dk = dif#f --check#
+#	dck = di#ff --cach#ed --check#
+#	dt = dif#ftool#
+#	dct = di#fftoo#l --cached#
+#	###############
+#	f = fetc#h#
+#	fo = fet#c#h origin#
+#	fu = fet#c#h upstream#
+#	################
+#	fp = for#m#at-p#atch#
+#	################
+#	fk = fsc#k#
+#	################
+#	g = grep# #-p#
+#	#################
+#	l = log #-#-o#neline#
+#	lg = log# #--#onelin#e --graph --decorate#
+#	#################
+#	ls = ls-#f#il#es#
+#	lsf = !g#i#t #ls#-files | grep -i#
+#	#################
+#	m = merg#e#
+#	ma = mer#g#e --abort#
+#	mc = mer#g#e --continue#
+#	ms = mer#g#e --skip#
+#	################
+#	o = chec#k#out#
+#	om = che#c#kou#t master#
+#	ob = che#c#kou#t -b#
+#	#################
+#	pr = pru#n#e -#v#
+#	#################
+#	ps = pus#h#
+#	psf = pu#s#h -f#
+#	psu = pu#s#h -u#
+#	pst = pu#s#h --#tags#
+#	################
+#	pso = pu#s#h or#igin#
+#	psao = p#u#sh -#-all origin#
+#	psfo = p#u#sh -#f origin#
+#	psuo = p#u#sh -#u origin#
+#	################
+#	psom = p#u#sh o#rigin master#
+#	psaom = #p#ush #--all origin master#
+#	psfom = #p#ush #-f origin master#
+#	psuom = #p#ush #-u origin master#
+#	psoc = !#g#it p#ush origin $(git# bc)#
+#	psaoc = #!#git #push --all origi#n $(git bc)#
+#	psfoc = #!#git #push -f origin $#(git bc)#
+#	psuoc = #!#git #push -u origin $#(git bc)#
+#	psdc = !#g#it p#ush origin :$(gi#t bc)#
+#	################
+#	pl = pul#l#
+#	pb = pul#l# --rebase#
+#	################
+#	plo = pu#l#l or#igin#
+#	pbo = pu#l#l --#rebase origin#
+#	plom = p#u#ll o#rigin master#
+#	ploc = !#g#it p#ull origin $#(git bc)#
+#	pbom = p#u#ll -#-rebase orig#in master#
+#	pboc = !#g#it p#ull --rebase# origin $#(git bc)#
+#	################
+#	plu = pu#l#l up#stream#
+#	plum = p#u#ll u#pstream master#
+#	pluc = !#g#it p#ull upstream $#(git bc)#
+#	pbum = p#u#ll -#-rebase upstre#am master#
+#	pbuc = !#g#it p#ull --rebase u#pstream $#(git bc)#
+#	################
+#	rb = reb#a#se#
+#	rba = re#b#as#e --abort#
+#	rbc = re#b#as#e --continue#
+#	rbi = re#b#as#e --interact#ive#
+#	rbs = re#b#as#e --skip#
+#	#################
+#	re = res#e#t#
+#	rh = res#e#t# HEAD#
+#	reh = re#s#e#t --hard#
+#	rem = re#s#e#t --mixe#d#
+#	res = re#s#e#t --soft#
+#	rehh = r#e#s#et --har#d HEAD#
+#	remh = r#e#s#et --mix#ed HEAD#
+#	resh = r#e#s#et --sof#t HEAD#
+#	#################
+#	r = remo#t#e#
+#	ra = rem#o#t#e add#
+#	rr = rem#o#t#e rm#
+#	rv = rem#o#t#e -v#
+#	rn = rem#o#t#e re#name#
+#	rp = rem#o#t#e pr#une#
+#	rs = rem#o#t#e sh#ow#
+#	rao = re#m#o#te a#dd# origin#
+#	rau = re#m#o#te a#dd# upstream#
+#	rro = re#m#o#te r#em#ove origi#n#
+#	rru = re#m#o#te r#em#ove upstr#eam#
+#	rso = re#m#o#te s#ho#w origin#
+#	rsu = re#m#o#te s#ho#w upstre#am#
+#	rpo = re#m#o#te p#ru#ne origi#n#
+#	rpu = re#m#o#te p#ru#ne upstr#e#am#
+#	#################
+#	rmf = rm# #-#f#
+#	rmrf = r#m# #-#r -f#
+#	##################
+#	s = stat#u#s#
+#	sb = sta#t#u#s -s -b#
+#	#################
+#	sa = sta#s#h# ap#ply#
+#	sc = sta#s#h# cl#ear#
+#	sd = sta#s#h# dr#op#
+#	sl = sta#s#h# li#st#
+#	sp = sta#s#h# po#p#
+#	ss = sta#s#h# sa#v#e#
+#	ssk = st#a#s#h s#a#ve -k#
+#	sw = sta#s#h# sh#o#w#
+#	st = !gi#t# #sta#s#h# list | wc -l 2>/dev/null | grep -oEi '[0-9]#[0-9]*'
+#	#################
+#	t = tag#
+#	td = ta#g -d#
+#	###############
+#	w = sho#w#
+#	wp = sh#o#w -p#
+#	wr = sh#o#w -p --no-color#
+#	################
+#	svnr = #s#vn re#base#
+#	svnd = #s#vn dc#ommit#
+#	svnl = #s#vn lo#g --o#neline --show-commit#
+#	################
+#	subadd #=# !sh #-c 'git submodule add git://github.com/$1 #$2/#$#(base#name $1)' -#
+#	subup =# #submo#dule update# --init --recursive#
+#	subpull# #= !gi#t submodule# foreach git pull --tags origin# master
+#	################
+#	assume #=# upda#te-index --assume-unchanged#
+#	unassum#e# = up#date-index --no-assume-unchanged#
+#	assumed# #= !gi#t ls -v | grep ^h | cut -c 3-#
+#	unassum#e#all =# !git assumed | xargs git una#ssume#
+#	assumea#l#l = !#git status -s | awk {'print $#2'} | xargs g#it assume
+#	################
+#	bump = #!#sh -c# 'git commit -am \"Version bump v$1\" && g#it psuoc && #git# #relea#se $1' -#
+#	release# #= !sh# -c 'git# tag v$1 && git pst' -
+#	unrelea#s#e = !#sh -c 'g#it tag -d v$1 && git pso :v$1' -
+#	merged #=# !sh #-c 'git #o master && git plom && git bd $1 && git rpo' #-#
+#	alias#es = !git config -l | grep alias | cut -c 7-
+#	snap #= !git stash save 'snapshot: $(date)' && git stash apply '#s#tash@{0}'#
+#	bare #= !sh -c #'git symbolic-ref HEAD refs/heads/$1 && git rm #-#-cached -#r . && git clean -xfd' -#
+#	whois# = !sh -c# 'git log -i -1 --author#=\"$1\" #-#-pretty=\#"format:%an <%ae>\"' -#
+#	serve# = daemon# --reuseaddr --verbose# --base-pa#th=. --export-all #./.gi#t#
+#	###############
+#	behin#d# = !git rev-list --left-only --count $(git bu)...HEAD
+#	ahead# #= !git rev-list --right-only --count $(git bu)...HEAD
+#	###############
+#	ours #=# "!f() { git checkout --ours $@ && git add $@; }; f"
+#	their#s# = "!f() { git checkout --theirs $@ && git add $@; }; f"
+#	subre#p#o = !sh -c 'git filter-branch --prune-empty #-#-#subdirectory-filter $1 master' -#
+#	human# #= name-rev --name-only --refs=re#fs/heads/*#
+[pager]
+	branch = false
+[merge "ours"]
+	driver = true

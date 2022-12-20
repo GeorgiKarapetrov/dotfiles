@@ -1,0 +1,2 @@
+cd /run/user/1000/1324388c463262e0/primary/Music && rsync --verbose --progress --omit-dir-times --no-perms --recursive --inplace --ignore-existing /home/georgi/Music/ ./
+#cd /run/user/1000/gvfs/mtp:host=realme_SDM778G-IDP__SN%3A13CFD9B3_13cfd9b3/Internal\ shared\ storage/Music/ && rsync --verbose --progress --omit-dir-times --no-perms --recursive --inplace --ignore-existing /home/georgi/Music/ ./

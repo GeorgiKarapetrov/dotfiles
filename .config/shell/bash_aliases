@@ -1,0 +1,88 @@
+# enable color support of ls and also add handy aliases
+if [ -x /usr/bin/dircolors ]; then
+    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+    alias dir='dir --color=auto'
+    alias vdir='vdir --color=auto'
+
+    alias grep='grep --color=auto'
+    alias fgrep='fgrep --color=auto'
+    alias egrep='egrep --color=auto'
+fi
+
+# Colorize commands when possible.
+alias \
+	ls="ls -hN --color=auto --group-directories-first" \
+	diff="diff --color=auto" \
+	ccat="highlight --out-format=ansi" \
+	#cat="bat"
+
+# Verbosity and settings that you pretty much just always are going to want.
+alias \
+	cp="cp -iv" \
+	mv="mv -iv" \
+	rm="rm -vI" \
+	bc="bc -ql" \
+	mkd="mkdir -pv" \
+	yt="yt-dlp -i" \
+	yta="yt -x -f bestaudio/best" \
+	ffmpeg="ffmpeg -hide_banner"
+
+# some more ls aliases
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -C'
+
+# Add an "alert" alias for long running commands.  Use like so:
+#   sleep 10; alert
+alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+
+alias tf=terraform
+
+alias cac="cd $HOME/.cache && ls -hN --color=auto --group-directories-first -A" \
+cf="cd $HOME/.config && ls -hN --color=auto --group-directories-first -A" \
+D="cd $HOME/Downloads && ls -hN --color=auto --group-directories-first -A" \
+d="cd $HOME/Documents && ls -hN --color=auto --group-directories-first -A" \
+gi="cd $HOME/Documents/git && ls -hN --color=auto --group-directories-first -A" \
+misc="cd $HOME/Documents/misc && ls -hN --color=auto --group-directories-first -A" \
+P="cd $HOME/Pictures && ls -hN --color=auto --group-directories-first -A" \
+dt="cd $HOME/.local/share && ls -hN --color=auto --group-directories-first -A" \
+rr="cd $HOME/.local/src && ls -hN --color=auto --group-directories-first -A" \
+h="cd $HOME && ls -hN --color=auto --group-directories-first -A" \
+mn="cd /mnt && ls -hN --color=auto --group-directories-first -A" \
+pp="cd $HOME/Pictures && ls -hN --color=auto --group-directories-first -A" \
+sc="cd $HOME/.local/bin && ls -hN --color=auto --group-directories-first -A" \
+cfv="$EDITOR $HOME/.config/nvim/init.vim" \
+cfssh="$EDITOR $HOME/.ssh/config" \
+cfb="$EDITOR $HOME/.config/shell/bashrc" \
+cfa="$EDITOR $HOME/.config/shell/bash_aliases" \
+cfp="$EDITOR $HOME/.config/shell/profile" \
+cfaws="$EDITOR $HOME/.aws/credentials" \
+cfhk="$EDITOR $HOME/.config/bspwm/sxhkd/sxhkdrc" \
+cfpolyb="$EDITOR $HOME/.config/polybar/config" \
+cfbsp="$EDITOR $HOME/.config/bspwm/bspwmrc" \
+cfautos="$EDITOR $HOME/.config/bspwm/autostart.sh" 
+
+
+
+[ -x "$(command -v nvim)" ] && alias vim="nvim" vimdiff="nvim -d" vi="nvim"
+
+# These commands are just too long.
+alias \
+	ka="killall" \
+	g="git" \
+	sdn="shutdown -h now" \
+	e="$EDITOR" \
+	v="$EDITOR" \
+	z="zathura"
+
+alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+
+#Xclip
+alias setclip="xclip -selection c"
+alias getclip="xclip -selection c -o"
+
+alias code="codium --disable-gpu"
+
+#https://bbs.archlinux.org/viewtopic.php?id=265253
+#https://github.com/qutebrowser/qutebrowser/issues/5541#issuecomment-648155389
+alias qutebrowser="qutebrowser -s qt.force_software_rendering qt-quick"

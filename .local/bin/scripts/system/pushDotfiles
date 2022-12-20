@@ -1,0 +1,53 @@
+#!/bin/bash
+
+#dotfiles ls-files | xargs -n 1 dirname | uniq
+#delete removed files from git index
+#git ls-files --deleted -z | xargs -0 git rm
+/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME ls-files --deleted -z | xargs -r0 /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME rm
+
+/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.ssh/config
+/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.texmf
+/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.fonts
+/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.gnupg/gpg.conf
+/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.local/bin/scripts
+/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/Pictures/archlinux07.jpg
+/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.config/bspwm
+/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.config/compton
+/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.config/dunst
+/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.config/gsimplecal
+/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.config/gtk-2.0
+/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.config/gxkb
+/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.config/htop
+/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.config/keepassxc/keepassxc.ini
+/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.config/lxsession/bspwm
+/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.config/mimeapps.list
+/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.config/mpd
+/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.config/mpv
+/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.config/nvim/init.vim
+/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.config/polybar
+/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.config/pulse/default.pa
+/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.config/pulse/presets
+/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.config/ranger
+/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.config/rofi
+/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.config/shell
+/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.config/shortcutrc
+/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.config/sublime-text-3/Packages/User/
+/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.config/terminator
+/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.config/tmux
+/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.config/user-dirs.dirs
+/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.config/user-dirs.locale
+/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.config/volumeicon
+/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.dmrc
+/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.gitconfig
+/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.gnupg/gpg.conf
+/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.gtkrc-2.0
+/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.inputrc
+/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.profile
+/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.pythonrc
+/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.ssh/config
+/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.texmf/altacv
+/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.xinitrc
+/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.bashrc
+
+/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME commit -S -am "sync"
+/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME push origin master:master

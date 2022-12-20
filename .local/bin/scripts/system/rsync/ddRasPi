@@ -1,0 +1,5 @@
+#!/bin/bash
+sudo mount /dev/sda1 /mnt
+mv /mnt/rasPi/RasPi.img.gz /mnt/rasPi/RasPi.img.gz.old
+ssh pi@pi.hole "sudo dd if=/dev/mmcblk0p1 | gzip -1 -" | sudo dd of=/mnt/rasPi/RasPi.img.gz && sudo rm /mnt/rasPi/RasPi.img.gz.old
+sudo umount /mnt

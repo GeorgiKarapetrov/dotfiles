@@ -1,0 +1,15 @@
+#!/bin/bash
+#https://www.reddit.com/r/bspwm/comments/92bddw/how_to_move_desktops_after_disconnecting_a_monitor/
+#https://github.com/DelusionalLogic/dotfiles/blob/bspwm/localbin/.localbin/bspwm_reorder
+#https://gist.github.com/danielcbaldwin/3b146824f12355e5bac7e4102ab483c7
+#https://www.reddit.com/r/bspwm/comments/53x8qh/for_those_of_you_who_use_a_laptop_and_external/d7xv9yu/
+
+#mirror screen
+if [[ "$(xrandr --query |grep " connected" | wc -l)" -ge 2 ]]; then
+    for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
+        if [[ $m != "eDP1" ]]; then
+            xrandr --output $m --same-as eDP1
+        fi
+    done
+fi
+bspc monitor eDP1 -d 1 2 3 4 5 6 7 8 9 10

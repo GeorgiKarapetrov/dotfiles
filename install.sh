@@ -1,7 +1,10 @@
-git clone --bare git@github.com:GeorgiKarapetrov/dotfiles.git $HOME/.dotfiles
+#!/bin/bash
+
 function dotfiles {
-   sudo /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=/ $@
+  /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME $@
 }
+
+git clone --bare git@github.com:GeorgiKarapetrov/dotfiles.git $HOME/.dotfiles
 mkdir -p $HOME/.dotfiles-backup
 dotfiles checkout master /
 if [ $? = 0 ]; then
@@ -19,7 +22,7 @@ dotfiles config status.showUntrackedFiles no
 #sudo rm /etc/systemd/system/display-manager.service
 #sudo systemctl enable lightdm
 #sudo groupadd fuse
-#sudo usermod -a -G fuse george
+#sudo usermod -a -G fuse georgi
 #text editors:
 #yay -S sublime-text-3 notepadqq bluefish brackets-bin atom
 #yay -S vscodium codelobster uex

@@ -1,0 +1,2 @@
+#!/bin/bash
+rsync -rvP $HOME/Documents/git/georgi.karapetrov.top/build pi@192.168.88.3:/home/pi/

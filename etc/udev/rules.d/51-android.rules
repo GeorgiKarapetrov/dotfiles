@@ -1,3 +1,0 @@
-SUBSYSTEM=="usb", ATTR{idVendor}=="22d9", MODE="0660", GROUP="adbusers"
-SUBSYSTEM=="usb",ATTR{idVendor}=="22d9",ATTR{idProduct}=="2765",SYMLINK+="android_adb"
-SUBSYSTEM=="usb",ATTR{idVendor}=="22d9",ATTR{idProduct}=="2765",SYMLINK+="android_fastboot"

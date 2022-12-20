@@ -1,2 +1,0 @@
-* * * * * DISPLAY=:1 xdotool key Num_Lock && DISPLAY=:1 xdotool key Num_Lock
-* * * * * DISPLAY=:0 xdotool key Num_Lock && DISPLAY=:0 xdotool key Num_Lock

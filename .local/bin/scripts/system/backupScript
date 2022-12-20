@@ -1,0 +1,6 @@
+#!/bin/bash
+
+printInstalled > $HOME/pkglist.txt
+rsyncGDrive
+pushDotfiles
+rm $HOME/pkglist.txt
