@@ -23,7 +23,7 @@ alias \
 	rm="rm -vI" \
 	bc="bc -ql" \
 	mkd="mkdir -pv" \
-	yt="yt-dlp -i" \
+	yt="yt-dlp -i -f 'bestvideo[height<=1080]+bestaudio'" \
 	yta="yt -x -f bestaudio/best" \
 	ffmpeg="ffmpeg -hide_banner"
 
@@ -43,14 +43,19 @@ cf="cd $HOME/.config && ls -hN --color=auto --group-directories-first -A" \
 D="cd $HOME/Downloads && ls -hN --color=auto --group-directories-first -A" \
 d="cd $HOME/Documents && ls -hN --color=auto --group-directories-first -A" \
 gi="cd $HOME/Documents/git && ls -hN --color=auto --group-directories-first -A" \
+web="cd $HOME/Documents/git/georgi.karapetrov.top && ls -hN --color=auto --group-directories-first -A" \
+resume="cd $HOME/Documents/git/resume && ls -hN --color=auto --group-directories-first -A" \
 misc="cd $HOME/Documents/misc && ls -hN --color=auto --group-directories-first -A" \
 P="cd $HOME/Pictures && ls -hN --color=auto --group-directories-first -A" \
+p="cd $HOME/Videos/pol && ls -hN --color=auto --group-directories-first -A" \
 dt="cd $HOME/.local/share && ls -hN --color=auto --group-directories-first -A" \
 rr="cd $HOME/.local/src && ls -hN --color=auto --group-directories-first -A" \
 h="cd $HOME && ls -hN --color=auto --group-directories-first -A" \
 mn="cd /mnt && ls -hN --color=auto --group-directories-first -A" \
 pp="cd $HOME/Pictures && ls -hN --color=auto --group-directories-first -A" \
 sc="cd $HOME/.local/bin && ls -hN --color=auto --group-directories-first -A" \
+pol="cd $HOME/Videos/pol && ls -hN --color=auto --group-directories-first -A" \
+V="cd $HOME/Videos && ls -hN --color=auto --group-directories-first -A" \
 cfv="$EDITOR $HOME/.config/nvim/init.vim" \
 cfssh="$EDITOR $HOME/.ssh/config" \
 cfb="$EDITOR $HOME/.config/shell/bashrc" \
@@ -60,7 +65,7 @@ cfaws="$EDITOR $HOME/.aws/credentials" \
 cfhk="$EDITOR $HOME/.config/bspwm/sxhkd/sxhkdrc" \
 cfpolyb="$EDITOR $HOME/.config/polybar/config" \
 cfbsp="$EDITOR $HOME/.config/bspwm/bspwmrc" \
-cfautos="$EDITOR $HOME/.config/bspwm/autostart.sh" 
+cfautos="$EDITOR $HOME/.config/bspwm/autostart.sh"
 
 
 
@@ -81,7 +86,7 @@ alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias setclip="xclip -selection c"
 alias getclip="xclip -selection c -o"
 
-alias code="codium --disable-gpu"
+alias code="code --disable-gpu"
 
 #https://bbs.archlinux.org/viewtopic.php?id=265253
 #https://github.com/qutebrowser/qutebrowser/issues/5541#issuecomment-648155389

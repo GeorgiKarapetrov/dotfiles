@@ -1,8 +1,6 @@
 #!/bin/sh
 
 
-#LAUNCHERS
-$HOME/.config/bspwm/autostart.sh
 #fix for moving spotify to specific workspace
 #bspc config external_rules_command ~/.config/bspwm/scripts/external_rules_command
 
@@ -115,8 +113,8 @@ bspc rule -a Pcmanfm desktop='^3' follow=on
 bspc rule -a Vimb desktop='^3' follow=on
 bspc rule -a lf desktop='^3' follow=on
 bspc rule -a Ranger desktop='^3' follow=on
-bspc rule -a KeePassXC desktop='^4' follow=on
-bspc rule -a keepassxc desktop='^4' follow=on
+bspc rule -a KeePassXC desktop='^4'
+bspc rule -a keepassxc desktop='^4'
 bspc rule -a Tixati desktop='^5'
 bspc rule -a firefox desktop='^6' follow=on
 bspc rule -a Navigator desktop='^6' follow=on
@@ -143,6 +141,9 @@ bspc rule -a ViberPC desktop='^9' follow=on
 bspc rule -a vlc desktop='^10'  follow=on
 bspc rule -a mpv desktop='^10'  follow=on
 bspc rule -a Wfica desktop='^10'  follow=on
+
+#LAUNCHERS
+$HOME/.config/bspwm/autostart.sh
 
 #Spotify fix  --move desktop 10
 #sleep 1

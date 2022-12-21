@@ -48,6 +48,9 @@
 /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.texmf/altacv
 /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.xinitrc
 /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.bashrc
+/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/Videos/resolution.sh
+/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/Videos/resolution.sh
+/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.local/share/ignorefiles
 
 /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME commit -S -am "sync"
 /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME push origin master:master

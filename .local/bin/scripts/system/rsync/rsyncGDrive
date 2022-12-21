@@ -2,33 +2,33 @@
 
 mount | grep "${HOME}/Documents/cloud/gdrive" >/dev/null || /usr/bin/google-drive-ocamlfuse "${HOME}/Documents/cloud/gdrive"
 
-rsync -uPO $HOME/Documents/cloud/gdrive/Home.kdbx $HOME/Documents/misc/KeePass
+rsync -uPO $HOME/Documents/cloud/gdrive/Home.kdbx $HOME/Documents/misc/KeePass/Home-$(date -u +%Y-%m-%d)
 
 #sqlite3 ~/.mozilla/firefox/4ijf35qs.Home-1591249024394/places.sqlite".backup $HOME/Documents/cloud/gdrive/Home/firefox_places.sqlite3.home"
 #sqlite3 ~/.mozilla/firefox/user.profile/places.sqlite ".restore /path/to/backup/file"
 if ! pgrep -f firefox >/dev/null 2>&1; then
-  rsync -uPOR --delete-after $HOME/.mozilla/firefox/4ijf35qs.Home-1591249024394/places.sqlite $HOME/Documents/cloud/gdrive/Home/
-  rsync -uPOR --delete-after $HOME/.mozilla/firefox/ef9lqmo7.MF/places.sqlite $HOME/Documents/cloud/gdrive/Home/
-  rsync -uPOR --delete-after $HOME/.mozilla/firefox/5k2oov4y.Sciant/places.sqlite $HOME/Documents/cloud/gdrive/Home/
+  rsync -uPOR $HOME/.mozilla/firefox/4ijf35qs.Home-1591249024394/places.sqlite $HOME/Documents/cloud/gdrive/Home/
+  rsync -uPOR $HOME/.mozilla/firefox/ef9lqmo7.MF/places.sqlite $HOME/Documents/cloud/gdrive/Home/
+  rsync -uPOR $HOME/.mozilla/firefox/5k2oov4y.Sciant/places.sqlite $HOME/Documents/cloud/gdrive/Home/
 fi
 
-rsync -uPOR --delete-after $HOME/.thunderbird/qw308cns.default-release/ImapMail/192.168.1-1.6/msgFilterRules.dat $HOME/Documents/cloud/gdrive/Home/
-rsync -uPOR --delete-after $HOME/.thunderbird/qw308cns.default-release/ImapMail/192.168.1.6/msgFilterRules.dat $HOME/Documents/cloud/gdrive/Home/
-rsync -uPOR --delete-after $HOME/.thunderbird/qw308cns.default-release/ImapMail/192.168.88-1.3/msgFilterRules.dat $HOME/Documents/cloud/gdrive/Home/
-rsync -uPOR --delete-after $HOME/.thunderbird/qw308cns.default-release/ImapMail/192.168.88-2.3/msgFilterRules.dat $HOME/Documents/cloud/gdrive/Home/
-rsync -uPOR --delete-after $HOME/.thunderbird/qw308cns.default-release/ImapMail/192.168.88.3/msgFilterRules.dat $HOME/Documents/cloud/gdrive/Home/
-rsync -uPOR --delete-after $HOME/.thunderbird/qw308cns.default-release/ImapMail/imap.gmail-1.com/msgFilterRules.dat $HOME/Documents/cloud/gdrive/Home/
-rsync -uPOR --delete-after $HOME/.thunderbird/qw308cns.default-release/ImapMail/imap.gmail-2.com/msgFilterRules.dat $HOME/Documents/cloud/gdrive/Home/
-rsync -uPOR --delete-after $HOME/.thunderbird/qw308cns.default-release/ImapMail/imap.gmail.com/msgFilterRules.dat $HOME/Documents/cloud/gdrive/Home/
-rsync -uPOR --delete-after $HOME/.thunderbird/qw308cns.default-release/ImapMail/imap.mail-1.bg/msgFilterRules.dat $HOME/Documents/cloud/gdrive/Home/
-rsync -uPOR --delete-after $HOME/.thunderbird/qw308cns.default-release/ImapMail/imap.mail.bg/msgFilterRules.dat $HOME/Documents/cloud/gdrive/Home/
-rsync -uPOR --delete-after $HOME/.thunderbird/qw308cns.default-release/ImapMail/imap.mail.bg.sbd/msgFilterRules.dat $HOME/Documents/cloud/gdrive/Home/
+rsync -uPOR $HOME/.thunderbird/qw308cns.default-release/ImapMail/192.168.1-1.6/msgFilterRules.dat $HOME/Documents/cloud/gdrive/Home/
+rsync -uPOR $HOME/.thunderbird/qw308cns.default-release/ImapMail/192.168.1.6/msgFilterRules.dat $HOME/Documents/cloud/gdrive/Home/
+rsync -uPOR $HOME/.thunderbird/qw308cns.default-release/ImapMail/192.168.88-1.3/msgFilterRules.dat $HOME/Documents/cloud/gdrive/Home/
+rsync -uPOR $HOME/.thunderbird/qw308cns.default-release/ImapMail/192.168.88-2.3/msgFilterRules.dat $HOME/Documents/cloud/gdrive/Home/
+rsync -uPOR $HOME/.thunderbird/qw308cns.default-release/ImapMail/192.168.88.3/msgFilterRules.dat $HOME/Documents/cloud/gdrive/Home/
+rsync -uPOR $HOME/.thunderbird/qw308cns.default-release/ImapMail/imap.gmail-1.com/msgFilterRules.dat $HOME/Documents/cloud/gdrive/Home/
+rsync -uPOR $HOME/.thunderbird/qw308cns.default-release/ImapMail/imap.gmail-2.com/msgFilterRules.dat $HOME/Documents/cloud/gdrive/Home/
+rsync -uPOR $HOME/.thunderbird/qw308cns.default-release/ImapMail/imap.gmail.com/msgFilterRules.dat $HOME/Documents/cloud/gdrive/Home/
+rsync -uPOR $HOME/.thunderbird/qw308cns.default-release/ImapMail/imap.mail-1.bg/msgFilterRules.dat $HOME/Documents/cloud/gdrive/Home/
+rsync -uPOR $HOME/.thunderbird/qw308cns.default-release/ImapMail/imap.mail.bg/msgFilterRules.dat $HOME/Documents/cloud/gdrive/Home/
+rsync -uPOR $HOME/.thunderbird/qw308cns.default-release/ImapMail/imap.mail.bg.sbd/msgFilterRules.dat $HOME/Documents/cloud/gdrive/Home/
 
-rsync -urPOR --delete-after $HOME/.ssh $HOME/Documents/cloud/gdrive/Home
-rsync -urPOR --delete-after $HOME/.gnupg $HOME/Documents/cloud/gdrive/Home
-rsync -urPOR --delete-after $HOME/.local/share/password-store/ $HOME/Documents/cloud/gdrive/Home
+rsync -urPOR --delete-after $HOME/.ssh $HOME/Documents/cloud/gdrive/Home/
+rsync -urPOR --delete-after $HOME/.gnupg $HOME/Documents/cloud/gdrive/Home/
+rsync -urPOR --delete-after $HOME/.local/share/password-store/ $HOME/Documents/cloud/gdrive/Home/
 
 # file no longer exists
-# rsync -uPOR --delete-after /etc/network/interfaces $HOME/Documents/cloud/gdrive/Home
-# rsync -uPOR --delete-after /etc/ssl/openssl.cnf $HOME/Documents/cloud/gdrive/Home
+# rsync -uPOR /etc/network/interfaces $HOME/Documents/cloud/gdrive/Home
+# rsync -uPOR /etc/ssl/openssl.cnf $HOME/Documents/cloud/gdrive/Home
 # rsync -urPOR --delete-after /etc/wpa_supplicant $HOME/Documents/cloud/gdrive/Home

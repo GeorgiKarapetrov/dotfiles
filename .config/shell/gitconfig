@@ -1,7 +1,7 @@
 [user]
     name = Georgi D. Karapetrov
-	signingkey = 81DA35B92255B037C509D3D51E622AEFF3A9A9C8
-	email = georgiKarapetrov@users.noreply.github.com
+	signingkey = 333754090A4E5800522D7B5F63BCAA9DB91D2D60
+	email = Georgi.D.Karapetrov@gmail.com
 [core]
 	editor = /usr/bin/nvim
     whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
