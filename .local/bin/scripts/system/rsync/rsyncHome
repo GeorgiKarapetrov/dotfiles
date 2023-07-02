@@ -1,7 +1,7 @@
 #!/bin/bash
-yay -Qqe > $HOME/pkglist.txt
-#comm -23 <(pacman -Qqett | sort) <(pacman -Qq base -g base-devel | sort | uniq) > $HOME/.pkglist.test
+# yay -Qqe > $HOME/pkglist.txt
+# comm -23 <(pacman -Qqett | sort) <(pacman -Qq base -g base-devel | sort | uniq) > $HOME/.pkglist.test
 sudo mount /dev/sda1 /mnt
 sudo rsync -axHAXSv --numeric-ids --info=progress2 --delete-excluded --delete-after --ignore-errors --exclude="$HOME/Downloads/torrent" --exclude="$HOME/Documents/cloud" --exclude="$HOME/.bitmonero" --exclude-from=/home/georgi/.local/share/ignorelist /home /mnt/
 sudo umount /mnt
-rm $HOME/pkglist.txt
+# rm $HOME/pkglist.txt

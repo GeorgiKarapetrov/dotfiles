@@ -68,7 +68,7 @@ super + e
 
 #Browser
 super + w
-	firefox
+	google-chrome-stable --force-device-scale-factor=1.5
 
 #Conky-toggle
 super + c
@@ -184,7 +184,7 @@ ctrl + alt + e
 
 #Firefox
 ctrl + alt + f
-	firefox
+	google-chrome-stable --force-device-scale-factor=1.5
 
 #Nitrogen
 ctrl + alt + i
@@ -360,7 +360,7 @@ XF86Explorer
 
 #Web
 XF86HomePage
-	firefox
+	google-chrome-stable --force-device-scale-factor=1.5
 
 #Mail
 XF86Mail

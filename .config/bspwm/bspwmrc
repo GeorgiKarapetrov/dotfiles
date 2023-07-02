@@ -36,7 +36,7 @@ bspc config presel_feedback_color	"#5e81ac"
 
 
 #Single monitor
-bspc monitor HDMI-A-0 -d 1 2 3 4 5 6 7 8 9 10
+bspc monitor HDMI-1 -d 1 2 3 4 5 6 7 8 9 10
 #bspc monitor HDMI-A-0 -d 10
 
 #Dual monitor
@@ -117,6 +117,8 @@ bspc rule -a KeePassXC desktop='^4'
 bspc rule -a keepassxc desktop='^4'
 bspc rule -a Tixati desktop='^5'
 bspc rule -a firefox desktop='^6' follow=on
+bspc rule -a google-chrome desktop='^6' follow=on
+bspc rule -a Google-chrome desktop='^6' follow=on
 bspc rule -a Navigator desktop='^6' follow=on
 bspc rule -a firefox-esr-esr102 desktop='^6' follow=on
 bspc rule -a Firefox desktop='^6' follow=on
@@ -124,6 +126,8 @@ bspc rule -a qutebrowser desktop='^6' follow=on
 bspc rule -a Steam desktop='^7'
 bspc rule -a Thunderbird desktop='^7'
 bspc rule -a thunderbird desktop='^7'
+bspc rule -a evolution desktop='^7'
+bspc rule -a Evolution desktop='^7'
 bspc rule -a Mail desktop='^7'
 bspc rule -a subl desktop='^8' follow=on
 bspc rule -a Subl desktop='^8' follow=on

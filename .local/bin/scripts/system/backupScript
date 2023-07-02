@@ -1,8 +1,6 @@
 #!/bin/bash
 
-printInstalled > $HOME/pkglist.txt
 rsyncGDrive
 pushDotfiles
 # requires sudo
 # rsyncHome
-rm $HOME/pkglist.txt

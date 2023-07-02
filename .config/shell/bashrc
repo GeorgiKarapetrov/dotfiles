@@ -181,3 +181,5 @@ if [ -f "$HOME/.gcloud/path.bash.inc" ]; then . "$HOME/.gcloud/path.bash.inc"; f
 
 # The next line enables shell command completion for gcloud.
 if [ -f "$HOME/.gcloud/completion.bash.inc" ]; then . "$HOME/.gcloud/completion.bash.inc"; fi
+
+[[ -s "/home/georgi/.gvm/scripts/gvm" ]] && source "/home/georgi/.gvm/scripts/gvm"

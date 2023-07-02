@@ -19,7 +19,8 @@ password="otp/$password"
 [[ -n $password ]] || exit
 
 if [[ $typeit -eq 0 ]]; then
-	pass otp -c "$password" 2>/dev/null
+	pass otp "$password" | { IFS= read -r pass; printf %s "$pass"; } |
+		xclip -selection c
 else
 	pass otp "$password" | { IFS= read -r pass; printf %s "$pass"; } |
 		xdotool type --clearmodifiers --file -

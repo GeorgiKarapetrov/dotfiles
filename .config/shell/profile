@@ -29,7 +29,10 @@ fi
 #test -r /home/georgi/.opam/opam-init/init.sh && . /home/georgi/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
 
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
-export PATH=$PATH:$(go env GOPATH)/bin
+export PATH="$PATH:$(go env GOPATH)/bin"
+export PATH="$PATH:$HOME/.local/share/cargo/bin"
+export PATH="$PATH:$HOME/.opam/default/bin"
+
 
 # https://bbs.archlinux.org/viewtopic.php?id=285590
 # https://wiki.archlinux.org/title/XDG_Desktop_Portal
@@ -55,7 +58,7 @@ export PATH="$(find ~/.local/bin -type d -printf %p:)$PATH"
 # Default programs:
 export EDITOR="nvim"
 export TERMINAL="terminator"
-export BROWSER="firefox"
+export BROWSER="google-chrome"
 
 # ~/ Clean-up:
 export XDG_CONFIG_HOME="$HOME/.config"

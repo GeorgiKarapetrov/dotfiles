@@ -91,3 +91,4 @@ alias code="code --disable-gpu"
 #https://bbs.archlinux.org/viewtopic.php?id=265253
 #https://github.com/qutebrowser/qutebrowser/issues/5541#issuecomment-648155389
 alias qutebrowser="qutebrowser -s qt.force_software_rendering qt-quick"
+alias google-chrome-stable="google-chrome-stable --force-device-scale-factor=1.5"

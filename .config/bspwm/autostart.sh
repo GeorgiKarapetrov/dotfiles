@@ -38,7 +38,7 @@ picom --config $HOME/.config/bspwm/picom.conf &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 /usr/lib/xfce4/notifyd/xfce4-notifyd &
 run volumeicon &
-run thunderbird &
+run evolution &
 #nitrogen --restore &
 
 #custom
@@ -49,7 +49,7 @@ run /usr/bin/kdeconnect-indicator &
 #exec --no-startup-id bash $HOME/.scripts/create_ap.sh &
 run tixati &
 run terminator &
-run firefox &
+sleep 2; run google-chrome-stable --force-device-scale-factor=1.25 &
 #qt apps QT_FONT_DPI=150, no longer needed due to /etc/profile.d/qt-hidpi.sh
 # contents:
 # export QT_DEVICE_PIXEL_RATIO=2
@@ -58,5 +58,5 @@ run keepassxc & #-style=gtk2
 run flameshot & #-style=gtk2
 run xfce4-power-manager &
 # run sleep 10; bspc desktop -f "^6" &
-mount | grep "${HOME}/Documents/cloud/gdrive" >/dev/null || /usr/bin/google-drive-ocamlfuse "${HOME}/Documents/cloud/gdrive"
-mountpoint -q $HOME/Documents/cloud/nextcloud || mount $HOME/Documents/cloud/nextcloud
+mount | grep "${HOME}/Documents/cloud/gdrive" >/dev/null || google-drive-ocamlfuse -label home "${HOME}/Documents/cloud/gdrive"
+# mountpoint -q $HOME/Documents/cloud/nextcloud || mount $HOME/Documents/cloud/nextcloud

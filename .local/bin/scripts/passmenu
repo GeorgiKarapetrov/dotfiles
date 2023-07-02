@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+set -x
 shopt -s nullglob globstar
 
 typeit=0
@@ -18,7 +19,7 @@ password=$(printf '%s\n' "${password_files[@]}" | dmenu -i -nb '#191919' -nf '#f
 [[ -n $password ]] || exit
 
 if [[ $typeit -eq 0 ]]; then
-	pass show -c "$password" 2>/dev/null
+	pass show "$password" | { IFS= read -r pass; printf %s "$pass"; } | xclip -selection c
 else
 	pass show "$password" | { IFS= read -r pass; printf %s "$pass"; } |
 		xdotool type --clearmodifiers --file -
