@@ -2,9 +2,16 @@
 
 mount | grep "${HOME}/Documents/cloud/gdrive" >/dev/null || /usr/bin/google-drive-ocamlfuse "${HOME}/Documents/cloud/gdrive"
 
-rsync -uPO $HOME/Documents/cloud/gdrive/Home.kdbx $HOME/Documents/misc/KeePass/Home-$(date -u +%Y-%m-%d)
+rsync -uPO $HOME/Documents/cloud/gdrive/keepass/Home.kdbx $HOME/Documents/misc/KeePass/Home-$(date -u +%Y-%m-%d)
+rsync -uPO $HOME/Documents/cloud/gdrive/keepass/Home.kdbx $HOME/Documents/cloud/gdrive/keepass/Home-$(date -u +%Y-%m-%d)
 
 rsync -urPOR --delete-after $HOME/.ssh $HOME/Documents/cloud/gdrive/Home/
+rsync -urPOR /etc/vconsole.conf $HOME/Documents/cloud/gdrive/Home/
+rsync -urPOR /var/spool/cron/georgi $HOME/Documents/cloud/gdrive/Home/
+# rsync -urPOR --delete-after /etc/crypt/keys $HOME/Documents/cloud/gdrive/Home/
+# rsync -urPOR /etc/crypttab $HOME/Documents/cloud/gdrive/Home/
+# rsync -urPOR /crypto_keyfile.bin $HOME/Documents/cloud/gdrive/Home/
+
 rsync -urPOR --delete-after $HOME/.gnupg $HOME/Documents/cloud/gdrive/Home/
 rsync -urPOR --delete-after $HOME/.local/share/password-store/ $HOME/Documents/cloud/gdrive/Home/
 rsync -urPOR /boot/grub/themes/Vimix/theme.txt $HOME/Documents/cloud/gdrive/Home/

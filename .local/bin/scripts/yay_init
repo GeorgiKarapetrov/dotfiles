@@ -2,10 +2,11 @@
 
 yay -S archlinux-keyring
 yay
-yay -S pass pass-otp keepassxc fzf linux-lts linux-zen qutebrowser terminator vlc yt-dlp
+yay -S pass pass-otp keepassxc fzf linux-lts linux-zen qutebrowser terminator vlc yt-dlp tk
 yay -S zathura zathura-pdf-poppler pcmanfm go evolution flameshot gmrun qalculate-gtk xclip sxiv adapta-gtk-theme-git bat-cat-git
 yay -S nvm electrum monero monero-gui pulseaudio-equalizer-ladspa preload tixati gxkb neovim cherrytree kdeconnect gsimplecal cronie tldr google-chrome visual-studio-code-bin
 yay -S texlive biber texmaker
+yay -S winbox
 yes |yay -Rns snapd gutenprint cups-pdf cups termite sddm-config-editor-git sddm zsh nano
 #gvm
 bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)

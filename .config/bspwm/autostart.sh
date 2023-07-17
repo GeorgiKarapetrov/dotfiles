@@ -8,7 +8,7 @@ function run {
 }
 
 #Find out your monitor name with xrandr or arandr (save and you get this line)
-xrandr --output DisplayPort-0 --off --output DisplayPort-1 --off --output HDMI-A-0 --mode 1920x1080 --pos 0x0 --rotate normal --output HDMI-A-1 --mode 3840x2160 --rate 50 --pos 0x0 --rotate normal --output DVI-D-0 --off
+xrandr --output HDMI-1 --mode 3840x2160 --rate 50 --pos 0x0 --rotate normal --scale 0.5x0.5 --brightness 1
 
 $HOME/.config/polybar/launch.sh &
 
@@ -39,7 +39,7 @@ picom --config $HOME/.config/bspwm/picom.conf &
 /usr/lib/xfce4/notifyd/xfce4-notifyd &
 run volumeicon &
 run evolution &
-#nitrogen --restore &
+nitrogen --restore &
 
 #custom
 pulseaudio-equalizer enable &
@@ -48,8 +48,11 @@ run /usr/bin/kdeconnect-indicator &
 # wifi hotspot
 #exec --no-startup-id bash $HOME/.scripts/create_ap.sh &
 run tixati &
-run terminator &
-sleep 2; run google-chrome-stable --force-device-scale-factor=1.25 &
+run alacritty &
+if ! pgrep -f google-chrome ;
+  then
+    sleep 2; run google-chrome-stable &
+fi
 #qt apps QT_FONT_DPI=150, no longer needed due to /etc/profile.d/qt-hidpi.sh
 # contents:
 # export QT_DEVICE_PIXEL_RATIO=2

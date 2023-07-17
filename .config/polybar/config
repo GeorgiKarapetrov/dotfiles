@@ -113,13 +113,13 @@ module-margin-left = 3
 module-margin-right = 3
 
 ;https://github.com/jaagr/polybar/wiki/Fonts
-font-0 = "Noto Sans:size=28;0"
-;font-1 = "FontAwesome:size=28;0"
-font-2 = "Noto Sans:size=28;0"
-font-3 = "Noto Sans Mono:size=28;0"
-font-4 = "FontAwesome5Brands:style=Regular:size=28"
-font-1 = "FontAwesome5Free:style=Regular:size=28"
-font-5 = "FontAwesome5Free:style=Solid:size=28"
+font-0 = "Noto Sans:size=14;0"
+;font-1 = "FontAwesome:size=14;0"
+font-2 = "Noto Sans:size=14;0"
+font-3 = "Noto Sans Mono:size=14;0"
+font-4 = "FontAwesome5Brands:style=Regular:size=14"
+font-1 = "FontAwesome5Free:style=Regular:size=14"
+font-5 = "FontAwesome5Free:style=Solid:size=14"
 
 modules-left = i3 xwindow
 modules-center = kernel
@@ -211,10 +211,10 @@ module-margin-left = 3
 module-margin-right = 3
 
 ;https://github.com/jaagr/polybar/wiki/Fonts
-font-0 = "Noto Sans:size=28;0"
-font-1 = "FontAwesome:size=28;0"
-font-2 = "Noto Sans:size=28;0"
-font-3 = "Noto Sans Mono:size=28;0"
+font-0 = "Noto Sans:size=14;0"
+font-1 = "FontAwesome:size=14;0"
+font-2 = "Noto Sans:size=14;0"
+font-3 = "Noto Sans Mono:size=14;0"
 
 modules-left = load-average
 modules-center = networkspeeddown networkspeedup
@@ -302,10 +302,10 @@ module-margin-right = 3
 enable-ipc = true
 
 ;https://github.com/jaagr/polybar/wiki/Fonts
-font-0 = "Noto Sans:size=28;0"
-font-1 = "FontAwesome:size=28;0"
-font-2 = "Noto Sans:size=28;0"
-font-3 = "Noto Sans Mono:size=28;0"
+font-0 = "Noto Sans:size=14;0"
+font-1 = "FontAwesome:size=14;0"
+font-2 = "Noto Sans:size=14;0"
+font-3 = "Noto Sans Mono:size=14;0"
 
 modules-left = ewmh xwindow
 modules-center = kernel
@@ -364,10 +364,10 @@ module-margin-right = 3
 enable-ipc = true
 
 ;https://github.com/jaagr/polybar/wiki/Fonts
-font-0 = "Noto Sans:size=28;0"
-font-1 = "FontAwesome:size=28;0"
-font-2 = "Noto Sans:size=28;0"
-font-3 = "Noto Sans Mono:size=28;0"
+font-0 = "Noto Sans:size=14;0"
+font-1 = "FontAwesome:size=14;0"
+font-2 = "Noto Sans:size=14;0"
+font-3 = "Noto Sans Mono:size=14;0"
 
 modules-left = load-average
 modules-center = networkspeeddown networkspeedup
@@ -428,10 +428,10 @@ module-margin-left = 3
 module-margin-right = 3
 
 ;https://github.com/jaagr/polybar/wiki/Fonts
-font-0 = "Noto Sans:size=28;0"
-font-1 = "FontAwesome:size=32;0"
-font-2 = "Noto Sans:size=28;0"
-font-3 = "Noto Sans Mono:size=28;0"
+font-0 = "Noto Sans:size=14;0"
+font-1 = "FontAwesome:size=16;0"
+font-2 = "Noto Sans:size=14;0"
+font-3 = "Noto Sans Mono:size=14;0"
 
 modules-left = bspwm xwindow
 modules-center = kernel
@@ -495,10 +495,10 @@ module-margin-left = 3
 module-margin-right = 3
 
 ;https://github.com/jaagr/polybar/wiki/Fonts
-font-0 = "Noto Sans:size=28;0"
-font-1 = "FontAwesome:size=32;0"
-font-2 = "Noto Sans:size=28;0"
-font-3 = "Noto Sans Mono:size=28;0"
+font-0 = "Noto Sans:size=14;0"
+font-1 = "FontAwesome:size=16;0"
+font-2 = "Noto Sans:size=14;0"
+font-3 = "Noto Sans Mono:size=14;0"
 
 modules-left = load-average
 modules-center = networkspeeddown networkspeedup
@@ -562,10 +562,10 @@ module-margin-left = 3
 module-margin-right = 3
 
 ;https://github.com/jaagr/polybar/wiki/Fonts
-font-0 = "Noto Sans:size=28;0"
-font-1 = "FontAwesome:size=32;0"
-font-2 = "Noto Sans:size=28;0"
-font-3 = "Noto Sans Mono:size=28;0"
+font-0 = "Noto Sans:size=14;0"
+font-1 = "FontAwesome:size=16;0"
+font-2 = "Noto Sans:size=14;0"
+font-3 = "Noto Sans Mono:size=14;0"
 
 modules-left = ewmh xwindow
 modules-center = kernel
@@ -629,10 +629,10 @@ module-margin-left = 3
 module-margin-right = 3
 
 ;https://github.com/jaagr/polybar/wiki/Fonts
-font-0 = "Noto Sans:size=28;0"
-font-1 = "FontAwesome:size=32;0"
-font-2 = "Noto Sans:size=28;0"
-font-3 = "Noto Sans Mono:size=28;0"
+font-0 = "Noto Sans:size=14;0"
+font-1 = "FontAwesome:size=16;0"
+font-2 = "Noto Sans:size=14;0"
+font-3 = "Noto Sans Mono:size=14;0"
 
 modules-left = load-average
 modules-center = networkspeeddown networkspeedup
@@ -694,11 +694,11 @@ module-margin-right = 3
 enable-ipc = true
 
 ;https://github.com/jaagr/polybar/wiki/Fonts
-font-0 = "Noto Sans:size=28;0"
-font-1 = "FontAwesome:size=32;0"
-font-2 = "Noto Sans:size=28;0"
-font-3 = "Noto Sans Mono:size=28;0"
-font-4 = "FontAwesome5Brands:size=32;0"
+font-0 = "Noto Sans:size=14;0"
+font-1 = "FontAwesome:size=16;0"
+font-2 = "Noto Sans:size=14;0"
+font-3 = "Noto Sans Mono:size=14;0"
+font-4 = "FontAwesome5Brands:size=16;0"
 
 modules-left = ewmh
 modules-center = kernel
@@ -758,11 +758,11 @@ module-margin-right = 3
 enable-ipc = true
 
 ;https://github.com/jaagr/polybar/wiki/Fonts
-font-0 = "Noto Sans:size=28;0"
-font-1 = "FontAwesome:size=32;0"
-font-2 = "Noto Sans:size=28;0"
-font-3 = "Noto Sans Mono:size=28;0"
-font-4 = "FontAwesome5Brands:size=32;0"
+font-0 = "Noto Sans:size=14;0"
+font-1 = "FontAwesome:size=16;0"
+font-2 = "Noto Sans:size=14;0"
+font-3 = "Noto Sans Mono:size=14;0"
+font-4 = "FontAwesome5Brands:size=16;0"
 
 modules-left = load-average
 modules-center = networkspeeddown networkspeedup

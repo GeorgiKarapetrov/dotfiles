@@ -68,7 +68,7 @@ super + e
 
 #Browser
 super + w
-	google-chrome-stable --force-device-scale-factor=1.5
+	google-chrome-stable
 
 #Conky-toggle
 super + c
@@ -76,7 +76,7 @@ super + c
 
 #Htop
 super + h
-	terminator -e 'htop'
+	alacritty -e 'htop'
 
 #arcolinux-logout
 super + x
@@ -84,7 +84,7 @@ super + x
 
 #blank screen
 super + a
-	terminator -e 'sleep 1; xset dpms force off'
+	alacritty -e 'sleep 1; xset dpms force off'
 
 #switch user
 super + z
@@ -94,9 +94,9 @@ super + z
 super + r
 	rofi-theme-selector
 
-#terminator
+#alacritty
 super + t
-	terminator
+	alacritty
 
 #Pavucontrol
 super + v
@@ -104,16 +104,16 @@ super + v
 
 #Terminator
 super + Return
-	terminator
+	alacritty
 
 #Xkill
 super + Escape
 	xkill
 
 #Keyboard dependent
-#terminator
+#alacritty
 super + KP_Enter
-	terminator
+	alacritty
 
 #################################################################
 # SUPER + SHIFT KEYS
@@ -131,7 +131,7 @@ super + shift + Return
 
 #dmenu
 super + shift + d
-	dmenu_run -i -nb '#191919' -nf '#fea63c' -sb '#fea63c' -sf '#191919' -fn 'NotoMonoRegular:bold:pixelsize=32'
+	dmenu_run -i -nb '#191919' -nf '#fea63c' -sb '#fea63c' -sf '#191919' -fn 'NotoMonoRegular:bold:pixelsize=18'
 
 #reload sxhkd:
 super + shift + s
@@ -184,7 +184,7 @@ ctrl + alt + e
 
 #Firefox
 ctrl + alt + f
-	google-chrome-stable --force-device-scale-factor=1.5
+	google-chrome-stable
 
 #Nitrogen
 ctrl + alt + i
@@ -220,11 +220,11 @@ ctrl + alt + s
 
 #Terminator
 #ctrl + alt + Return
-#	terminator
+#	alacritty
 
-#terminator
+#alacritty
 ctrl + alt + t
-	terminator
+	alacritty
 
 #Vivaldi
 ctrl + alt + v
@@ -236,9 +236,9 @@ ctrl + alt + a
 
 
 #Keyboard dependent
-#terminator
+#alacritty
 #ctrl + alt + KP_Enter
-#	terminator
+#	alacritty
 
 
 #################################################################
@@ -360,7 +360,7 @@ XF86Explorer
 
 #Web
 XF86HomePage
-	google-chrome-stable --force-device-scale-factor=1.5
+	google-chrome-stable
 
 #Mail
 XF86Mail
