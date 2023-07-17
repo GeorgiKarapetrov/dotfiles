@@ -4,7 +4,7 @@ function dotfiles {
   /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME $@
 }
 
-git clone --bare https://github.com/GeorgiKarapetrov/dotfiles.git $HOME/.dotfiles
+git clone --bare git@github.com:GeorgiKarapetrov/dotfiles.git $HOME/.dotfiles
 mkdir -p $HOME/.dotfiles-backup
 dotfiles checkout master /
 if [ $? = 0 ]; then
