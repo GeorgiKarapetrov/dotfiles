@@ -7,6 +7,7 @@
 
 /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.ssh/config
 /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.texmf
+/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.Xresources
 /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.fonts
 /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.gnupg/gpg.conf
 /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.local/bin/scripts

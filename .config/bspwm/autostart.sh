@@ -8,7 +8,7 @@ function run {
 }
 
 #Find out your monitor name with xrandr or arandr (save and you get this line)
-xrandr --output HDMI-1 --mode 3840x2160 --rate 50 --pos 0x0 --rotate normal --scale 0.5x0.5 --brightness 1
+xrandr --output HDMI-1 --mode 3840x2160 --rate 50 --pos 0x0 --rotate normal --brightness 1 # --scale 0.5x0.5
 
 $HOME/.config/polybar/launch.sh &
 

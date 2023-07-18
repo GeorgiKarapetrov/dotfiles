@@ -53,7 +53,7 @@ rr="cd $HOME/.local/src && ls -hN --color=auto --group-directories-first -A" \
 h="cd $HOME && ls -hN --color=auto --group-directories-first -A" \
 mn="cd /mnt && ls -hN --color=auto --group-directories-first -A" \
 pp="cd $HOME/Pictures && ls -hN --color=auto --group-directories-first -A" \
-sc="cd $HOME/.local/bin && ls -hN --color=auto --group-directories-first -A" \
+sc="cd $HOME/.local/bin/scripts && ls -hN --color=auto --group-directories-first -A" \
 pol="cd $HOME/Videos/pol && ls -hN --color=auto --group-directories-first -A" \
 V="cd $HOME/Videos && ls -hN --color=auto --group-directories-first -A" \
 cfv="$EDITOR $HOME/.config/nvim/init.vim" \

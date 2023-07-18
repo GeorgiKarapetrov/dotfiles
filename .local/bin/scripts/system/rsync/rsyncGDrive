@@ -7,6 +7,7 @@ rsync -uPO $HOME/Documents/cloud/gdrive/keepass/Home.kdbx $HOME/Documents/cloud/
 
 rsync -urPOR --delete-after $HOME/.ssh $HOME/Documents/cloud/gdrive/Home/
 rsync -urPOR /etc/vconsole.conf $HOME/Documents/cloud/gdrive/Home/
+rsync -urPOR /etc/X11/xorg.conf.d/40-dpi.conf $HOME/Documents/cloud/gdrive/Home/
 rsync -urPOR /var/spool/cron/georgi $HOME/Documents/cloud/gdrive/Home/
 # rsync -urPOR --delete-after /etc/crypt/keys $HOME/Documents/cloud/gdrive/Home/
 # rsync -urPOR /etc/crypttab $HOME/Documents/cloud/gdrive/Home/
