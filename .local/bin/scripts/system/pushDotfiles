@@ -48,12 +48,16 @@
 /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.profile
 /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.pythonrc
 /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.ssh/config
-/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.texmf/altacv
 /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.xinitrc
 /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.bashrc
 /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/Videos/resolution.sh
 /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.local/share/ignorelist
 /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.local/share/pkglist.txt
 
-/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME commit -S -am "sync"
+if [ -z "$1" ]
+then
+	/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME commit -S -am "sync"
+else
+	/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME commit -S -am "$1"
+fi
 /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME push origin master:master
