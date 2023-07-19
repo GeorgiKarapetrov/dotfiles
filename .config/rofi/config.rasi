@@ -2,7 +2,7 @@ configuration {
     modi: "combi,windowcd,run";
     lines: 15;
     columns: 2;
-    font: "Source Code Pro 18";
+    font: "Source Code Pro 32";
     bw: 0;
     location: 0;
     padding: 0;
