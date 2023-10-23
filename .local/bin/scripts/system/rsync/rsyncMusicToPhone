@@ -1,2 +1,15 @@
-cd /run/user/1000/1324388c463262e0/primary/Music && rsync --verbose --progress --omit-dir-times --no-perms --recursive --inplace --ignore-existing /home/georgi/Music/ ./
-#cd /run/user/1000/gvfs/mtp:host=realme_SDM778G-IDP__SN%3A13CFD9B3_13cfd9b3/Internal\ shared\ storage/Music/ && rsync --verbose --progress --omit-dir-times --no-perms --recursive --inplace --ignore-existing /home/georgi/Music/ ./
+#!/bin/bash
+
+set -x
+
+if [ -d /run/user/1000/1324388c463262e0 ]
+then
+cd /run/user/1000/1324388c463262e0/primary/Music
+elif [ -d /run/user/1000/gvfs/mtp:host=motorola_motorola_edge_20_lite_ZY22FX8NR7 ]
+then
+cd /run/user/1000/gvfs/mtp:host=motorola_motorola_edge_20_lite_ZY22FX8NR7/Internal\ shared\ storage/Music
+else
+echo Where is the phone mounted?
+exit 1
+fi
+rsync --verbose --progress --omit-dir-times --no-perms --recursive --inplace --ignore-existing /home/georgi/Music/ ./
