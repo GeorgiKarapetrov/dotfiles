@@ -60,6 +60,7 @@ avahi
 awesome-terminal-fonts
 base
 base-devel
+bash-complete-alias
 bash-completion
 bat-cat-git
 biber
@@ -90,6 +91,8 @@ dmenu
 dmidecode
 dmraid
 dnsmasq
+docker
+docker-compose
 dosfstools
 downgrade
 duf
@@ -113,6 +116,7 @@ flameshot
 freetype2
 fsarchiver
 garcon
+gedit
 ghostscript
 git
 gksu
@@ -154,6 +158,7 @@ hw-probe
 hwinfo
 hyperv
 imagemagick
+inetutils
 intltool
 inxi
 irssi
@@ -173,6 +178,8 @@ libgsf
 libmtp
 libopenraw
 libpwquality
+libreoffice-still
+libreoffice-still-bg
 libusb-compat
 lightdm
 lightdm-gtk-greeter
@@ -194,6 +201,7 @@ man-db
 man-pages
 mc
 mdadm
+meld
 memtest86+
 memtest86+-efi
 mesa
@@ -328,6 +336,7 @@ thunar-archive-plugin
 thunar-media-tags-plugin
 thunar-volman
 tixati
+tk
 tldr
 tlp
 tmux
@@ -385,6 +394,7 @@ usb_modeswitch
 usbmuxd
 usbutils
 variety
+viber
 vim
 visual-studio-code-bin
 vlc
@@ -394,6 +404,7 @@ w3m
 wd719x-firmware
 webkit2gtk
 wget
+winbox
 wireless-regdb
 wireless_tools
 wmctrl

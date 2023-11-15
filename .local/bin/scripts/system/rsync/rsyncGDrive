@@ -2,32 +2,36 @@
 
 mount | grep "${HOME}/Documents/cloud/gdrive" >/dev/null || /usr/bin/google-drive-ocamlfuse "${HOME}/Documents/cloud/gdrive"
 
-rsync -uPO $HOME/Documents/cloud/gdrive/keepass/Home.kdbx $HOME/Documents/misc/KeePass/Home-$(date -u +%Y-%m-%d)
-rsync -uPO $HOME/Documents/cloud/gdrive/keepass/Home.kdbx $HOME/Documents/cloud/gdrive/keepass/Home-$(date -u +%Y-%m-%d)
+DATE=$(date +%Y-%m-%d)
+BASE_NAME="Home"
+TARGET_PATH="${HOME}/Documents/cloud/gdrive/${BASE_NAME}/"
 
-rsync -urPOR --delete-after $HOME/.ssh $HOME/Documents/cloud/gdrive/Home/
-rsync -urPOR /etc/vconsole.conf $HOME/Documents/cloud/gdrive/Home/
-rsync -urPOR /etc/X11/xorg.conf.d/40-dpi.conf $HOME/Documents/cloud/gdrive/Home/
-rsync -urPOR /etc/X11/xinit/xserverrc $HOME/Documents/cloud/gdrive/Home/
-rsync -urPOR /var/spool/cron/georgi $HOME/Documents/cloud/gdrive/Home/
-# rsync -urPOR --delete-after /etc/crypt/keys $HOME/Documents/cloud/gdrive/Home/
-# rsync -urPOR /etc/crypttab $HOME/Documents/cloud/gdrive/Home/
-# rsync -urPOR /crypto_keyfile.bin $HOME/Documents/cloud/gdrive/Home/
+rsync -uPO $HOME/Documents/cloud/gdrive/keepass/Home.kdbx $HOME/Documents/misc/KeePass/${BASE_NAME}-${DATE}
+rsync -uPO $HOME/Documents/cloud/gdrive/keepass/Home.kdbx $HOME/Documents/cloud/gdrive/keepass/${BASE_NAME}-${DATE}
 
-rsync -urPOR --delete-after $HOME/.gnupg $HOME/Documents/cloud/gdrive/Home/
-rsync -urPOR --delete-after $HOME/.local/share/password-store/ $HOME/Documents/cloud/gdrive/Home/
-rsync -urPOR /boot/grub/themes/Vimix/theme.txt $HOME/Documents/cloud/gdrive/Home/
-rsync -urPOR /boot/grub/themes/Vimix/archlinux07.jpg $HOME/Documents/cloud/gdrive/Home/
-rsync -urPOR /etc/default/grub $HOME/Documents/cloud/gdrive/Home/
-rsync -urPOR --delete-after /etc/lightdm/ $HOME/Documents/cloud/gdrive/Home/
-rsync -urPOR --delete-after /etc/profile.d/ $HOME/Documents/cloud/gdrive/Home/
-rsync -urPOR --delete-after /etc/ssh $HOME/Documents/cloud/gdrive/Home/
-rsync -urPOR --delete-after /etc/udev/rules.d/ $HOME/Documents/cloud/gdrive/Home/
-rsync -urPOR /etc/sysctl.conf $HOME/Documents/cloud/gdrive/Home/
-rsync -urPOR /etc/systemd/system/fstrim.timer.d/override.conf $HOME/Documents/cloud/gdrive/Home/
-rsync -urPOR --delete-after /usr/share/texmf/tex/latex/AltaCV/ $HOME/Documents/cloud/gdrive/Home/
+rsync -urPOR --delete-after $HOME/.ssh "${TARGET_PATH}"
+rsync -urPOR /etc/vconsole.conf "${TARGET_PATH}"
+rsync -urPOR /etc/X11/xorg.conf.d/40-dpi.conf "${TARGET_PATH}"
+rsync -urPOR /etc/X11/xinit/xserverrc "${TARGET_PATH}"
+rsync -urPOR /var/spool/cron/georgi "${TARGET_PATH}"
+# rsync -urPOR --delete-after /etc/crypt/keys "${TARGET_PATH}"
+# rsync -urPOR /etc/crypttab "${TARGET_PATH}"
+# rsync -urPOR /crypto_keyfile.bin "${TARGET_PATH}"
+
+rsync -urPOR --delete-after $HOME/.gnupg "${TARGET_PATH}"
+rsync -urPOR --delete-after $HOME/.local/share/password-store/ "${TARGET_PATH}"
+rsync -urPOR /boot/grub/themes/Vimix/theme.txt "${TARGET_PATH}"
+rsync -urPOR /boot/grub/themes/Vimix/archlinux07.jpg "${TARGET_PATH}"
+rsync -urPOR /etc/default/grub "${TARGET_PATH}"
+rsync -urPOR --delete-after /etc/lightdm/ "${TARGET_PATH}"
+rsync -urPOR --delete-after /etc/profile.d/ "${TARGET_PATH}"
+rsync -urPOR --delete-after /etc/ssh "${TARGET_PATH}"
+rsync -urPOR --delete-after /etc/udev/rules.d/ "${TARGET_PATH}"
+rsync -urPOR /etc/sysctl.conf "${TARGET_PATH}"
+rsync -urPOR /etc/systemd/system/fstrim.timer.d/override.conf "${TARGET_PATH}"
+rsync -urPOR --delete-after /usr/share/texmf/tex/latex/AltaCV/ "${TARGET_PATH}"
 
 # file no longer exists
-# rsync -uPOR /etc/network/interfaces $HOME/Documents/cloud/gdrive/Home
-# rsync -uPOR /etc/ssl/openssl.cnf $HOME/Documents/cloud/gdrive/Home
-# rsync -urPOR --delete-after /etc/wpa_supplicant $HOME/Documents/cloud/gdrive/Home
+# rsync -uPOR /etc/network/interfaces "${TARGET_PATH}"
+# rsync -uPOR /etc/ssl/openssl.cnf "${TARGET_PATH}"
+# rsync -urPOR --delete-after /etc/wpa_supplicant "${TARGET_PATH}"

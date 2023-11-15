@@ -1,0 +1,5 @@
+#!/bin/bash
+
+mount | grep "${HOME}/Documents/cloud/gdrive" >/dev/null || google-drive-ocamlfuse -label home "${HOME}/Documents/cloud/gdrive"
+
+rsync -urPO --delete-after $HOME/Documents/cloud/gdrive/ctb $HOME/Documents/misc

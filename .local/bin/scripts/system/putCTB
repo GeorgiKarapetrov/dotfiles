@@ -1,0 +1,8 @@
+#!/bin/bash
+
+mount | grep "${HOME}/Documents/cloud/gdrive" >/dev/null || google-drive-ocamlfuse -label home "${HOME}/Documents/cloud/gdrive"
+
+# date +%Y-%m-%d
+# rsync -urPO --delete-after $HOME/Documents/ctb $HOME/Documents/home/gdrive
+# -R --relative
+rsync --update --recursive --partial --progress --omit-dir-times --delete-after $HOME/Documents/misc/ctb $HOME/Documents/cloud/gdrive
