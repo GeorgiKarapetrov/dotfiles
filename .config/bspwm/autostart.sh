@@ -61,5 +61,6 @@ run keepassxc & #-style=gtk2
 run flameshot & #-style=gtk2
 run xfce4-power-manager &
 # run sleep 10; bspc desktop -f "^6" &
-mount | grep "${HOME}/Documents/cloud/gdrive" >/dev/null || google-drive-ocamlfuse -label home "${HOME}/Documents/cloud/gdrive"
+# now in cron
+# mount | grep "${HOME}/Documents/cloud/gdrive" >/dev/null || google-drive-ocamlfuse -label home "${HOME}/Documents/cloud/gdrive"
 # mountpoint -q $HOME/Documents/cloud/nextcloud || mount $HOME/Documents/cloud/nextcloud
