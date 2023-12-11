@@ -13,11 +13,13 @@ def get_total_repos(group, name,github_token=""):
     while True:
         if github_token =="":
             url = 'https://api.github.com/{0}/{1}/repos?per_page=100&page={2}'
-            r = requests.get(url.format(group, name, page))
+            url = url.format(group, name, page)
+            print(url)
+            r = requests.get(url)
         else:
             url = 'https://api.github.com/{0}/{1}/repos?per_page=100&page={2}&access_token={3}'
             r = requests.get(url.format(group, name, page,github_token))
-            
+
         if r.status_code == 200:
             rdata = r.json()
             for repo in rdata:
@@ -35,7 +37,7 @@ def get_total_repos(group, name,github_token=""):
 
 def clone_repos(all_repos):
     print('Cloning...')
-    counter = 1 
+    counter = 1
     total = str(len(all_repos))
     for repo in all_repos:
         print ('\nRepository ' + str(counter) + ' of ' + total + '\n' )
@@ -53,4 +55,3 @@ if __name__ == '__main__':
             clone_repos(total)
     else:
         print('Usage: python USERS_OR_ORG GITHUB_USER_OR_ORG-NAME [GIT_TOKEN]')
-

@@ -169,7 +169,7 @@ jq
 jsoncpp
 kdeconnect
 keepassxc
-kvantum
+kvantum-qt5-git
 laptop-detect
 less
 libdvdcss
