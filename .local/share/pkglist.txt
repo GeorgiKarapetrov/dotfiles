@@ -37,7 +37,6 @@ arcolinux-local-xfce4-git
 arcolinux-mirrorlist-git
 arcolinux-neofetch-git
 arcolinux-nitrogen-git
-arcolinux-pamac-all
 arcolinux-paru-git
 arcolinux-pipemenus-git
 arcolinux-polybar-git
@@ -273,6 +272,7 @@ pulseaudio-alsa
 pulseaudio-bluetooth
 pulseaudio-equalizer-ladspa
 pv
+python-pip
 python-pyparted
 qalculate-gtk
 qt5ct
@@ -304,6 +304,7 @@ sxhkd
 sxiv
 syslinux
 system-config-printer
+ta-lib
 tcpdump
 terminator
 terminus-font
