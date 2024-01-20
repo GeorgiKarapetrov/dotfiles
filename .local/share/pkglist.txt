@@ -152,6 +152,7 @@ gxkb
 hardcode-fixer-git
 hardinfo-gtk3
 hdparm
+highlight
 htop
 hw-probe
 hwinfo
