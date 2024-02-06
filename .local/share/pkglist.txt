@@ -477,7 +477,6 @@ xtitle-git
 yad
 yay-bin
 yt-dlp
-yubikey-full-disk-encryption
 yubikey-manager
 yubikey-manager-qt
 yubikey-personalization-gui
