@@ -86,12 +86,14 @@ dex
 dhclient
 dialog
 diffutils
+discord
 dmenu
 dmidecode
 dmraid
 dnsmasq
 docker
 docker-compose
+dolphin
 dosfstools
 downgrade
 duf
@@ -475,6 +477,10 @@ xtitle-git
 yad
 yay-bin
 yt-dlp
+yubikey-full-disk-encryption
+yubikey-manager
+yubikey-manager-qt
+yubikey-personalization-gui
 zathura
 zathura-pdf-poppler
 zenity

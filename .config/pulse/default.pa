@@ -146,8 +146,8 @@ load-module module-switch-on-connect
 ### BEGIN: Equalized audio configuration
 ### Generated from: pulseaudio-equalizer
 .nofail
-load-module module-ladspa-sink sink_name=ladspa_output.mbeq_1197.mbeq sink_master=alsa_output.pci-0000_0d_00.3.analog-stereo plugin=mbeq_1197 label=mbeq control=-0.2,-0.2,-0.2,-0.2,3.5,3.5,3.5,3.5,3.5,3.5,3.5,2.5,2.5,0.0,0.0
+load-module module-ladspa-sink sink_name=ladspa_output.mbeq_1197.mbeq sink_master=bluez_sink.AC_80_0A_6D_F9_58.a2dp_sink plugin=mbeq_1197 label=mbeq control=-0.2,-0.2,-0.2,-0.2,3.5,3.5,3.5,3.5,3.5,3.5,3.5,2.5,2.5,0.0,0.0
 set-default-sink ladspa_output.mbeq_1197.mbeq
-set-sink-mute alsa_output.pci-0000_0d_00.3.analog-stereo 0
+set-sink-mute bluez_sink.AC_80_0A_6D_F9_58.a2dp_sink 0
 .fail
 ### END: Equalized audio configuration
