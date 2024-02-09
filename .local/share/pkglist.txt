@@ -288,6 +288,7 @@ ripgrep
 ristretto
 rofi
 rp-pppoe
+rpi-imager-bin
 rsync
 rtl8821cu-morrownr-dkms-git
 rxvt-unicode

@@ -39,7 +39,7 @@ picom --config $HOME/.config/bspwm/picom.conf &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 /usr/lib/xfce4/notifyd/xfce4-notifyd &
 run volumeicon &
-run evolution &
+sleep 10; run evolution &
 nitrogen --restore &
 
 #custom
@@ -52,7 +52,7 @@ run tixati &
 run alacritty &
 if ! pgrep -f google-chrome ;
   then
-    sleep 2; run google-chrome-stable &
+    sleep 5; run google-chrome-stable &
 fi
 #qt apps QT_FONT_DPI=150, no longer needed due to /etc/profile.d/qt-hidpi.sh
 # contents:

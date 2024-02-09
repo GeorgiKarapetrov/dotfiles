@@ -438,7 +438,7 @@ modules-center = kernel
 modules-right = pavolume memory2 cpu2 date
 
 tray-detached = false
-tray-offset-x = 500
+tray-offset-x = 200
 tray-offset-y = 0
 tray-padding = 0
 tray-maxsize = 400
@@ -452,7 +452,8 @@ scroll-down = bspwm-deskprev
 ; Set a DPI values used when rendering text
 ; This only affects scalable fonts
 ; Set this to 0 to let polybar calculate the dpi from the screen size.
-dpi = 192
+# dpi = 192
+dpi = 96
 ;dpi-x = 96
 ;dpi-y = 96
 
