@@ -10,7 +10,7 @@ if [[ "$NUM_MONS" = 1 ]]; then
 		eval "m$c=$m"
 		c=$((c + 1))
 	done
-	xrandr --output $m1 --primary --mode 1920x1080 --rate 50 --pos 1920x0 --rotate normal --brightness 1.1
+	xrandr --output $m1 --primary --mode 3840x2160 --rate 50 --pos 3840x0 --rotate normal --brightness 1.0
 	bspc monitor $m1 -d 1 2 3 4 5 6 7 8 9 10 11
 	exit 0
 fi

@@ -452,8 +452,8 @@ scroll-down = bspwm-deskprev
 ; Set a DPI values used when rendering text
 ; This only affects scalable fonts
 ; Set this to 0 to let polybar calculate the dpi from the screen size.
-# dpi = 192
-dpi = 96
+dpi = 192
+; dpi = 96
 ;dpi-x = 96
 ;dpi-y = 96
 

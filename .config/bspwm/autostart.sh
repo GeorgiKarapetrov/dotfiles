@@ -8,14 +8,13 @@ function run {
 }
 
 #Find out your monitor name with xrandr or arandr (save and you get this line)
-# xrandr --output HDMI-1 --mode 3840x2160 --rate 50 --pos 0x0 --rotate normal --brightness 1 # --scale 0.5x0.5
-xrandr --output HDMI-1 --primary --mode 1920x1080 --rate 74.97 --pos 1920x0 --rotate normal --brightness 1
+xrandr --output HDMI-1 --mode 3840x2160 --rate 50 --pos 0x0 --rotate normal --brightness 1 & # --scale 0.5x0.5
+# displays &
 
 $HOME/.config/polybar/launch.sh &
 
 #change your keyboard if you need it
-run setxkbmap -model pc105 -layout us,bg -variant ,phonetic -option grp:alt_caps_toggle
-# sleep 1; run gxkb &
+run setxkbmap -model pc105 -layout us,bg -variant ,phonetic -option grp:alt_caps_toggle &
 run gxkb &
 
 #Some ways to set your wallpaper besides variety or nitrogen
@@ -39,7 +38,6 @@ picom --config $HOME/.config/bspwm/picom.conf &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 /usr/lib/xfce4/notifyd/xfce4-notifyd &
 run volumeicon &
-sleep 10; run evolution &
 nitrogen --restore &
 
 #custom
@@ -52,7 +50,7 @@ run tixati &
 run alacritty &
 if ! pgrep -f google-chrome ;
   then
-    sleep 5; run google-chrome-stable &
+	  (sleep 5 && run google-chrome-stable) &
 fi
 #qt apps QT_FONT_DPI=150, no longer needed due to /etc/profile.d/qt-hidpi.sh
 # contents:
@@ -65,3 +63,4 @@ run xfce4-power-manager &
 # also in cron
 mount | grep "${HOME}/Documents/cloud/gdrive" >/dev/null || google-drive-ocamlfuse -label home "${HOME}/Documents/cloud/gdrive"
 # mountpoint -q $HOME/Documents/cloud/nextcloud || mount $HOME/Documents/cloud/nextcloud
+(sleep 10 && run evolution) &
