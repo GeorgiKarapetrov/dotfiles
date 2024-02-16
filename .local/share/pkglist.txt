@@ -300,6 +300,7 @@ sdparm
 sg3_utils
 smartmontools
 sof-firmware
+speedcrunch
 speedtest-cli-git
 squashfs-tools
 sudo
@@ -310,6 +311,7 @@ syslinux
 system-config-printer
 ta-lib
 tcpdump
+telegram-desktop
 terminator
 terminus-font
 testdisk
