@@ -46,7 +46,7 @@ run /usr/lib/kdeconnectd &
 run /usr/bin/kdeconnect-indicator &
 # wifi hotspot
 #exec --no-startup-id bash $HOME/.scripts/create_ap.sh &
-run tixati &
+# run tixati &
 run alacritty &
 if ! pgrep -f google-chrome ;
   then

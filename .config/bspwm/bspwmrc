@@ -108,44 +108,30 @@ bspc rule -a Xfce4-settings-manager state=tiled
 #open applications on specific workspaces
 bspc rule -a Alacritty desktop='^1' follow=true
 bspc rule -a Terminator desktop='^1' follow=true
-bspc rule -a 'VirtualBox Manager' desktop='^2' follow=true
+bspc rule -a viber desktop='^2' follow=on
+bspc rule -a ViberPC desktop='^2' follow=on
+bspc rule -a discord desktop='^2' follow=on
+bspc rule -a telegram-desktop desktop='^2' follow=on
 bspc rule -a Thunar desktop='^3' follow=on
 bspc rule -a Pcmanfm desktop='^3' follow=on
-bspc rule -a Vimb desktop='^3' follow=on
-bspc rule -a lf desktop='^3' follow=on
-bspc rule -a Ranger desktop='^3' follow=on
 bspc rule -a KeePassXC desktop='^4'
 bspc rule -a keepassxc desktop='^4'
 bspc rule -a Tixati desktop='^5'
 bspc rule -a firefox desktop='^6' follow=on
 bspc rule -a google-chrome desktop='^6' follow=on
 bspc rule -a Google-chrome desktop='^6' follow=on
-bspc rule -a Navigator desktop='^6' follow=on
 bspc rule -a firefox-esr-esr102 desktop='^6' follow=on
 bspc rule -a Firefox desktop='^6' follow=on
 bspc rule -a qutebrowser desktop='^6' follow=on
-bspc rule -a Steam desktop='^7'
-bspc rule -a Thunderbird desktop='^7'
-bspc rule -a thunderbird desktop='^7'
 bspc rule -a evolution desktop='^7'
 bspc rule -a Evolution desktop='^7'
-bspc rule -a Mail desktop='^7'
-bspc rule -a subl desktop='^8' follow=on
-bspc rule -a Subl desktop='^8' follow=on
 bspc rule -a code desktop='^8' follow=on
 bspc rule -a Code desktop='^8' follow=on
 bspc rule -a vscodium desktop='^8' follow=on
 bspc rule -a VSCodium desktop='^8' follow=on
-bspc rule -a Cherrytree desktop='^8' follow=on
+bspc rule -a Cherrytree desktop='^9' follow=on
 bspc rule -a org.remmina.Remmina desktop='^9' follow=on
-bspc rule -a RemoteDesktopManager.Free desktop='^9' follow=on
-bspc rule -a xfreerdp desktop='^9' follow=on
-bspc rule -a qTox desktop='^9' follow=on
-bspc rule -a viber desktop='^9' follow=on
-bspc rule -a ViberPC desktop='^9' follow=on
 bspc rule -a vlc desktop='^10'  follow=on
-bspc rule -a mpv desktop='^10'  follow=on
-bspc rule -a Wfica desktop='^10'  follow=on
 
 #LAUNCHERS
 $HOME/.config/bspwm/autostart.sh
