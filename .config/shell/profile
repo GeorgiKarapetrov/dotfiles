@@ -8,17 +8,18 @@
 # for ssh logins, install and configure the libpam-umask package.
 #umask 022
 
+# Set font when running in console
+if [ $TERM == linux ]; then
+    /bin/setfont /usr/share/kbd/consolefonts/ter-132n.psf.gz
+fi
+
 # set PATH so it includes user's private bin if it exists
-if [ -d "$HOME/bin" ] ; then
-    PATH="$HOME/bin:$PATH"
+if [ -d "$HOME/.bin" ] ; then
+    PATH="$HOME/.bin:$PATH"
 fi
 
 if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
-fi
-
-if [ -d "$HOME/.local/bin/goneovim" ] ; then
-    PATH="$HOME/.local/bin/goneovim:$PATH"
 fi
 
 if [ -d "$HOME/.tfenv/bin" ] ; then
@@ -29,10 +30,12 @@ fi
 #test -r /home/georgi/.opam/opam-init/init.sh && . /home/georgi/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
 
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
-export PATH="$PATH:$(go env GOPATH)/bin"
+# export PATH=$PATH:$(go env GOPATH)/bin
 export PATH="$PATH:$HOME/.local/share/cargo/bin"
 export PATH="$PATH:$HOME/.opam/default/bin"
 
+[[ -s "/home/karapetrovg/.gvm/scripts/gvm" ]] && source "/home/karapetrovg/.gvm/scripts/gvm"
+export PATH=$PATH:$HOME/.local/share/go/bin
 
 # https://bbs.archlinux.org/viewtopic.php?id=285590
 # https://wiki.archlinux.org/title/XDG_Desktop_Portal
@@ -45,15 +48,18 @@ export PYTHONSTARTUP=$HOME/.config/shell/pythonrc
 #dircolors ~/.config/shell/dir_colors 1>/dev/null
 
 #use qt5ct to manage qt5 apps in de/wm other than kde/gnome
-export QT_QPA_PLATFORMTHEME="qt5ct"
+export QT_QPA_PLATFORMTHEME="qt5ct" # gtk2 Have QT use gtk2 theme.
 # https://wiki.archlinux.org/title/Uniform_look_for_Qt_and_GTK_applications#Consistent_file_dialog
-#export QT_QPA_PLATFORMTHEME="gtk2"	# Have QT use gtk2 theme.
+
+#bash-git-prompt theme
+GIT_PROMPT_THEME=Solarized_Ubuntu
 
 #LUKE
 
 # Adds `~/.local/bin` to $PATH
 #export PATH="$PATH:${$(find ~/.local/bin -type d -printf %p:)%%:}"
 export PATH="$(find ~/.local/bin -type d -printf %p:)$PATH"
+export PATH="$(find ~/.bin -type d -printf %p:)$PATH"
 
 # Default programs:
 export EDITOR="nvim"
@@ -64,7 +70,7 @@ export BROWSER="google-chrome"
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_CACHE_HOME="$HOME/.cache"
-export XINITRC="$HOME/.config/shell/xinitrc"
+export XINITRC="${XDG_CONFIG_HOME:-$HOME/.config}/shell/xinitrc"
 #export XAUTHORITY="$XDG_RUNTIME_DIR/Xauthority" # This line will break some DMs.
 export NOTMUCH_CONFIG="${XDG_CONFIG_HOME:-$HOME/.config}/notmuch-config"
 export GTK2_RC_FILES="${XDG_CONFIG_HOME:-$HOME/.config/shell}/gtkrc-2.0"

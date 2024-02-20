@@ -1,6 +1,6 @@
 #!/bin/bash
 
-printInstalled > $HOME/Documents/misc/.installed.pkgs
+printInstalled > $HOME/.config/shell/pkg.list
 rsyncGDrive
 pushDotfiles
 # requires sudo

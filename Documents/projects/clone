@@ -1,0 +1,29 @@
+#!/bin/bash
+
+# list projects
+# curl -o repos.json --header "PRIVATE-TOKEN: $GITLAB_API_TOKEN" https://$GITLAB_DOMAIN/api/v4/groups/42768/projects?per_page=100&page=1
+
+# grep project url
+# cat repos.json |jq '.. | objects | with_entries(select(.key | contains("ssh_url_to_repo"))) | select(. != {})' > repos
+
+# grep project paths
+# cat repos.json |jq '.. | objects | with_entries(select(.key | contains("path_with_namespace"))) | select(. != {})' |grep path > repos
+
+GITLAB_DOMAIN=CHANGE_ME
+GROUP_IDS="1 2"
+
+for GROUP_ID in $GROUP_IDS; do
+    SUB_GROUPS=$(curl --header "PRIVATE-TOKEN: ${GITLAB_TOKEN}" "https://${GITLAB_DOMAIN}/api/v4/groups/${GROUP_ID}/subgroups?per_page=100" | jq .[].id)
+    ./cloneGroup "${GITLAB_DOMAIN}" "${GROUP_ID}" "${GITLAB_TOKEN}"
+    for SUB_GROUP in $SUB_GROUPS; do
+        ./cloneGroup "${GITLAB_DOMAIN}" "${SUB_GROUP}" "${GITLAB_TOKEN}"
+    done
+done
+
+# Per url
+PROJECT_URLS="https://$GITLAB_DOMAIN/1 https://$GITLAB_DOMAIN/2"
+pushd some_path || exit
+for PROJECT_URL in $PROJECT_URLS; do
+    [ -d "${PROJECT_URL}" ] || git clone "${PROJECT_URL}"
+done
+popd || exit

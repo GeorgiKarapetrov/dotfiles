@@ -1,13 +1,13 @@
 #!/bin/bash
 
-mount | grep "${HOME}/Documents/cloud/gdrive" >/dev/null || /usr/bin/google-drive-ocamlfuse "${HOME}/Documents/cloud/gdrive"
+mount | grep "${HOME}/Documents/gdrive" >/dev/null || google-drive-ocamlfuse "${HOME}/Documents/gdrive"
 
 DATE=$(date +%Y-%m-%d)
 BASE_NAME="Home"
-TARGET_PATH="${HOME}/Documents/cloud/gdrive/${BASE_NAME}/"
+TARGET_PATH="${HOME}/Documents/gdrive/${BASE_NAME}/"
 
-rsync -uPO $HOME/Documents/cloud/gdrive/keepass/Home.kdbx $HOME/Documents/misc/KeePass/${BASE_NAME}-${DATE}
-rsync -uPO $HOME/Documents/cloud/gdrive/keepass/Home.kdbx $HOME/Documents/cloud/gdrive/keepass/${BASE_NAME}-${DATE}
+rsync -uPO $HOME/Documents/gdrive/keepass/Home.kdbx $HOME/Documents/misc/KeePass/${BASE_NAME}-${DATE}
+rsync -uPO $HOME/Documents/gdrive/keepass/Home.kdbx $HOME/Documents/gdrive/keepass/${BASE_NAME}-${DATE}
 
 rsync -urPOR --delete-after $HOME/.ssh "${TARGET_PATH}"
 rsync -urPOR /etc/vconsole.conf "${TARGET_PATH}"

@@ -1,0 +1,12 @@
+#!/bin/bash
+
+for REPO in */*/ freq/freqtrade_official/*/ freq/freqtrade_official/other_bots/*/*/ freq/freqtrade_official/other_bots/pycryptobot/; do
+    git -C "$REPO" rev-parse --is-inside-work-tree >/dev/null 2>&1 || continueecho This is "$REPO"
+    git -C "$REPO" config remote.origin.fetch "+refs/heads/*:refs/remotes/origin/*"
+    # git -C $REPO fetch origin
+    CURRENT_BRANCH=$(git -C "$REPO" branch --show-current)
+    git -C "$REPO" branch --set-upstream-to=origin/"$CURRENT_BRANCH" "$CURRENT_BRANCH"
+    git -C "$REPO" pull origin "$CURRENT_BRANCH" --unshallow
+    echo
+    echo
+done

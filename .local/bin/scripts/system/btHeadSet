@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# MAC=50:C2:ED:53:06:F5 # Jabra
+MAC=AC:80:0A:6D:F9:58 # Sony
+
+bluetoothctl connect $MAC && \
+sleep 1; sink $1 && \
+pulseaudio-equalizer enable && \
+pacmd set-default-source bluez_source.$MAC.handsfree_head_unit && \
+pacmd set-default-sink ladspa_output.mbeq_1197.mbeq

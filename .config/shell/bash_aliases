@@ -36,20 +36,17 @@ alias l='ls -C'
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
-alias tf=terraform
-
 alias cac="cd $HOME/.cache && ls -hN --color=auto --group-directories-first -A" \
 cf="cd $HOME/.config && ls -hN --color=auto --group-directories-first -A" \
 D="cd $HOME/Downloads && ls -hN --color=auto --group-directories-first -A" \
 d="cd $HOME/Documents && ls -hN --color=auto --group-directories-first -A" \
-gi="cd $HOME/Documents/git && ls -hN --color=auto --group-directories-first -A" \
-freq="cd $HOME/Documents/git/freq && ls -hN --color=auto --group-directories-first -A" \
-ft="cd $HOME/Documents/git/freq/freqtrade_official/freqtrade && ls -hN --color=auto --group-directories-first -A" \
-web="cd $HOME/Documents/git/georgi.karapetrov.top && ls -hN --color=auto --group-directories-first -A" \
-resume="cd $HOME/Documents/git/resume && ls -hN --color=auto --group-directories-first -A" \
+freq="cd $HOME/Documents/projects/freq && ls -hN --color=auto --group-directories-first -A" \
+ft="cd $HOME/Documents/projects/freq/freqtrade_official/freqtrade && ls -hN --color=auto --group-directories-first -A" \
+web="cd $HOME/Documents/projects/personal/georgi.karapetrov.top && ls -hN --color=auto --group-directories-first -A" \
+cv="cd $HOME/Documents/projects/presonal/resume && ls -hN --color=auto --group-directories-first -A" \
 misc="cd $HOME/Documents/misc && ls -hN --color=auto --group-directories-first -A" \
 P="cd $HOME/Pictures && ls -hN --color=auto --group-directories-first -A" \
-p="cd $HOME/Videos/pol && ls -hN --color=auto --group-directories-first -A" \
+p="cd $HOME/Documents/projects && ls -hN --color=auto --group-directories-first -A" \
 dt="cd $HOME/.local/share && ls -hN --color=auto --group-directories-first -A" \
 rr="cd $HOME/.local/src && ls -hN --color=auto --group-directories-first -A" \
 h="cd $HOME && ls -hN --color=auto --group-directories-first -A" \
@@ -70,7 +67,6 @@ cfbsp="$EDITOR $HOME/.config/bspwm/bspwmrc" \
 cfautos="$EDITOR $HOME/.config/bspwm/autostart.sh"
 
 
-
 [ -x "$(command -v nvim)" ] && alias vim="nvim" vimdiff="nvim -d" vi="nvim"
 
 # These commands are just too long.
@@ -80,7 +76,9 @@ alias \
 	sdn="shutdown -h now" \
 	e="$EDITOR" \
 	v="$EDITOR" \
-	z="zathura"
+	z="zathura" \
+	tf="terraform" \
+	k="kubectl"
 
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
@@ -89,8 +87,12 @@ alias setclip="xclip -selection c"
 alias getclip="xclip -selection c -o"
 
 alias code="code --disable-gpu"
+alias wine="WINEPREFIX=~/.wine wine"
 
 #https://bbs.archlinux.org/viewtopic.php?id=265253
 #https://github.com/qutebrowser/qutebrowser/issues/5541#issuecomment-648155389
 alias qutebrowser="qutebrowser -s qt.force_software_rendering qt-quick"
 # alias google-chrome-stable="google-chrome-stable --force-device-scale-factor=1.5"
+
+# Lock session and go to sleep
+alias bye='function _bye(){ sudo whoami; dm-tool lock; sleep 10; sudo pm-suspend;};_bye'

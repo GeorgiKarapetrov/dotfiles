@@ -2,6 +2,7 @@
 
 set -x
 
-mount | grep "${HOME}/Documents/cloud/gdrive" >/dev/null || google-drive-ocamlfuse -label home "${HOME}/Documents/cloud/gdrive"
+mount | grep "${HOME}/Documents/gdrive" >/dev/null || google-drive-ocamlfuse -label home "${HOME}/Documents/gdrive"
 
-rsync -acurPO -vv --info=stats2,misc1,flist0 --delete-after $HOME/Documents/cloud/gdrive/ctb $HOME/Documents/misc
+rsync -urPO --delete-after $HOME/Documents/gdrive/ctb $HOME/Documents/misc
+# rsync -acurPO -vv --info=stats2,misc1,flist0 --delete-after $HOME/Documents/gdrive/ctb $HOME/Documents/misc

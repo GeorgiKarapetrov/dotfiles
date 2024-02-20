@@ -61,6 +61,7 @@ base
 base-devel
 bash-complete-alias
 bash-completion
+bash-git-prompt
 bat-cat-git
 biber
 bind
@@ -156,6 +157,9 @@ hardinfo-gtk3
 hdparm
 highlight
 htop
+hunspell-bg
+hunspell-en_gb
+hunspell-en_us
 hw-probe
 hwinfo
 hyperv
@@ -186,14 +190,13 @@ libusb-compat
 lightdm
 lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
-linux
 linux-atm
 linux-firmware
 linux-firmware-marvell
 linux-firmware-qlogic
-linux-headers
 linux-lts
 linux-zen
+linux-zen-headers
 logrotate
 lsb-release
 lsscsi
@@ -259,6 +262,7 @@ pass-otp
 pavucontrol
 pcmanfm
 pcsclite
+pdfmerger
 picom
 pkgfile
 playerctl
@@ -277,6 +281,7 @@ pulseaudio-equalizer-ladspa
 pv
 python-pip
 python-pyparted
+python-rapidjson
 qalculate-gtk
 qt5ct
 qutebrowser

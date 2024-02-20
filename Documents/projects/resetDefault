@@ -1,0 +1,13 @@
+#!/bin/bash
+
+for REPO in */*/ freq/freqtrade_official/*/ freq/freqtrade_official/other_bots/*/*/ freq/freqtrade_official/other_bots/pycryptobot/; do
+    git -C "$REPO" rev-parse --is-inside-work-tree >/dev/null 2>&1 || continue
+    [[ -d $REPO ]] || continue
+    git -C "$REPO" fetch --all --prune --tags
+    DEFAULT_BRANCH=$(git -C "$REPO" remote show origin | grep "HEAD branch" | sed 's/.*: //')
+    git -C "$REPO" checkout "$DEFAULT_BRANCH"
+    git -C "$REPO" branch --set-upstream-to=origin/"$DEFAULT_BRANCH" "$DEFAULT_BRANCH"
+    git -C "$REPO" reset --hard origin/"$DEFAULT_BRANCH"
+    echo
+    echo
+done

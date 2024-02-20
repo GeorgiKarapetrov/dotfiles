@@ -2,6 +2,7 @@
     name = Georgi D. Karapetrov
 	signingkey = 333754090A4E5800522D7B5F63BCAA9DB91D2D60
 	email = Georgi.D.Karapetrov@gmail.com
+    username = GeorgiKarapetrov
 [core]
 	editor = /usr/bin/nvim
     whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
@@ -247,3 +248,8 @@
 	branch = false
 [merge "ours"]
 	driver = true
+[url "git@github.com:"]
+	# insteadOf = https://user:pass@github.com/
+	insteadOf = insteadOf = https://github.com/
+[pull]
+	ff = only

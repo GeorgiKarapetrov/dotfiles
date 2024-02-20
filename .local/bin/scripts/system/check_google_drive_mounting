@@ -1,9 +1,9 @@
 #!/bin/bash
-ls /home/georgi/Documents/cloud/gdrive
-if [ $? -eq 0 ] && mount | grep "${HOME}/Documents/cloud/gdrive" >/dev/null; then
+ls /home/georgi/Documents/gdrive
+if [ $? -eq 0 ] && mount | grep "${HOME}/Documents/gdrive" >/dev/null; then
     echo OK
 else
     echo FAIL - mounting again
-    /usr/bin/fusermount -u /home/georgi/Documents/cloud/gdrive
+    /usr/bin/fusermount -u /home/georgi/Documents/gdrive
     /home/georgi/.local/bin/scripts/system/automount_google_drive
 fi

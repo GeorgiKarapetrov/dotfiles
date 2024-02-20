@@ -1,7 +1,7 @@
 [Default Applications]
 image/bmp=pix.desktop
 image/gif=pix.desktop
-image/jpeg=ristretto.desktop
+image/jpeg=org.xfce.ristretto.desktop
 image/jpg=xviewer.desktop
 image/pjpeg=xviewer.desktop
 image/png=pix.desktop
@@ -148,7 +148,7 @@ image/x-xcf=gimp.desktop
 image/x-xcursor=gimp.desktop
 image/x-xwindowdump=gimp.desktop
 image/xpm=pix.desktop
-video/x-matroska=vlc.desktop
+video/x-matroska=mpv.desktop
 x-scheme-handler/viber=viber.desktop
 application/vnd.sqlite3=cherrytree.desktop
 application/x-7z-compressed=cherrytree.desktop
@@ -179,7 +179,7 @@ x-scheme-handler/webcals=evolution.desktop
 [Added Associations]
 image/bmp=pix.desktop;gimp.desktop;xviewer.desktop;
 image/gif=pix.desktop;gimp.desktop;xviewer.desktop;
-image/jpeg=org.xfce.ristretto.desktop;org.gnome.gThumb.desktop;ristretto.desktop;pix.desktop;gimp.desktop;xviewer.desktop;
+image/jpeg=org.xfce.ristretto.desktop;xdvi.desktop;org.gnome.gThumb.desktop;ristretto.desktop;pix.desktop;gimp.desktop;xviewer.desktop;
 image/jpg=pix.desktop;xviewer.desktop;
 image/pjpeg=pix.desktop;xviewer.desktop;
 image/png=org.xfce.ristretto.desktop;ristretto.desktop;pix.desktop;gimp.desktop;xviewer.desktop;

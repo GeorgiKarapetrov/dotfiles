@@ -1,0 +1,617 @@
+<?xml version="1.0"?>
+<filteroptions>
+  <ruleset>
+    <rule enabled="true" grouping="all" source="incoming" account-uid="5c7c4efa9a81b23cef3c7fa109a0249b3c7161b7">
+      <title>Subject is [Fail2Ban] dovecot: stopped on blacked</title>
+      <partset>
+        <part name="subject">
+          <value name="subject-type" type="option" value="contains"/>
+          <value name="subject" type="string" allow-empty="true">
+            <string>Fail2Ban</string>
+          </value>
+        </part>
+      </partset>
+      <actionset>
+        <part name="move-to-folder">
+          <value name="folder" type="folder">
+            <folder uri="folder://5c7c4efa9a81b23cef3c7fa109a0249b3c7161b7/INBOX/Fail2Ban"/>
+          </value>
+        </part>
+      </actionset>
+    </rule>
+    <rule enabled="true" grouping="all" source="incoming" account-uid="fd8ff1620989e6434bc46afa55b92676458ad83b">
+      <title>Mail from The Turtle Pond (via Slack)</title>
+      <partset>
+        <part name="sender">
+          <value name="sender-type" type="option" value="contains"/>
+          <value name="sender" type="string" allow-empty="false">
+            <string>notification@slack.com</string>
+          </value>
+        </part>
+      </partset>
+      <actionset>
+        <part name="move-to-folder">
+          <value name="folder" type="folder">
+            <folder uri="folder://fd8ff1620989e6434bc46afa55b92676458ad83b/INBOX/Spam/slack"/>
+          </value>
+        </part>
+      </actionset>
+    </rule>
+    <rule enabled="true" grouping="all" source="incoming" account-uid="fd8ff1620989e6434bc46afa55b92676458ad83b">
+      <title>Mail from DEV.BG Job Board</title>
+      <partset>
+        <part name="sender">
+          <value name="sender-type" type="option" value="contains"/>
+          <value name="sender" type="string" allow-empty="false">
+            <string>noreply@dev.bg</string>
+          </value>
+        </part>
+      </partset>
+      <actionset>
+        <part name="move-to-folder">
+          <value name="folder" type="folder">
+            <folder uri="folder://fd8ff1620989e6434bc46afa55b92676458ad83b/INBOX/Work%20Application/DevBG"/>
+          </value>
+        </part>
+      </actionset>
+    </rule>
+    <rule enabled="true" grouping="all" source="incoming" account-uid="fd8ff1620989e6434bc46afa55b92676458ad83b">
+      <title>Mail from Kraken</title>
+      <partset>
+        <part name="sender">
+          <value name="sender-type" type="option" value="contains"/>
+          <value name="sender" type="string" allow-empty="false">
+            <string>no-reply@email.kraken.com</string>
+          </value>
+        </part>
+      </partset>
+      <actionset>
+        <part name="move-to-folder">
+          <value name="folder" type="folder">
+            <folder uri="folder://fd8ff1620989e6434bc46afa55b92676458ad83b/INBOX/kraken"/>
+          </value>
+        </part>
+      </actionset>
+    </rule>
+    <rule enabled="true" grouping="all" source="incoming" account-uid="fd8ff1620989e6434bc46afa55b92676458ad83b">
+      <title>Mail from LinkedIn Messaging</title>
+      <partset>
+        <part name="sender">
+          <value name="sender-type" type="option" value="contains"/>
+          <value name="sender" type="string" allow-empty="false">
+            <string>messages-noreply@linkedin.com</string>
+          </value>
+        </part>
+      </partset>
+      <actionset>
+        <part name="move-to-folder">
+          <value name="folder" type="folder">
+            <folder uri="folder://fd8ff1620989e6434bc46afa55b92676458ad83b/INBOX/Spam/LinkedIn"/>
+          </value>
+        </part>
+      </actionset>
+    </rule>
+    <rule enabled="true" grouping="all" source="incoming" account-uid="fd8ff1620989e6434bc46afa55b92676458ad83b">
+      <title>Mail via LinkedIn</title>
+      <partset>
+        <part name="sender">
+          <value name="sender-type" type="option" value="contains"/>
+          <value name="sender" type="string" allow-empty="false">
+            <string>messaging-digest-noreply@linkedin.com</string>
+          </value>
+        </part>
+      </partset>
+      <actionset>
+        <part name="move-to-folder">
+          <value name="folder" type="folder">
+            <folder uri="folder://fd8ff1620989e6434bc46afa55b92676458ad83b/INBOX/Spam/LinkedIn"/>
+          </value>
+        </part>
+      </actionset>
+    </rule>
+    <rule enabled="true" grouping="all" source="incoming" account-uid="fd8ff1620989e6434bc46afa55b92676458ad83b">
+      <title>Mail from MyVe</title>
+      <partset>
+        <part name="sender">
+          <value name="sender-type" type="option" value="contains"/>
+          <value name="sender" type="string" allow-empty="false">
+            <string>office@myve.bg</string>
+          </value>
+        </part>
+      </partset>
+      <actionset>
+        <part name="move-to-folder">
+          <value name="folder" type="folder">
+            <folder uri="folder://fd8ff1620989e6434bc46afa55b92676458ad83b/INBOX/Spam"/>
+          </value>
+        </part>
+      </actionset>
+    </rule>
+    <rule enabled="true" grouping="all" source="incoming" account-uid="fd8ff1620989e6434bc46afa55b92676458ad83b">
+      <title>Mail from ebank@dskbank.bg</title>
+      <partset>
+        <part name="sender">
+          <value name="sender-type" type="option" value="contains"/>
+          <value name="sender" type="string" allow-empty="false">
+            <string>ebank@dskbank.bg</string>
+          </value>
+        </part>
+      </partset>
+      <actionset>
+        <part name="move-to-folder">
+          <value name="folder" type="folder">
+            <folder uri="folder://fd8ff1620989e6434bc46afa55b92676458ad83b/INBOX/dsk"/>
+          </value>
+        </part>
+      </actionset>
+    </rule>
+    <rule enabled="true" grouping="all" source="incoming" account-uid="fd8ff1620989e6434bc46afa55b92676458ad83b">
+      <title>Mail from Microsoft on behalf of VMware, Inc.</title>
+      <partset>
+        <part name="sender">
+          <value name="sender-type" type="option" value="contains"/>
+          <value name="sender" type="string" allow-empty="false">
+            <string>msonlineservicesteam@microsoftonline.com</string>
+          </value>
+        </part>
+      </partset>
+      <actionset>
+        <part name="move-to-folder">
+          <value name="folder" type="folder">
+            <folder uri="folder://fd8ff1620989e6434bc46afa55b92676458ad83b/INBOX/Work%20Application/VMWare"/>
+          </value>
+        </part>
+      </actionset>
+    </rule>
+    <rule enabled="true" grouping="all" source="incoming" account-uid="fd8ff1620989e6434bc46afa55b92676458ad83b">
+      <title>Mail from Firefox Accounts</title>
+      <partset>
+        <part name="sender">
+          <value name="sender-type" type="option" value="contains"/>
+          <value name="sender" type="string" allow-empty="false">
+            <string>accounts@firefox.com</string>
+          </value>
+        </part>
+      </partset>
+      <actionset>
+        <part name="move-to-folder">
+          <value name="folder" type="folder">
+            <folder uri="folder://fd8ff1620989e6434bc46afa55b92676458ad83b/INBOX/Spam/firefox"/>
+          </value>
+        </part>
+      </actionset>
+    </rule>
+    <rule enabled="true" grouping="all" source="incoming" account-uid="fd8ff1620989e6434bc46afa55b92676458ad83b">
+      <title>Mail from Call Center</title>
+      <partset>
+        <part name="sender">
+          <value name="sender-type" type="option" value="contains"/>
+          <value name="sender" type="string" allow-empty="false">
+            <string>Call_Center@dskbank.bg</string>
+          </value>
+        </part>
+      </partset>
+      <actionset>
+        <part name="move-to-folder">
+          <value name="folder" type="folder">
+            <folder uri="folder://fd8ff1620989e6434bc46afa55b92676458ad83b/INBOX/dsk"/>
+          </value>
+        </part>
+      </actionset>
+    </rule>
+    <rule enabled="true" grouping="all" source="incoming" account-uid="fd8ff1620989e6434bc46afa55b92676458ad83b">
+      <title>Mail from GitLab</title>
+      <partset>
+        <part name="sender">
+          <value name="sender-type" type="option" value="contains"/>
+          <value name="sender" type="string" allow-empty="false">
+            <string>gitlab@mg.gitlab.com</string>
+          </value>
+        </part>
+      </partset>
+      <actionset>
+        <part name="move-to-folder">
+          <value name="folder" type="folder">
+            <folder uri="folder://fd8ff1620989e6434bc46afa55b92676458ad83b/INBOX/Spam/GitHub"/>
+          </value>
+        </part>
+      </actionset>
+    </rule>
+    <rule enabled="true" grouping="all" source="incoming" account-uid="fd8ff1620989e6434bc46afa55b92676458ad83b">
+      <title>Mail from VMware Talent Acquisition</title>
+      <partset>
+        <part name="sender">
+          <value name="sender-type" type="option" value="contains"/>
+          <value name="sender" type="string" allow-empty="false">
+            <string>VMwareTalentAcquisition@qualtrics-survey.com</string>
+          </value>
+        </part>
+      </partset>
+      <actionset>
+        <part name="move-to-folder">
+          <value name="folder" type="folder">
+            <folder uri="folder://fd8ff1620989e6434bc46afa55b92676458ad83b/INBOX/Work%20Application/VMWare"/>
+          </value>
+        </part>
+      </actionset>
+    </rule>
+    <rule enabled="true" grouping="all" source="incoming" account-uid="5c7c4efa9a81b23cef3c7fa109a0249b3c7161b7">
+      <title>Mail from Google</title>
+      <partset>
+        <part name="sender">
+          <value name="sender-type" type="option" value="contains"/>
+          <value name="sender" type="string" allow-empty="false">
+            <string>no-reply@accounts.google.com</string>
+          </value>
+        </part>
+      </partset>
+      <actionset>
+        <part name="move-to-folder">
+          <value name="folder" type="folder">
+            <folder uri="folder://5c7c4efa9a81b23cef3c7fa109a0249b3c7161b7/INBOX/spam/google"/>
+          </value>
+        </part>
+      </actionset>
+    </rule>
+    <rule enabled="true" grouping="all" source="incoming" account-uid="5c7c4efa9a81b23cef3c7fa109a0249b3c7161b7">
+      <title>Mail from Cron Daemon</title>
+      <partset>
+        <part name="sender">
+          <value name="sender-type" type="option" value="contains"/>
+          <value name="sender" type="string" allow-empty="false">
+            <string>root@karapetrov.top</string>
+          </value>
+        </part>
+      </partset>
+      <actionset>
+        <part name="move-to-folder">
+          <value name="folder" type="folder">
+            <folder uri="folder://5c7c4efa9a81b23cef3c7fa109a0249b3c7161b7/INBOX/cron"/>
+          </value>
+        </part>
+      </actionset>
+    </rule>
+    <rule enabled="true" grouping="all" source="incoming" account-uid="5c7c4efa9a81b23cef3c7fa109a0249b3c7161b7">
+      <title>Mail from GitHub</title>
+      <partset>
+        <part name="sender">
+          <value name="sender-type" type="option" value="contains"/>
+          <value name="sender" type="string" allow-empty="false">
+            <string>noreply@github.com</string>
+          </value>
+        </part>
+      </partset>
+      <actionset>
+        <part name="move-to-folder">
+          <value name="folder" type="folder">
+            <folder uri="folder://5c7c4efa9a81b23cef3c7fa109a0249b3c7161b7/INBOX/spam/git"/>
+          </value>
+        </part>
+      </actionset>
+    </rule>
+    <rule enabled="true" grouping="all" source="incoming" account-uid="5c7c4efa9a81b23cef3c7fa109a0249b3c7161b7">
+      <title>Mail from Google 2</title>
+      <partset>
+        <part name="sender">
+          <value name="sender-type" type="option" value="contains"/>
+          <value name="sender" type="string" allow-empty="false">
+            <string>noreply@google.com</string>
+          </value>
+        </part>
+      </partset>
+      <actionset>
+        <part name="move-to-folder">
+          <value name="folder" type="folder">
+            <folder uri="folder://5c7c4efa9a81b23cef3c7fa109a0249b3c7161b7/INBOX/spam/google"/>
+          </value>
+        </part>
+      </actionset>
+    </rule>
+    <rule enabled="true" grouping="all" source="incoming" account-uid="fd8ff1620989e6434bc46afa55b92676458ad83b">
+      <title>Mail from Daisy (Kraken Support)</title>
+      <partset>
+        <part name="sender">
+          <value name="sender-type" type="option" value="contains"/>
+          <value name="sender" type="string" allow-empty="false">
+            <string>support@kraken.com</string>
+          </value>
+        </part>
+      </partset>
+      <actionset>
+        <part name="move-to-folder">
+          <value name="folder" type="folder">
+            <folder uri="folder://fd8ff1620989e6434bc46afa55b92676458ad83b/INBOX/kraken"/>
+          </value>
+        </part>
+      </actionset>
+    </rule>
+    <rule enabled="true" grouping="all" source="incoming" account-uid="fd8ff1620989e6434bc46afa55b92676458ad83b">
+      <title>Mail from Kraken 2</title>
+      <partset>
+        <part name="sender">
+          <value name="sender-type" type="option" value="contains"/>
+          <value name="sender" type="string" allow-empty="false">
+            <string>noreply@kraken.com</string>
+          </value>
+        </part>
+      </partset>
+      <actionset>
+        <part name="move-to-folder">
+          <value name="folder" type="folder">
+            <folder uri="folder://fd8ff1620989e6434bc46afa55b92676458ad83b/INBOX/kraken"/>
+          </value>
+        </part>
+      </actionset>
+    </rule>
+    <rule enabled="true" grouping="all" source="incoming" account-uid="fd8ff1620989e6434bc46afa55b92676458ad83b">
+      <title>Mail from Binance</title>
+      <partset>
+        <part name="sender">
+          <value name="sender-type" type="option" value="contains"/>
+          <value name="sender" type="string" allow-empty="false">
+            <string>do-not-reply@ses.binance.com</string>
+          </value>
+        </part>
+      </partset>
+      <actionset>
+        <part name="move-to-folder">
+          <value name="folder" type="folder">
+            <folder uri="folder://fd8ff1620989e6434bc46afa55b92676458ad83b/INBOX/binance"/>
+          </value>
+        </part>
+      </actionset>
+    </rule>
+    <rule enabled="true" grouping="all" source="incoming" account-uid="fd8ff1620989e6434bc46afa55b92676458ad83b">
+      <title>Mail from LinkedIn Job Alerts</title>
+      <partset>
+        <part name="sender">
+          <value name="sender-type" type="option" value="contains"/>
+          <value name="sender" type="string" allow-empty="false">
+            <string>jobalerts-noreply@linkedin.com</string>
+          </value>
+        </part>
+      </partset>
+      <actionset>
+        <part name="move-to-folder">
+          <value name="folder" type="folder">
+            <folder uri="folder://fd8ff1620989e6434bc46afa55b92676458ad83b/INBOX/Spam/LinkedIn"/>
+          </value>
+        </part>
+      </actionset>
+    </rule>
+    <rule enabled="true" grouping="all" source="incoming" account-uid="fd8ff1620989e6434bc46afa55b92676458ad83b">
+      <title>Mail from Veliyana Stoyanova</title>
+      <partset>
+        <part name="sender">
+          <value name="sender-type" type="option" value="contains"/>
+          <value name="sender" type="string" allow-empty="false">
+            <string>hit-reply@linkedin.com</string>
+          </value>
+        </part>
+      </partset>
+      <actionset>
+        <part name="move-to-folder">
+          <value name="folder" type="folder">
+            <folder uri="folder://fd8ff1620989e6434bc46afa55b92676458ad83b/INBOX/Spam/LinkedIn"/>
+          </value>
+        </part>
+      </actionset>
+    </rule>
+    <rule enabled="true" grouping="all" source="incoming" account-uid="fd8ff1620989e6434bc46afa55b92676458ad83b">
+      <title>Mail from Petinka Petkova</title>
+      <partset>
+        <part name="sender">
+          <value name="sender-type" type="option" value="contains"/>
+          <value name="sender" type="string" allow-empty="false">
+            <string>petinka@mindspeople.com</string>
+          </value>
+        </part>
+      </partset>
+      <actionset>
+        <part name="move-to-folder">
+          <value name="folder" type="folder">
+            <folder uri="folder://fd8ff1620989e6434bc46afa55b92676458ad83b/INBOX/Work%20Application/minds"/>
+          </value>
+        </part>
+      </actionset>
+    </rule>
+    <rule enabled="true" grouping="all" source="incoming" account-uid="fd8ff1620989e6434bc46afa55b92676458ad83b">
+      <title>Mail from Linktree</title>
+      <partset>
+        <part name="sender">
+          <value name="sender-type" type="option" value="contains"/>
+          <value name="sender" type="string" allow-empty="false">
+            <string>noreply@linktr.ee</string>
+          </value>
+        </part>
+      </partset>
+      <actionset>
+        <part name="move-to-folder">
+          <value name="folder" type="folder">
+            <folder uri="folder://fd8ff1620989e6434bc46afa55b92676458ad83b/INBOX/Spam/LinkTree"/>
+          </value>
+        </part>
+      </actionset>
+    </rule>
+    <rule enabled="true" grouping="all" source="incoming" account-uid="fd8ff1620989e6434bc46afa55b92676458ad83b">
+      <title>Mail from CLOUDSIGMA AG</title>
+      <partset>
+        <part name="sender">
+          <value name="sender-type" type="option" value="contains"/>
+          <value name="sender" type="string" allow-empty="false">
+            <string>notifications@app.bamboohr.com</string>
+          </value>
+        </part>
+      </partset>
+      <actionset>
+        <part name="move-to-folder">
+          <value name="folder" type="folder">
+            <folder uri="folder://fd8ff1620989e6434bc46afa55b92676458ad83b/INBOX/Work%20Application"/>
+          </value>
+        </part>
+      </actionset>
+    </rule>
+    <rule enabled="true" grouping="all" source="incoming" account-uid="fd8ff1620989e6434bc46afa55b92676458ad83b">
+      <title>Mail from Stoyan Varlyakov</title>
+      <partset>
+        <part name="sender">
+          <value name="sender-type" type="option" value="contains"/>
+          <value name="sender" type="string" allow-empty="false">
+            <string>@cloudsigma.com</string>
+          </value>
+        </part>
+      </partset>
+      <actionset>
+        <part name="move-to-folder">
+          <value name="folder" type="folder">
+            <folder uri="folder://fd8ff1620989e6434bc46afa55b92676458ad83b/INBOX/Work%20Application"/>
+          </value>
+        </part>
+      </actionset>
+    </rule>
+    <rule enabled="true" grouping="all" source="incoming" account-uid="fd8ff1620989e6434bc46afa55b92676458ad83b">
+      <title>Mail from no-reply@redis.com</title>
+      <partset>
+        <part name="sender">
+          <value name="sender-type" type="option" value="contains"/>
+          <value name="sender" type="string" allow-empty="false">
+            <string>no-reply@redis.com</string>
+          </value>
+        </part>
+      </partset>
+      <actionset>
+        <part name="move-to-folder">
+          <value name="folder" type="folder">
+            <folder uri="folder://fd8ff1620989e6434bc46afa55b92676458ad83b/INBOX/Work%20Application"/>
+          </value>
+        </part>
+      </actionset>
+    </rule>
+    <rule enabled="true" grouping="all" source="incoming" account-uid="fd8ff1620989e6434bc46afa55b92676458ad83b">
+      <title>Mail from SAP Careers</title>
+      <partset>
+        <part name="sender">
+          <value name="sender-type" type="option" value="contains"/>
+          <value name="sender" type="string" allow-empty="false">
+            <string>system@successfactors.eu</string>
+          </value>
+        </part>
+      </partset>
+      <actionset>
+        <part name="move-to-folder">
+          <value name="folder" type="folder">
+            <folder uri="folder://fd8ff1620989e6434bc46afa55b92676458ad83b/INBOX/Work%20Application"/>
+          </value>
+        </part>
+      </actionset>
+    </rule>
+    <rule enabled="true" grouping="all" source="incoming" account-uid="fd8ff1620989e6434bc46afa55b92676458ad83b">
+      <title>Mail from Sb Support</title>
+      <partset>
+        <part name="sender">
+          <value name="sender-type" type="option" value="contains"/>
+          <value name="sender" type="string" allow-empty="false">
+            <string>support@sb-bg.com</string>
+          </value>
+        </part>
+      </partset>
+      <actionset>
+        <part name="move-to-folder">
+          <value name="folder" type="folder">
+            <folder uri="folder://fd8ff1620989e6434bc46afa55b92676458ad83b/INBOX/Work%20Application/VMWare"/>
+          </value>
+        </part>
+      </actionset>
+    </rule>
+    <rule enabled="true" grouping="all" source="incoming">
+      <title>Mail from LinkedIn</title>
+      <partset>
+        <part name="sender">
+          <value name="sender-type" type="option" value="contains"/>
+          <value name="sender" type="string" allow-empty="false">
+            <string>notifications-noreply@linkedin.com</string>
+          </value>
+        </part>
+      </partset>
+      <actionset>
+        <part name="move-to-folder">
+          <value name="folder" type="folder">
+            <folder uri="folder://fd8ff1620989e6434bc46afa55b92676458ad83b/INBOX/Spam/LinkedIn"/>
+          </value>
+        </part>
+      </actionset>
+    </rule>
+    <rule enabled="true" grouping="all" source="incoming">
+      <title>Mail from SAP</title>
+      <partset>
+        <part name="sender">
+          <value name="sender-type" type="option" value="ends with"/>
+          <value name="sender" type="string" allow-empty="false">
+            <string>@sap.com</string>
+          </value>
+        </part>
+      </partset>
+      <actionset>
+        <part name="move-to-folder">
+          <value name="folder" type="folder">
+            <folder uri="folder://fd8ff1620989e6434bc46afa55b92676458ad83b/INBOX/Work%20Application/SAP"/>
+          </value>
+        </part>
+      </actionset>
+    </rule>
+    <rule enabled="true" grouping="all" source="incoming">
+      <title>Mail from Payroll International</title>
+      <partset>
+        <part name="sender">
+          <value name="sender-type" type="option" value="contains"/>
+          <value name="sender" type="string" allow-empty="false">
+            <string>payrollinternational@vmware.com</string>
+          </value>
+        </part>
+      </partset>
+      <actionset>
+        <part name="move-to-folder">
+          <value name="folder" type="folder">
+            <folder uri="folder://fd8ff1620989e6434bc46afa55b92676458ad83b/INBOX/Work%20Application/VMWare"/>
+          </value>
+        </part>
+      </actionset>
+    </rule>
+    <rule enabled="true" grouping="all" source="incoming">
+      <title>Mail from HelpNowPlus</title>
+      <partset>
+        <part name="sender">
+          <value name="sender-type" type="option" value="contains"/>
+          <value name="sender" type="string" allow-empty="false">
+            <string>noreply@vmware.com</string>
+          </value>
+        </part>
+      </partset>
+      <actionset>
+        <part name="move-to-folder">
+          <value name="folder" type="folder">
+            <folder uri="folder://fd8ff1620989e6434bc46afa55b92676458ad83b/INBOX/Work%20Application/VMWare"/>
+          </value>
+        </part>
+      </actionset>
+    </rule>
+    <rule enabled="true" grouping="all" source="incoming">
+      <title>Mail from INSAIT - Institute for Computer Science, Artificial Intelligence and Technology/Open Ph.D. Positions at INSAIT</title>
+      <partset>
+        <part name="sender">
+          <value name="sender-type" type="option" value="contains"/>
+          <value name="sender" type="string" allow-empty="false">
+            <string>e+d4fpdlb84453r3ws@insait.recruitee.com</string>
+          </value>
+        </part>
+      </partset>
+      <actionset>
+        <part name="move-to-folder">
+          <value name="folder" type="folder">
+            <folder uri="folder://fd8ff1620989e6434bc46afa55b92676458ad83b/INBOX/Work%20Application/INSAIT"/>
+          </value>
+        </part>
+      </actionset>
+    </rule>
+  </ruleset>
+</filteroptions>

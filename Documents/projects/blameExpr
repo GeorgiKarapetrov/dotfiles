@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# set -x
+
+[[ -d $1 ]] || exit 1
+
+# x=a/b/c/d
+# y=a/
+# echo ${x#*/}
+
+MATCHES=$(grep -rn $2 $1 | grep -v /.git/ | cut -f1,2 -d: | cut -d'/' -f2-)
+echo $MATCHES
+for MATCH in $MATCHES; do
+    FILE_PATH=$(echo $MATCH | cut -f1 -d:)
+    LINE_NUMBER=$(echo $MATCH | cut -f2 -d:)
+    # CONTEXT=$(sed -n "${LINE_NUMBER}p" $1/$FILE_PATH)
+    echo $FILE_PATH:$LINE_NUMBER
+    echo "git --no-pager -C $1 log -L $LINE_NUMBER,$LINE_NUMBER:$FILE_PATH"
+    echo
+    git --no-pager -C $1 blame -L $LINE_NUMBER,$LINE_NUMBER $FILE_PATH
+    echo
+    echo
+    echo
+done
