@@ -112,6 +112,7 @@ bspc rule -a viber desktop='^2' follow=on
 bspc rule -a ViberPC desktop='^2' follow=on
 bspc rule -a discord desktop='^2' follow=on
 bspc rule -a telegram-desktop desktop='^2' follow=on
+bspc rule -a TelegramDesktop desktop='^2' follow=on
 bspc rule -a Thunar desktop='^3' follow=on
 bspc rule -a Pcmanfm desktop='^3' follow=on
 bspc rule -a KeePassXC desktop='^4'
