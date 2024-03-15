@@ -94,7 +94,6 @@ dmraid
 dnsmasq
 docker
 docker-compose
-dolphin
 dosfstools
 downgrade
 duf
@@ -262,7 +261,6 @@ pass-otp
 pavucontrol
 pcmanfm
 pcsclite
-pdfmerger
 picom
 pkgfile
 playerctl

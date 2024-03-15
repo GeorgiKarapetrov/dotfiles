@@ -1,2 +1,2 @@
 #!/bin/bash
-rsync -rvP $HOME/Documents/git/georgi.karapetrov.top/build pi@192.168.88.3:/home/pi/
+rsync -rvP $HOME/Documents/projects/personal/georgi.karapetrov.top/build pi@192.168.88.3:/home/pi/

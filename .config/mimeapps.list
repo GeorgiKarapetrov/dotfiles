@@ -349,3 +349,4 @@ x-scheme-handler/mailto=xfce4-mail-reader.desktop;evolution.desktop;
 x-scheme-handler/mid=evolution.desktop;
 x-scheme-handler/webcal=evolution.desktop;
 x-scheme-handler/webcals=evolution.desktop;
+inode/chardevice=code.desktop;
