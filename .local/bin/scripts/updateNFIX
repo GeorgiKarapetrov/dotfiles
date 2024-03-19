@@ -6,11 +6,16 @@ TARGET_PATH="$HOME"/Documents/projects/freq/freqtrade_official/freqtrade/ft_user
 cd "$HOME"/Documents/projects/freq/strategies/NostalgiaForInfinity/ || exit
 git pull
 cp NostalgiaForInfinityX4.py "$TARGET_PATH"/user_data/strategies
+
 # cp -r configs/ "$TARGET_PATH"/user_data/configs/
+
 # cd "$TARGET_PATH" || exit
 # git status | grep "modified:   user_data/strategies/NostalgiaForInfinityX4.py"
 # git commit -S -am "update NFIX"
+
 # git push origin master:master
+
 # ./exec_on_remote git pull
+
 # REST_PATH=user_data/configs/rest
 # python $REST_PATH/rest_client.py --config $REST_PATH/<CHANGE_ME>.json reload_config
