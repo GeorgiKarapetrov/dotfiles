@@ -73,6 +73,7 @@ broadcom-wl-dkms
 bspwm
 btrfs-progs
 cherrytree
+chromium
 cinnamon
 cinnamon-translations
 clonezilla
@@ -93,6 +94,7 @@ dmidecode
 dmraid
 dnsmasq
 docker
+docker-buildx
 docker-compose
 dosfstools
 downgrade
@@ -145,6 +147,7 @@ gst-plugins-good
 gst-plugins-ugly
 gstreamer
 gutenprint
+guvcview
 gvfs
 gvfs-afc
 gvfs-gphoto2
@@ -281,6 +284,8 @@ python-pip
 python-pyparted
 python-rapidjson
 qalculate-gtk
+qemu-user-static
+qemu-user-static-binfmt
 qt5ct
 qutebrowser
 rate-mirrors-bin

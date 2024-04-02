@@ -41,7 +41,7 @@ run telegram-desktop &
 run alacritty &
 if ! pgrep -f google-chrome ;
   then
-	  (sleep 5 && run google-chrome-stable) &
+	  (sleep 9 && run google-chrome-stable) &
 fi
 #qt apps QT_FONT_DPI=150, no longer needed due to /etc/profile.d/qt-hidpi.sh
 # contents:

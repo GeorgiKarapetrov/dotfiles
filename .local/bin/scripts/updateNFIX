@@ -5,7 +5,7 @@ set -x
 TARGET_PATH="$HOME"/Documents/projects/freq/freqtrade_official/freqtrade/ft_userdata
 cd "$HOME"/Documents/projects/freq/strategies/NostalgiaForInfinity/ || exit
 git pull
-cp NostalgiaForInfinityX4.py "$TARGET_PATH"/user_data/strategies
+cp NostalgiaForInfinityX4.py "$TARGET_PATH"/user_data/strategies_orig_updater
 
 # cp -r configs/ "$TARGET_PATH"/user_data/configs/
 
