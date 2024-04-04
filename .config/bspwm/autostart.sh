@@ -17,7 +17,7 @@ xsetroot -cursor_name left_ptr &
 # setxkbmap -model pc105 -layout us,bg -variant ,phonetic -option grp:alt_caps_toggle
 run gxkb &
 
-run sxhkd -c ~/.config/bspwm/sxhkd/sxhkdrc && sleep 1 &
+run sxhkd -c ~/.config/bspwm/sxhkd/sxhkdrc &
 
 run conky -c $HOME/.config/bspwm/system-overview &
 run nm-applet &
@@ -37,11 +37,12 @@ run /usr/lib/kdeconnectd &
 run /usr/bin/kdeconnect-indicator &
 run tixati &
 run discord &
-run telegram-desktop &
+# run viber &
+# run telegram-desktop &
 run alacritty &
 if ! pgrep -f google-chrome ;
   then
-	  (sleep 9 && run google-chrome-stable) &
+	  (sleep 11 && run google-chrome-stable) &
 fi
 #qt apps QT_FONT_DPI=150, no longer needed due to /etc/profile.d/qt-hidpi.sh
 # contents:
@@ -52,4 +53,4 @@ run flameshot & #-style=gtk2
 run xfce4-power-manager &
 # also in cron
 mount | grep "${HOME}/Documents/gdrive" >/dev/null || google-drive-ocamlfuse -label home "${HOME}/Documents/gdrive"
-(sleep 10 && run evolution) &
+(sleep 11 && run evolution) &

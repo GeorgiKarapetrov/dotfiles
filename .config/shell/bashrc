@@ -174,6 +174,7 @@ export LS_COLORS="rs=0:di=01;33:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;
 
 complete -C $HOME/.tfenv/versions/1.1.7/terraform tf
 complete -F _complete_alias dotfiles
+complete -F _complete_alias sysfiles
 #https://github.com/hashicorp/terraform/issues/2182#issuecomment-898798893
 #terraform plan | terraform-targets
 #terraform plan | terraform-targets | grep 'some pattern'

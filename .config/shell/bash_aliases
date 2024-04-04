@@ -81,6 +81,7 @@ alias \
 	k="kubectl"
 
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias sysfiles='/usr/bin/git --git-dir=$HOME/.sysfiles/ --work-tree=/'
 
 #Xclip
 alias setclip="xclip -selection c"
