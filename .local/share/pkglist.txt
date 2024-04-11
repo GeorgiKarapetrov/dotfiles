@@ -19,6 +19,7 @@ archlinux-logout-git
 archlinux-tweak-tool-git
 arcolinux-alacritty-git
 arcolinux-bin-git
+arcolinux-bootloader-grub-git
 arcolinux-bspwm-git
 arcolinux-cinnamon-dconf-git
 arcolinux-cinnamon-git
@@ -426,6 +427,7 @@ wmctrl
 wpa_supplicant
 wvdial
 xapp
+xarchiver
 xclip
 xdg-desktop-portal-gtk
 xdg-user-dirs
