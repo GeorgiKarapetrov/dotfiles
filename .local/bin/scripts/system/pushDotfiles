@@ -60,6 +60,7 @@
 /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.xinitrc
 /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.bashrc
 /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/Videos/resolution.sh
+/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/Music/removeImages.sh
 /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.local/share/ignorelist
 /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.local/share/pkglist.txt
 
