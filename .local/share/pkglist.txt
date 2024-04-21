@@ -53,7 +53,7 @@ arcolinux-variety-git
 arcolinux-volumeicon-git
 arcolinux-wallpapers-git
 arcolinux-welcome-app-git
-arcolinux-xfce-git
+arconet-xfce
 asciinema
 autorandr
 avahi
