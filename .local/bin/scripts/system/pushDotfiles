@@ -1,76 +1,82 @@
 #!/bin/bash
 
+# alias dotfiles='/usr/bin/git --git-dir="$HOME"/.dotfiles/ --work-tree="$HOME"'
+
+# https://askubuntu.com/a/1254207
+dotfiles() {
+	/usr/bin/git --git-dir="$HOME"/.dotfiles/ --work-tree="$HOME" "$@"
+}
+
 # dotfiles ls-files | xargs -n 1 dirname | uniq
 # delete removed files from git index
 # git ls-files --deleted -z | xargs -0 git rm
-/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME ls-files --deleted -z | xargs -r0 /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME rm
+dotfiles ls-files --deleted -z | xargs -r0 /usr/bin/git --git-dir="$HOME"/.dotfiles/ --work-tree="$HOME" rm
 
-/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/Documents/projects/blameExpr
-/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/Documents/projects/clone
-/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/Documents/projects/cloneGroup
-/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/Documents/projects/countCommits
-/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/Documents/projects/fetch
-/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/Documents/projects/resetDefault
-/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/Documents/projects/unshallow
-/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.config/evolution/mail/filters.xml
-/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.ssh/config
-# /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.texmf
-/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.Xresources
-/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.fonts
-/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.gnupg/gpg.conf
-/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.local/bin/scripts
-/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/Pictures/archlinux07.jpg
-/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.config/alacritty
-/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.config/yt-dlp
-/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.config/bspwm
-/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.config/compton
-/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.config/dunst
-/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.config/gsimplecal
-/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.config/git
-/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.config/gtk-2.0
-/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.config/gxkb
-/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.config/htop
-/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.config/keepassxc/keepassxc.ini
-/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.config/lxsession/bspwm
-/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.config/mimeapps.list
-/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.config/mpd
-/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.config/mpv
-/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.config/nvim/init.vim
-/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.config/polybar
-/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.config/pulse/default.pa
-/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.config/pulse/presets
-/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.config/ranger
-/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.config/rofi
-/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.config/shell
-/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.config/shortcutrc
-/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.config/sublime-text-3/Packages/User/
-/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.config/terminator
-/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.config/tmux
-/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.config/user-dirs.dirs
-/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.config/user-dirs.locale
-/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.config/volumeicon
-/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.dmrc
-/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.gitconfig
-/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.gnupg/gpg.conf
-/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.gtkrc-2.0
-/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.inputrc
-/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.profile
-/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.pythonrc
-/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.ssh/config
-/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.xinitrc
-/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.bashrc
-/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/Videos/resolution.sh
-/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/Music/removeImages.sh
-/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.local/share/ignorelist
-/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $HOME/.local/share/pkglist.txt
+dotfiles add "$HOME"/Documents/projects/blameExpr
+dotfiles add "$HOME"/Documents/projects/clone
+dotfiles add "$HOME"/Documents/projects/cloneGroup
+dotfiles add "$HOME"/Documents/projects/countCommits
+dotfiles add "$HOME"/Documents/projects/fetch
+dotfiles add "$HOME"/Documents/projects/resetDefault
+dotfiles add "$HOME"/Documents/projects/unshallow
+dotfiles add "$HOME"/.config/evolution/mail/filters.xml
+dotfiles add "$HOME"/.ssh/config
+# dotfiles add "$HOME"/.texmf
+dotfiles add "$HOME"/.Xresources
+dotfiles add "$HOME"/.fonts
+dotfiles add "$HOME"/.gnupg/gpg.conf
+dotfiles add "$HOME"/.local/bin/scripts
+dotfiles add "$HOME"/Pictures/archlinux07.jpg
+dotfiles add "$HOME"/.config/alacritty
+dotfiles add "$HOME"/.config/yt-dlp
+dotfiles add "$HOME"/.config/bspwm
+dotfiles add "$HOME"/.config/compton
+dotfiles add "$HOME"/.config/dunst
+dotfiles add "$HOME"/.config/gsimplecal
+dotfiles add "$HOME"/.config/git
+dotfiles add "$HOME"/.config/gtk-2.0
+dotfiles add "$HOME"/.config/gxkb
+dotfiles add "$HOME"/.config/htop
+dotfiles add "$HOME"/.config/keepassxc/keepassxc.ini
+dotfiles add "$HOME"/.config/lxsession/bspwm
+dotfiles add "$HOME"/.config/mimeapps.list
+dotfiles add "$HOME"/.config/mpd
+dotfiles add "$HOME"/.config/mpv
+dotfiles add "$HOME"/.config/nvim/init.vim
+dotfiles add "$HOME"/.config/polybar
+dotfiles add "$HOME"/.config/pulse/default.pa
+dotfiles add "$HOME"/.config/pulse/presets
+dotfiles add "$HOME"/.config/ranger
+dotfiles add "$HOME"/.config/rofi
+dotfiles add "$HOME"/.config/shell
+dotfiles add "$HOME"/.config/shortcutrc
+dotfiles add "$HOME"/.config/sublime-text-3/Packages/User/
+dotfiles add "$HOME"/.config/terminator
+dotfiles add "$HOME"/.config/tmux
+dotfiles add "$HOME"/.config/user-dirs.dirs
+dotfiles add "$HOME"/.config/user-dirs.locale
+dotfiles add "$HOME"/.config/volumeicon
+dotfiles add "$HOME"/.dmrc
+dotfiles add "$HOME"/.gitconfig
+dotfiles add "$HOME"/.gnupg/gpg.conf
+dotfiles add "$HOME"/.gtkrc-2.0
+dotfiles add "$HOME"/.inputrc
+dotfiles add "$HOME"/.profile
+dotfiles add "$HOME"/.pythonrc
+dotfiles add "$HOME"/.ssh/config
+dotfiles add "$HOME"/.xinitrc
+dotfiles add "$HOME"/.bashrc
+dotfiles add "$HOME"/Videos/resolution.sh
+dotfiles add "$HOME"/Music/removeImages.sh
+dotfiles add "$HOME"/.local/share/ignorelist
+dotfiles add "$HOME"/.local/share/pkglist.txt
 
-if [ -z "$1" ]
-then
-	/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME commit -S -am "sync"
+if [ -z "$1" ]; then
+	dotfiles commit -S -am "sync"
 else
-	/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME commit -S -am "$1"
+	dotfiles commit -S -am "$1"
 fi
-/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME push origin master:master
+dotfiles push origin master:master
 
-/usr/bin/git --git-dir=$HOME/.sysfiles/ --work-tree=/ commit -S -am "sync"
-/usr/bin/git --git-dir=$HOME/.sysfiles/ --work-tree=/ push origin master:master
+/usr/bin/git --git-dir="$HOME"/.sysfiles/ --work-tree=/ commit -S -am "sync"
+/usr/bin/git --git-dir="$HOME"/.sysfiles/ --work-tree=/ push origin master:master
