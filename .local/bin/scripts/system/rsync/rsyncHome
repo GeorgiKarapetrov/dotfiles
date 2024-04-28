@@ -14,7 +14,7 @@ sudo rsync \
   --exclude="Documents/gdrive" \
   --exclude=".bitmonero" \
   --exclude-from=/home/georgi/.local/share/ignorelist \
-  /home/ /mnt/ && \
+  /home/ /mnt/
 sudo umount /mnt && \
 sudo cryptsetup close backup
 # rm $HOME/pkglist.txt

@@ -43,7 +43,7 @@ d="cd $HOME/Documents && ls -hN --color=auto --group-directories-first -A" \
 freq="cd $HOME/Documents/projects/freq && ls -hN --color=auto --group-directories-first -A" \
 ft="cd $HOME/Documents/projects/freq/freqtrade_official/freqtrade && ls -hN --color=auto --group-directories-first -A" \
 web="cd $HOME/Documents/projects/personal/georgi.karapetrov.top && ls -hN --color=auto --group-directories-first -A" \
-cv="cd $HOME/Documents/projects/presonal/resume && ls -hN --color=auto --group-directories-first -A" \
+cv="cd $HOME/Documents/projects/personal/resume && ls -hN --color=auto --group-directories-first -A" \
 misc="cd $HOME/Documents/misc && ls -hN --color=auto --group-directories-first -A" \
 P="cd $HOME/Pictures && ls -hN --color=auto --group-directories-first -A" \
 p="cd $HOME/Documents/projects && ls -hN --color=auto --group-directories-first -A" \

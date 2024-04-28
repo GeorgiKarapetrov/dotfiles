@@ -1,1 +1,1 @@
--o %(title)s-%(chapter)s.%(ext)s --no-mtime --sponsorblock-remove all --embed-metadata
+-o "%(title)s_[%(id)s]" --no-mtime --sponsorblock-remove all --embed-metadata

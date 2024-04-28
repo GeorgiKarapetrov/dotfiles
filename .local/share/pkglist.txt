@@ -18,6 +18,7 @@ archlinux-keyring
 archlinux-logout-git
 archlinux-tweak-tool-git
 arcolinux-alacritty-git
+arcolinux-arc-kde
 arcolinux-bin-git
 arcolinux-bootloader-grub-git
 arcolinux-bspwm-git
@@ -80,6 +81,7 @@ cinnamon-translations
 clonezilla
 conky-lua-archers
 cronie
+cryfs
 cryptsetup
 cups
 cups-filters
@@ -105,6 +107,7 @@ edid-decode-git
 edk2-shell
 efibootmgr
 electrum
+encfs
 ethtool
 evolution
 exfatprogs
@@ -132,6 +135,7 @@ gnome-system-monitor
 gnome-terminal
 gnu-netcat
 go
+gocryptfs
 google-chrome
 gpart
 gparted
@@ -249,6 +253,7 @@ ntp
 numlockx
 nvm
 nvme-cli
+ocs-url
 open-iscsi
 openconnect
 openresolv
@@ -256,6 +261,7 @@ openssh
 openvpn
 os-prober
 p7zip
+packagekit-qt5
 partclone
 parted
 partimage
@@ -287,7 +293,6 @@ python-rapidjson
 qalculate-gtk
 qemu-user-static
 qemu-user-static-binfmt
-qt5ct
 qutebrowser
 rate-mirrors-bin
 refind
@@ -313,6 +318,7 @@ speedcrunch
 speedtest-cli-git
 squashfs-tools
 sudo
+surfn-plasma-dark-icons-git
 sutils-git
 sxhkd
 sxiv
@@ -416,6 +422,8 @@ visual-studio-code-bin
 vlc
 volumeicon
 vpnc
+vulkan-radeon
+vulkan-tools
 w3m
 wd719x-firmware
 webkit2gtk
