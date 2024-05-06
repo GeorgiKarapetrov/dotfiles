@@ -23,7 +23,7 @@ alias \
 	rm="rm -vI" \
 	bc="bc -ql" \
 	mkd="mkdir -pv" \
-	yt="yt-dlp -i -f 'bestvideo[height<=1080]+bestaudio'" \
+	yt="yt-dlp -ciw -f 'bestvideo[height<=1080]+bestaudio'" \
 	yta="yt -x -f bestaudio/best" \
 	ffmpeg="ffmpeg -hide_banner"
 
