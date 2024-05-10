@@ -67,6 +67,8 @@ bash-git-prompt
 bat-cat-git
 biber
 bind
+bisq
+bisq2
 blueberry
 bluez
 bluez-libs
@@ -99,6 +101,7 @@ dnsmasq
 docker
 docker-buildx
 docker-compose
+dolphin
 dosfstools
 downgrade
 duf

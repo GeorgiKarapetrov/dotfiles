@@ -685,5 +685,41 @@
         </part>
       </actionset>
     </rule>
+    <rule enabled="true" grouping="all" source="incoming">
+      <title>Mail from kiteworks</title>
+      <partset>
+        <part name="sender">
+          <value name="sender-type" type="option" value="contains"/>
+          <value name="sender" type="string" allow-empty="false">
+            <string>kiteworks.com</string>
+          </value>
+        </part>
+      </partset>
+      <actionset>
+        <part name="move-to-folder">
+          <value name="folder" type="folder">
+            <folder uri="folder://fd8ff1620989e6434bc46afa55b92676458ad83b/INBOX/Work%20Application/kiteworks"/>
+          </value>
+        </part>
+      </actionset>
+    </rule>
+    <rule enabled="true" grouping="all" source="incoming">
+      <title>Mail from Axway @ icims</title>
+      <partset>
+        <part name="sender">
+          <value name="sender-type" type="option" value="contains"/>
+          <value name="sender" type="string" allow-empty="false">
+            <string>axway</string>
+          </value>
+        </part>
+      </partset>
+      <actionset>
+        <part name="move-to-folder">
+          <value name="folder" type="folder">
+            <folder uri="folder://fd8ff1620989e6434bc46afa55b92676458ad83b/INBOX/Work%20Application/axway"/>
+          </value>
+        </part>
+      </actionset>
+    </rule>
   </ruleset>
 </filteroptions>

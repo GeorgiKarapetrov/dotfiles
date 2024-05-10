@@ -4,6 +4,8 @@ set -x
 
 if [ -d /run/user/1000/1324388c463262e0 ]; then
     cd /run/user/1000/1324388c463262e0/primary/Music
+elif [ -d /run/user/1000/e5ff9059_7fd0_41b4_8c74_343cba33c4c1/storage/emulated/0 ]; then
+    cd /run/user/1000/e5ff9059_7fd0_41b4_8c74_343cba33c4c1/storage/emulated/0/Music
 elif [ -d /run/user/1000/gvfs/mtp:host=motorola_motorola_edge_20_lite_ZY22FX8NR7 ]; then
     cd /run/user/1000/gvfs/mtp:host=motorola_motorola_edge_20_lite_ZY22FX8NR7/Internal\ shared\ storage/Music
 else

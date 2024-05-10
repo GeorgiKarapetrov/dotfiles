@@ -64,6 +64,8 @@ bspc rule -a VirtualBox Machine state=fullscreen
 #bspc rule -a Gimp state=fullscreen
 
 #Floating applications
+bspc rule -a bisq.desktop.app.BisqApp state=floating
+bspc rule -a bisq.desktop_app.JavaFXApplication state=floating
 bspc rule -a Arandr state=floating
 bspc rule -a Qalculate state=floating
 bspc rule -a SpeedCrunch state=floating
