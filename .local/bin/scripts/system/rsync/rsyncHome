@@ -4,7 +4,7 @@
 sudo cryptsetup luksOpen /dev/sda backup && \
 sudo mount /dev/mapper/backup /mnt && \
 sudo rsync \
-  -axHAXSv \
+  -aHAXSv \
   --numeric-ids \
   --info=progress2 \
   --delete-excluded \
