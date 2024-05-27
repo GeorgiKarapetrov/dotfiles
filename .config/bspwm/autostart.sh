@@ -36,7 +36,7 @@ pulseaudio-equalizer enable &
 run /usr/lib/kdeconnectd &
 run /usr/bin/kdeconnect-indicator &
 run tixati &
-run discord &
+(sleep 11 && run discord) &
 # run viber &
 # run telegram-desktop &
 run alacritty &
