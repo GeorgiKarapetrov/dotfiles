@@ -50,10 +50,10 @@ arcolinux-sddm-simplicity-git
 arcolinux-system-config-git
 arcolinux-systemd-services-git
 arcolinux-variety-autostart-git
-arcolinux-variety-git
 arcolinux-volumeicon-git
 arcolinux-wallpapers-git
 arcolinux-welcome-app-git
+arconet-variety-config
 arconet-xfce
 asciinema
 autorandr
@@ -67,8 +67,6 @@ bash-git-prompt
 bat-cat-git
 biber
 bind
-bisq
-bisq2
 blueberry
 bluez
 bluez-libs
